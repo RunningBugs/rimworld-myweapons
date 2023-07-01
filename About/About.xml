@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>RunningBugs.UnbalancedWeapons</packageId>
+    <name>My Unbalanced Weapons Mod</name>
+    <author>Sanhu Li</author>
+    <description>This is my first RimWorld mod. It adds a new super gun to the game to make life easier for new players</description>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+    </loadAfter>
+</ModMetaData>
