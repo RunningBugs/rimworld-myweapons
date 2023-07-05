@@ -11,7 +11,7 @@
     <projectile>
       <!-- <damageDef>Bullet</damageDef> -->
       <damageDef>Bullet</damageDef>
-      <explosionRadius>1</explosionRadius>
+      <!-- <explosionRadius>1</explosionRadius> -->
       <damageAmountBase>25</damageAmountBase>
       <stoppingPower>3</stoppingPower>
       <!-- <flyOverhead>true</flyOverhead> -->
