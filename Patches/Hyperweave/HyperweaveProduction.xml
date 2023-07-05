@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Campfire"]/recipes</xpath>
+        <value>
+            <li>RunningBugs_Make_Hyperweave</li>
+            <li>RunningBugs_Make_Wood</li> 
+            <li>RunningBugs_Make_Steel</li> 
+            <li>RunningBugs_Make_Silver</li> 
+            <li>RunningBugs_Make_Components</li> 
+            <li>RunningBugs_Make_ComponentSpacer</li> 
+            <li>RunningBugs_Make_Cloth</li> 
+            <li>RunningBugs_Make_Gold</li> 
+            <li>RunningBugs_Make_MedicineUltratech</li> 
+            <li>RunningBugs_Make_Kibble</li> 
+            <li>RunningBugs_Make_Plasteel</li> 
+            <li>RunningBugs_Make_BlocksMarble</li> 
+            <li>RunningBugs_Make_Omni_V</li> 
+            <li>RunningBugs_Make_ER_V</li> 
+            <li>RunningBugs_Make_Cleaner_V</li>
+            <li>RunningBugs_Make_VanometricPowerCell</li>
+            <li>RunningBugs_Make_AIPersonaCore</li>
+        </value>
+    </Operation>
+</Patch>

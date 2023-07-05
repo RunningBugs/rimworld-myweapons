@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[@Name="RPP_Recipe_Matrix"]/recipeUsers</xpath>
+        <value>
+          <li>Campfire</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="RPP_Production_Omni_V"]/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>Electricity</researchPrerequisite>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="RPP_Production_Cleaner_V"]/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>Electricity</researchPrerequisite>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="RPP_Production_ER_V"]/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>Electricity</researchPrerequisite>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[@Name="RPP_Recipe_Bot_V"]/workAmount</xpath>
+        <value>
+          <workAmount>50</workAmount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[@Name="RPP_Recipe_Bot_V"]/skillRequirements</xpath>
+        <value>
+            <skillRequirements>
+                <Crafting>20</Crafting>
+            </skillRequirements>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[@Name="RPP_Recipe_Bot_V"]/ingredients</xpath>
+        <value>
+            <ingredients>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>WoodLog</li>
+                        </thingDefs>
+                    </filter>
+                    <count>5</count>
+                </li>
+            </ingredients>
+        </value>
+    </Operation> -->
+</Patch>

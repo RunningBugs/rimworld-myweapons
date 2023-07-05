@@ -9,7 +9,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
+      <!-- <damageDef>Bullet</damageDef> -->
       <damageDef>Bullet</damageDef>
+      <explosionRadius>1</explosionRadius>
       <damageAmountBase>25</damageAmountBase>
       <stoppingPower>3</stoppingPower>
       <!-- <flyOverhead>true</flyOverhead> -->
@@ -67,8 +69,8 @@
         <defaultProjectile>Bullet_MySuperGun</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>1000</range>
-        <burstShotCount>5</burstShotCount>
-        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -83,8 +85,8 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <power>25</power>
+        <cooldownTime>0.6</cooldownTime>
       </li>
       <li>
         <label>barrel</label>
@@ -92,8 +94,8 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <power>25</power>
+        <cooldownTime>0.6</cooldownTime>
       </li>
     </tools>
   </ThingDef>
@@ -112,6 +114,8 @@
     <projectile>
       <damageDef>Bomb</damageDef>
       <!-- Use default damage from explosion def -->
+      <damageAmountBase>75</damageAmountBase>
+      <flyOverhead>true</flyOverhead>
       <explosionRadius>7</explosionRadius>
       <speed>50</speed>
     </projectile>
@@ -194,8 +198,8 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>11.7</power>
-        <cooldownTime>2.6</cooldownTime>
+        <power>25</power>
+        <cooldownTime>0.6</cooldownTime>
       </li>
     </tools>
   </ThingDef>

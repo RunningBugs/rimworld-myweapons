@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- <RecipeDef>
+        <defName>RunningBugs_Make_HyperWeave</defName>
+        <label>make hyperweave</label>
+        <description>Make hyperweave from void</description>
+        <jobString>Making hyperweave.</jobString>
+        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <workAmount>100</workAmount>
+        <targetCountAdjustment>100</targetCountAdjustment>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <Hyperweave>1000</Hyperweave>
+        </products>
+    </RecipeDef> -->
+</Defs>

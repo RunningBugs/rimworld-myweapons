@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef Name="RunningBugs_ResourceGainRecipe" Abstract="true">
+        <!-- <label>make resource</label> -->
+        <description>Make resource from void.</description>
+        <jobString>Making resources.</jobString>
+        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <workAmount>10</workAmount>
+        <targetCountAdjustment>100</targetCountAdjustment>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Hyperweave</defName>
+        <label>make Hyperweave</label>
+        <products>
+            <Hyperweave>1000</Hyperweave>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Wood</defName>
+        <label>make wood</label>
+        <products>
+            <WoodLog>1000</WoodLog>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Steel</defName>
+        <label>make steel</label>
+        <products>
+            <Steel>1000</Steel>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Silver</defName>
+        <label>make silver</label>
+        <products>
+            <Silver>1000</Silver>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Components</defName>
+        <label>make components</label>
+        <products>
+            <ComponentIndustrial>1000</ComponentIndustrial>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_ComponentSpacer</defName>
+        <label>make advanced components</label>
+        <products>
+            <ComponentSpacer>1000</ComponentSpacer>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Cloth</defName>
+        <label>make cloth</label>
+        <products>
+            <Cloth>1000</Cloth>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Gold</defName>
+        <label>make gold</label>
+        <products>
+            <Gold>1000</Gold>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_MedicineUltratech</defName>
+        <label>make MedicineUltratech</label>
+        <products>
+            <MedicineUltratech>1000</MedicineUltratech>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Kibble</defName>
+        <label>make kibble</label>
+        <products>
+            <Kibble>1000</Kibble>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Plasteel</defName>
+        <label>make plasteel</label>
+        <products>
+            <Plasteel>1000</Plasteel>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_BlocksMarble</defName>
+        <label>make blocksmarble</label>
+        <products>
+            <BlocksMarble>1000</BlocksMarble>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Omni_V</defName>
+        <label>make Omni_V</label>
+        <products>
+            <RPP_RechargeStation_Omni_V>1</RPP_RechargeStation_Omni_V>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_ER_V</defName>
+        <label>make ER_V</label>
+        <products>
+            <RPP_RechargeStation_ER_V>1</RPP_RechargeStation_ER_V>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Cleaner_V</defName>
+        <label>make Cleaner_V</label>
+        <products>
+            <AIRobot_RechargeStation_Cleaner_V>1</AIRobot_RechargeStation_Cleaner_V>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_VanometricPowerCell</defName>
+        <label>make VanometricPowerCell</label>
+        <products>
+            <VanometricPowerCell>1</VanometricPowerCell>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_AIPersonaCore</defName>
+        <label>make AIPersonaCore</label>
+        <products>
+            <AIPersonaCore>1</AIPersonaCore>
+        </products>
+    </RecipeDef>
+</Defs>
