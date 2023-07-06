@@ -18,7 +18,7 @@
             <li MayRequire="Alaestor.MiscRobots.PlusPlus">RunningBugs_Make_Omni_V</li> 
             <li MayRequire="Alaestor.MiscRobots.PlusPlus">RunningBugs_Make_ER_V</li> 
             <li MayRequire="Alaestor.MiscRobots.PlusPlus">RunningBugs_Make_Cleaner_V</li>
-            <li>RunningBugs_Make_VanometricPowerCell</li>
+            <li>RunningBugs_Make_SuperVanometricPowerCell</li>
             <li>RunningBugs_Make_AIPersonaCore</li>
             <li>RunningBugs_Make_Uranium</li>
         </value>
