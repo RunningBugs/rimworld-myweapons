@@ -25,5 +25,8 @@
         <products>
             <SuperVanometricPowerCell>1</SuperVanometricPowerCell>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>SuperVanometricPowerCell</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 </Defs>

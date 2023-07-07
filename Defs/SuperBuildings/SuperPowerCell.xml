@@ -7,7 +7,7 @@
             developed by archotechs, and is beyond even most glitterworld societies. While nobody
             knows exactly how it works, scholars believe it somehow extracts energy directly from
             fluctuations in the quantum foam.</description> -->
-        <description>Super Vanometric Power Cell, which has 1mW power output.</description>
+        <description>Over powerful Super Vanometric Power Cell, which has 1000x power comparing to normal VanometricPowerCells (1mW).</description>
         <graphicData>
             <texPath>Things/Building/Special/VanometricPowerCell</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -63,6 +63,9 @@
         <tradeTags>
             <li>ExoticBuilding</li>
         </tradeTags>
+        <descriptionHyperlinks>
+            <ThingDef>VanometricPowerCell</ThingDef>
+        </descriptionHyperlinks>
     </ThingDef>
     <!-- <ThingDef ParentName="Building_VanometricPowerCell">
         <defName>SuperVanometricPowerCell</defName>

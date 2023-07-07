@@ -29,6 +29,9 @@
         <products>
             <Hyperweave>1000</Hyperweave>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Hyperweave</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -37,6 +40,9 @@
         <products>
             <WoodLog>1000</WoodLog>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -45,6 +51,9 @@
         <products>
             <Steel>1000</Steel>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Steel</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -53,6 +62,9 @@
         <products>
             <Silver>1000</Silver>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Silver</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -61,6 +73,9 @@
         <products>
             <ComponentIndustrial>1000</ComponentIndustrial>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>ComponentIndustrial</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -69,6 +84,9 @@
         <products>
             <ComponentSpacer>1000</ComponentSpacer>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>ComponentSpacer</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -77,6 +95,9 @@
         <products>
             <Cloth>1000</Cloth>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Cloth</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -85,6 +106,9 @@
         <products>
             <Gold>1000</Gold>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gold</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -93,6 +117,9 @@
         <products>
             <MedicineUltratech>1000</MedicineUltratech>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>MedicineUltratech</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -101,6 +128,9 @@
         <products>
             <Kibble>1000</Kibble>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Kibble</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -109,6 +139,9 @@
         <products>
             <Plasteel>1000</Plasteel>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Plasteel</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -117,6 +150,9 @@
         <products>
             <BlocksMarble>1000</BlocksMarble>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>BlocksMarble</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -125,6 +161,9 @@
         <products>
             <RPP_RechargeStation_Omni_V>1</RPP_RechargeStation_Omni_V>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>RPP_RechargeStation_Omni_V</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -133,6 +172,9 @@
         <products>
             <RPP_RechargeStation_ER_V>1</RPP_RechargeStation_ER_V>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>RPP_RechargeStation_ER_V</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -141,6 +183,9 @@
         <products>
             <AIRobot_RechargeStation_Cleaner_V>1</AIRobot_RechargeStation_Cleaner_V>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>AIRobot_RechargeStation_Cleaner_V</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -149,6 +194,9 @@
         <products>
             <VanometricPowerCell>1</VanometricPowerCell>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>VanometricPowerCell</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -157,6 +205,9 @@
         <products>
             <AIPersonaCore>1</AIPersonaCore>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>AIPersonaCore</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -165,5 +216,8 @@
         <products>
             <Uranium>1000</Uranium>
         </products>
+        <descriptionHyperlinks>
+            <ThingDef>Uranium</ThingDef>
+        </descriptionHyperlinks>
     </RecipeDef>
 </Defs>
