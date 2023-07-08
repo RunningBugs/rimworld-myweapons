@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!-- Defs for Supler Gun -->
+  <!-- Defs for Supler Gun -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MySuperGun</defName>
     <label>my super gun blast</label>
@@ -57,8 +57,6 @@
       </skillRequirements>
       <recipeUsers>
         <li>Campfire</li>
-        <li>ElectricStove</li>
-        <li>FueledStove</li>
       </recipeUsers>
       <researchPrerequisite>Electricity</researchPrerequisite>
     </recipeMaker>
@@ -166,8 +164,6 @@
       </skillRequirements>
       <recipeUsers>
         <li>Campfire</li>
-        <li>ElectricStove</li>
-        <li>FueledStove</li>
       </recipeUsers>
       <researchPrerequisite>Electricity</researchPrerequisite>
     </recipeMaker>
@@ -197,6 +193,102 @@
         <label>barrel</label>
         <capacities>
           <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+  <!-- Super EMP launcher -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SuperEMPLauncher</defName>
+    <label>EMP launcher shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(68,150,215)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>EMP</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>10</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <flyOverhead>true</flyOverhead>
+      <!-- <arcHeightFactor>0.2</arcHeightFactor> -->
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_SuperEmpLauncher</defName>
+    <label>Super EMP launcher</label>
+    <description>A super powerful wide-barreled EMP shell launcher. The shell will upon impact
+      release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets,
+      mortars) and depleting shields in the area of effect.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/EMPLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>GrenadeEMP</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>3</WorkToMake>
+      <Mass>0.4</Mass>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <WoodLog>1</WoodLog>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>0</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>Campfire</li>
+      </recipeUsers>
+      <researchPrerequisite>Electricity</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SuperEMPLauncher</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>100</range>
+        <forcedMissRadius>1</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
         </capacities>
         <power>25</power>
         <cooldownTime>0.6</cooldownTime>
