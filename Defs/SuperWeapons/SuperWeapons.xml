@@ -38,7 +38,7 @@
     <statBases>
       <DeteriorationRate>0</DeteriorationRate>
       <Beauty>100</Beauty>
-      <MarketValue>9000</MarketValue>
+      <MarketValue>0</MarketValue>
       <Flammability>0</Flammability>
       <WorkToMake>100</WorkToMake>
       <Mass>0.5</Mass>
@@ -145,7 +145,7 @@
     <statBases>
       <DeteriorationRate>0</DeteriorationRate>
       <Beauty>100</Beauty>
-      <MarketValue>9000</MarketValue>
+      <MarketValue>0</MarketValue>
       <Flammability>0</Flammability>
       <WorkToMake>100</WorkToMake>
       <Mass>0.5</Mass>
@@ -223,9 +223,14 @@
       <shadowSize>0.6</shadowSize>
     </projectile>
   </ThingDef>
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_SuperEmpLauncher</defName>
     <label>Super EMP launcher</label>
+    <useHitPoints>false</useHitPoints>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <relicChance>0</relicChance>
     <description>A super powerful wide-barreled EMP shell launcher. The shell will upon impact
       release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets,
       mortars) and depleting shields in the area of effect.</description>
@@ -234,7 +239,6 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>0</generateCommonality>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -242,6 +246,9 @@
       <li>GrenadeEMP</li>
     </weaponTags>
     <statBases>
+      <MarketValue>0</MarketValue>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
       <WorkToMake>3</WorkToMake>
       <Mass>0.4</Mass>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>

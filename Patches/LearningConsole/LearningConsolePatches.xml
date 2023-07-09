@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Training Console1.2</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleAnimals"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleAnimals"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleArtistic"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleArtistic"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleConstruction"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/RecipeDef[defName="TrainingConsoleConstruction"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleCooking"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleCooking"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleCrafting"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleCrafting"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleGrowing"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleGrowing"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleMedicine"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleMedicine"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleMelee"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleMelee"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleMining"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleMining"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleIntellectual"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/RecipeDef[defName="TrainingConsoleIntellectual"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleShooting"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleShooting"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleSocial"]/workAmount</xpath>
+                    <value>
+                        <workAmount>5</workAmount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RecipeDef[defName="TrainingConsoleSocial"]/workSkillLearnFactor</xpath>
+                    <value>
+                        <workSkillLearnFactor>500</workSkillLearnFactor>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

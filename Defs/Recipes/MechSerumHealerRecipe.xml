@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_MechSerumHealer</defName>
+        <label>make MechSerumHealer</label>
+        <products>
+            <MechSerumHealer>10</MechSerumHealer>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>MechSerumHealer</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_PsychicSoothePulser</defName>
+        <label>make PsychicSoothePulser</label>
+        <products>
+            <PsychicSoothePulser>1</PsychicSoothePulser>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>PsychicSoothePulser</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+</Defs>

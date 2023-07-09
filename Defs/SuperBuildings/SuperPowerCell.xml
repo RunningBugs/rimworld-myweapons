@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef Name="Building_VanometricPowerCell" ParentName="BuildingBase">
+    <ThingDef ParentName="BuildingBase">
         <defName>SuperVanometricPowerCell</defName>
         <label>super vanometric power cell</label>
         <!-- <description>Generates free energy, forever, without using fuel. This technology is

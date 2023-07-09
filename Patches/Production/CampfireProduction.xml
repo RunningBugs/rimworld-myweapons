@@ -21,6 +21,8 @@
             <li>RunningBugs_Make_SuperVanometricPowerCell</li>
             <li>RunningBugs_Make_AIPersonaCore</li>
             <li>RunningBugs_Make_Uranium</li>
+            <li>RunningBugs_Make_MechSerumHealer</li>
+            <li>RunningBugs_Make_PsychicSoothePulser</li>
         </value>
     </Operation>
 </Patch>
