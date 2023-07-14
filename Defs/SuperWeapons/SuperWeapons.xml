@@ -16,7 +16,7 @@
       <stoppingPower>3</stoppingPower>
       <!-- <flyOverhead>true</flyOverhead> -->
       <armorPenetrationBase>0.14</armorPenetrationBase>
-      <speed>100</speed>
+      <speed>200</speed>
     </projectile>
   </ThingDef>
 
@@ -38,7 +38,7 @@
     <statBases>
       <DeteriorationRate>0</DeteriorationRate>
       <Beauty>100</Beauty>
-      <MarketValue>0</MarketValue>
+      <MarketValue>1</MarketValue>
       <Flammability>0</Flammability>
       <WorkToMake>100</WorkToMake>
       <Mass>0.5</Mass>
@@ -115,7 +115,7 @@
       <damageAmountBase>75</damageAmountBase>
       <flyOverhead>true</flyOverhead>
       <explosionRadius>7</explosionRadius>
-      <speed>50</speed>
+      <speed>200</speed>
     </projectile>
   </ThingDef>
 
@@ -145,7 +145,7 @@
     <statBases>
       <DeteriorationRate>0</DeteriorationRate>
       <Beauty>100</Beauty>
-      <MarketValue>0</MarketValue>
+      <MarketValue>1</MarketValue>
       <Flammability>0</Flammability>
       <WorkToMake>100</WorkToMake>
       <Mass>0.5</Mass>
@@ -213,7 +213,7 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <speed>40</speed>
+      <speed>200</speed>
       <damageDef>EMP</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>10</explosionRadius>
@@ -246,7 +246,7 @@
       <li>GrenadeEMP</li>
     </weaponTags>
     <statBases>
-      <MarketValue>0</MarketValue>
+      <MarketValue>1</MarketValue>
       <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
       <WorkToMake>3</WorkToMake>
@@ -271,7 +271,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_SuperEMPLauncher</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <range>100</range>
+        <range>1000</range>
         <forcedMissRadius>1</forcedMissRadius>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_IncendiaryLauncher</soundCast>

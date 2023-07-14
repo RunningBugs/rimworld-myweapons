@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_SuperMiniTurret</defName>
+        <label>mini-turret bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>Gun_SuperMiniTurret</defName>
+        <label>Super mini-turret gun</label>
+        <description>A simple automatic gun made to be mounted on a turret.</description>
+        <graphicData>
+            <texPath>Things/Building/Security/TurretMini_Top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <AccuracyTouch>1</AccuracyTouch>
+            <AccuracyShort>1</AccuracyShort>
+            <AccuracyMedium>1</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+            <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>Bullet_SuperMiniTurret</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>150</range>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                <burstShotCount>10</burstShotCount>
+                <soundCast>GunShotA</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>Turret_SuperMiniTurret</defName>
+        <label>super mini-turret</label>
+        <useHitPoints>false</useHitPoints>
+        <description>A super portable automatic turret. Requires nothing to refurbish after heavy use. It's not damagable. Its super AI brain can't be directly controlled, and beware of no friendly fire.</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/Security/TurretMini_Base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.27,0.25,0.27)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <uiIconPath>Things/Building/Security/TurretMini_MenuIcon</uiIconPath>
+        <uiIconScale>0.90</uiIconScale>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>false</rotatable>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>0</Flammability>
+            <WorkToBuild>18</WorkToBuild>
+            <Mass>8</Mass>
+            <Beauty>20</Beauty>
+            <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Breakdownable" />
+        </comps>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>1</costStuffCount>
+        <costList>
+            <WoodLog>1</WoodLog>
+        </costList>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <designationCategory>Security</designationCategory>
+        <constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+        <building>
+            <combatPower>45</combatPower>   <!-- same as a scavenger -->
+            <ai_combatDangerous>false</ai_combatDangerous>
+            <turretGunDef>Gun_SuperMiniTurret</turretGunDef>
+            <turretBurstCooldownTime>2</turretBurstCooldownTime>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
+        <designationHotKey>Misc2</designationHotKey>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Turret_SuperMiniTurret.label>超级小型自动机枪塔</Turret_SuperMiniTurret.label>
+    <Turret_SuperMiniTurret.description>一种小型，射程不短的超级自动机枪塔。长期使用后也不需要维护。不会受损，不会爆炸。超级人工智能控制，没有友军误伤。</Turret_SuperMiniTurret.description>
+    <Gun_SuperMiniTurret.label>超级小型自动机枪</Gun_SuperMiniTurret.label>
+    <Gun_SuperMiniTurret.description>一个简单的装在塔上的超级机枪</Gun_SuperMiniTurret.description>
+
+</LanguageData>
