@@ -11,7 +11,7 @@
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>10</workAmount>
         <targetCountAdjustment>100</targetCountAdjustment>
-        <ingredients>
+        <!-- <ingredients>
             <li>
                 <filter>
                     <thingDefs>
@@ -20,7 +20,7 @@
                 </filter>
                 <count>1</count>
             </li>
-        </ingredients>
+        </ingredients> -->
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -218,6 +218,17 @@
         </products>
         <descriptionHyperlinks>
             <ThingDef>Uranium</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_HemogenPack</defName>
+        <label>make HemogenPack</label>
+        <products>
+            <HemogenPack>1000</HemogenPack>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>HemogenPack</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
 </Defs>

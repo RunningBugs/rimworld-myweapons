@@ -23,6 +23,7 @@
             <li>RunningBugs_Make_Uranium</li>
             <li>RunningBugs_Make_MechSerumHealer</li>
             <li>RunningBugs_Make_PsychicSoothePulser</li>
+            <li>RunningBugs_Make_HemogenPack</li>
         </value>
     </Operation>
 </Patch>

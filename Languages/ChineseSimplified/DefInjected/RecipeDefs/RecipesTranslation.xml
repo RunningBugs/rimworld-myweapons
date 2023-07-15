@@ -41,5 +41,7 @@
     <RunningBugs_Make_MechSerumHealer.description>从虚空制作治愈机械液</RunningBugs_Make_MechSerumHealer.description>
     <RunningBugs_Make_PsychicSoothePulser.label>制作心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.label>
     <RunningBugs_Make_PsychicSoothePulser.description>从虚空制作心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.description>
+    <RunningBugs_Make_HemogenPack.label>制作血原包</RunningBugs_Make_HemogenPack.label>
+    <RunningBugs_Make_HemogenPack.description>从虚空中制作血原包</RunningBugs_Make_HemogenPack.description>
 
 </LanguageData>
