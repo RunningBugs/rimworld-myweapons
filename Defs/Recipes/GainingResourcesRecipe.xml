@@ -11,16 +11,6 @@
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>10</workAmount>
         <targetCountAdjustment>100</targetCountAdjustment>
-        <!-- <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>WoodLog</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients> -->
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -229,6 +219,17 @@
         </products>
         <descriptionHyperlinks>
             <ThingDef>HemogenPack</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Chemfuel</defName>
+        <label>make Chemfuel</label>
+        <products>
+            <Chemfuel>1000</Chemfuel>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Chemfuel</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
 </Defs>

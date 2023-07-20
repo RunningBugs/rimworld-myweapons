@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef Name="RunningBugs_CookRecipe" Abstract="true">
+        <!-- <label>make resource</label> -->
+        <description>Make meals from void.</description>
+        <jobString>Cooking...</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <workAmount>10</workAmount>
+        <targetCountAdjustment>100</targetCountAdjustment>
+    </RecipeDef>
+    <RecipeDef ParentName="RunningBugs_CookRecipe">
+        <defName>RunningBugs_Cook_MealLavishBulk</defName>
+        <label>cook lavish meal x40</label>
+        <description>Cook 40 very complex meals from void. It's like the god's blessing.</description>
+        <jobString>Cooking 40 lavish meals.</jobString>
+        <ingredients></ingredients>
+        <products>
+          <MealLavish>40</MealLavish>
+        </products>
+        <displayPriority>600</displayPriority>
+        <descriptionHyperlinks>
+            <ThingDef>MealLavish</ThingDef>
+        </descriptionHyperlinks>
+      </RecipeDef>
+</Defs>

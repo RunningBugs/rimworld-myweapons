@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Gun_SuperGun.label>超级栓动步枪</Gun_SuperGun.label>
+    <Gun_SuperGun.description>古老的栓动式步枪。拥有良好的射程。并且可以释放心灵冲击，用于控制疯狂的单位。</Gun_SuperGun.description>
+    <Gun_SuperGun.tools.stock.label>枪托</Gun_SuperGun.tools.stock.label>
+    <Gun_SuperGun.tools.barrel.label>枪管</Gun_SuperGun.tools.barrel.label>
+    <Gun_SuperGun.verbs.Verb_Shoot.label>超级栓动步枪射击</Gun_SuperGun.verbs.Verb_Shoot.label>
+    <Gun_SuperGun.verbs.Verb_CastTargetEffect.label>超级栓动步枪心灵冲击</Gun_SuperGun.verbs.Verb_CastTargetEffect.label>
+
+</LanguageData>

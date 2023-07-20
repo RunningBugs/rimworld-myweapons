@@ -24,6 +24,8 @@
             <li>RunningBugs_Make_MechSerumHealer</li>
             <li>RunningBugs_Make_PsychicSoothePulser</li>
             <li>RunningBugs_Make_HemogenPack</li>
+            <li>RunningBugs_Make_Chemfuel</li>
+            <li>RunningBugs_Cook_MealLavishBulk</li>
         </value>
     </Operation>
 </Patch>

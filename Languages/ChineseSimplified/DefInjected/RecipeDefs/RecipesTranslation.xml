@@ -44,4 +44,12 @@
     <RunningBugs_Make_HemogenPack.label>制作血原包</RunningBugs_Make_HemogenPack.label>
     <RunningBugs_Make_HemogenPack.description>从虚空中制作血原包</RunningBugs_Make_HemogenPack.description>
 
+    <RunningBugs_Cook_MealLavishBulk.label>烹饪奢侈食物 x40</RunningBugs_Cook_MealLavishBulk.label>
+    <RunningBugs_Cook_MealLavishBulk.description>如同神的祝福一般，从虚空中烹饪出四十份非常复杂的食物。</RunningBugs_Cook_MealLavishBulk.description>
+    <RunningBugs_Cook_MealLavishBulk.jobString>正在烹饪四十份奢侈食物。</RunningBugs_Cook_MealLavishBulk.jobString>
+
+    <RunningBugs_Make_Chemfuel.label>制作化合燃料</RunningBugs_Make_Chemfuel.label>
+    <RunningBugs_Make_Chemfuel.description>从虚空中制作化合燃料</RunningBugs_Make_Chemfuel.description>
+    <RunningBugs_Make_Chemfuel.jobString>正在制作化合燃料</RunningBugs_Make_Chemfuel.jobString>
+
 </LanguageData>

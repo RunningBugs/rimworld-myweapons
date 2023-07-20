@@ -1,0 +1,5 @@
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Assemblies/MyWeapons.dll
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Assemblies/MyWeapons.pdb
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Source/obj/Release/MyWeapons.csproj.CoreCompileInputs.cache
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Source/obj/Release/MyWeapons.dll
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Source/obj/Release/MyWeapons.pdb
