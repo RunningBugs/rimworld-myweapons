@@ -64,12 +64,12 @@
     <RunningBugs_Make_SuperGunPersona.description>从虚空中制作人格超级枪。这是一种非常强力的枪械。</RunningBugs_Make_SuperGunPersona.description>
     <RunningBugs_Make_SuperGunPersona.jobString>制作人格超级枪</RunningBugs_Make_SuperGunPersona.jobString>
 
-    <RunningBugs_Make_SuperGun.label>制作超级火箭炮</RunningBugs_Make_SuperGun.label>
-    <RunningBugs_Make_SuperGun.description>从虚空中制作超级火箭炮。这是一种非常强力的火箭炮。</RunningBugs_Make_SuperGun.description>
-    <RunningBugs_Make_SuperGun.jobString>制作超级火箭炮</RunningBugs_Make_SuperGun.jobString>
+    <RunningBugs_Make_SuperRocketGun.label>制作超级火箭炮</RunningBugs_Make_SuperRocketGun.label>
+    <RunningBugs_Make_SuperRocketGun.description>从虚空中制作超级火箭炮。这是一种非常强力的火箭炮。</RunningBugs_Make_SuperRocketGun.description>
+    <RunningBugs_Make_SuperRocketGun.jobString>制作超级火箭炮</RunningBugs_Make_SuperRocketGun.jobString>
 
-    <RunningBugs_Make_SuperGun.label>制作超级EMP发射器</RunningBugs_Make_SuperGun.label>
-    <RunningBugs_Make_SuperGun.description>从虚空中制作超级EMP发射器。这是一种非常强力的EMP发射器，射程大，子弹快，影响范围大。</RunningBugs_Make_SuperGun.description>
-    <RunningBugs_Make_SuperGun.jobString>制作超级EMP发射器</RunningBugs_Make_SuperGun.jobString>
+    <RunningBugs_Make_SuperEmpLauncher.label>制作超级EMP发射器</RunningBugs_Make_SuperEmpLauncher.label>
+    <RunningBugs_Make_SuperEmpLauncher.description>从虚空中制作超级EMP发射器。这是一种非常强力的EMP发射器，射程大，子弹快，影响范围大。</RunningBugs_Make_SuperEmpLauncher.description>
+    <RunningBugs_Make_SuperEmpLauncher.jobString>制作超级EMP发射器</RunningBugs_Make_SuperEmpLauncher.jobString>
 
 </LanguageData>
