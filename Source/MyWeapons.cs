@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
+
 namespace MyWeapons
 {
     [StaticConstructorOnStartup]
@@ -8,7 +9,7 @@ namespace MyWeapons
     {
         static LoadingScreen()
         {
-            Log.Message("My Weapons Initialized");
+            Log.Warning("My Weapons Initialized");
         }
     }
 }

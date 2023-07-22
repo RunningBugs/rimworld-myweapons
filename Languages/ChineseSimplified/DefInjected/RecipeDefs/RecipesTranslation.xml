@@ -52,4 +52,8 @@
     <RunningBugs_Make_Chemfuel.description>从虚空中制作化合燃料</RunningBugs_Make_Chemfuel.description>
     <RunningBugs_Make_Chemfuel.jobString>正在制作化合燃料</RunningBugs_Make_Chemfuel.jobString>
 
+    <RunningBugs_Make_SuperShieldBelt.label>制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.label>
+    <RunningBugs_Make_SuperShieldBelt.description>从虚空中制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.description>
+    <RunningBugs_Make_SuperShieldBelt.jobString>正在制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.jobString>
+
 </LanguageData>

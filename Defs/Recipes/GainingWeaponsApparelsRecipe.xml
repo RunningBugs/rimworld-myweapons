@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef Name="RunningBugs_CraftRecipe" Abstract="true">
+        <!-- <label>make resource</label> -->
+        <description>Make things from void.</description>
+        <jobString>Making...</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <!-- <allowMixingIngredients>true</allowMixingIngredients> -->
+        <workAmount>10</workAmount>
+        <targetCountAdjustment>100</targetCountAdjustment>
+    </RecipeDef>
+    <RecipeDef ParentName="RunningBugs_CraftRecipe">
+        <defName>RunningBugs_Make_SuperShieldBelt</defName>
+        <label>make the super shield belt</label>
+        <description>make the super shield belt void.</description>
+        <jobString>Making super shield belt.</jobString>
+        <skillRequirements>
+            <Crafting>0</Crafting>
+        </skillRequirements>
+        <ingredients></ingredients>
+        <recipeUsers>
+            <li>Campfire</li>
+        </recipeUsers>
+        <products>
+            <Apparel_SuperShieldBelt>1</Apparel_SuperShieldBelt>
+        </products>
+        <displayPriority>0</displayPriority>
+        <descriptionHyperlinks>
+            <ThingDef>Apparel_SuperShieldBelt</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+</Defs>

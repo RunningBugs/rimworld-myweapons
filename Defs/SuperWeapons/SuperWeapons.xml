@@ -20,7 +20,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef Name="SuperGun" ParentName="BaseMakeableGun">
     <defName>Gun_SuperGun</defName>
     <label>super bolt-action rifle</label>
     <description>An ancient pattern super bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
@@ -82,7 +82,7 @@
         <defaultProjectile>Bullet_MySuperGun</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
         <warmupTime>1</warmupTime>
-        <range>500</range>
+        <range>200</range>
         <burstShotCount>10</burstShotCount>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <soundCast>Shot_BoltActionRifle</soundCast>
@@ -99,9 +99,9 @@
         <targetable>true</targetable>
         <!-- <onlyManualCast>True</onlyManualCast> -->
         <onlyManualCast>false</onlyManualCast>
-        <range>500</range>
+        <range>200</range>
         <warmupTime>0.5</warmupTime>
-        <invalidTargetPawn>Psychic shock immune</invalidTargetPawn>
+        <!-- <invalidTargetPawn>Psychic shock immune</invalidTargetPawn> -->
         <targetParams>
           <canTargetBuildings>false</canTargetBuildings>
           <!-- <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive> -->
@@ -129,6 +129,23 @@
         <cooldownTime>0.6</cooldownTime>
       </li>
     </tools>
+  </ThingDef>
+
+  <!-- Defs for Persona Super Gun!-->
+  <ThingDef ParentName="SuperGun">
+    <defName>Gun_SuperGunPersona</defName>
+    <comps>
+      <li Class="MyWeapons.CompProperties_BladelinkWeapon_SpecificWeaponTraits">
+        <biocodeOnEquip>true</biocodeOnEquip>
+        <personas>
+          <li>ThoughtKind</li>
+          <li>ThoughtCalm</li>
+        </personas>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
   </ThingDef>
 
 

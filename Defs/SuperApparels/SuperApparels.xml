@@ -3,8 +3,9 @@
     <ThingDef ParentName="ApparelBase">
         <defName>Apparel_SuperShieldBelt</defName>
         <label>super shield belt</label>
-        <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It doesn't prevent the wearer from firing out, and shuts down instantly if hit by EMP.</description>
+        <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It doesn't prevent the wearer from firing out, and resets to full instantly if hit by EMP.</description>
         <thingClass>Apparel</thingClass>
+        <useHitPoints>false</useHitPoints>
         <generateCommonality>0</generateCommonality>
         <generateAllowChance>0</generateAllowChance>
         <graphicData>
@@ -17,7 +18,8 @@
             <Mass>0</Mass>
             <WorkToMake>4</WorkToMake>
             <Flammability>0</Flammability>
-            <EnergyShieldRechargeRate>1</EnergyShieldRechargeRate>
+            <DeteriorationRate>0</DeteriorationRate>
+            <EnergyShieldRechargeRate>1000</EnergyShieldRechargeRate>
             <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
             <EquipDelay>0</EquipDelay>
         </statBases>
@@ -25,6 +27,9 @@
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>50</Steel>
+            <Plasteel>20</Plasteel>
         </costList>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
@@ -35,7 +40,6 @@
             <soundWorking>Recipe_Machining</soundWorking>
             <recipeUsers>
                 <li>TableMachining</li>
-                <li>Campfire</li>
             </recipeUsers>
             <useIngredientsForColor>false</useIngredientsForColor>
             <skillRequirements>
@@ -86,6 +90,8 @@
         <comps>
             <li Class="CompProperties_Shield">
                 <blocksRangedWeapons>false</blocksRangedWeapons>
+                <startingTicksToReset>0</startingTicksToReset>
+                <energyOnReset>1.0</energyOnReset>
             </li>
         </comps>
         <allowedArchonexusCount>1</allowedArchonexusCount>
