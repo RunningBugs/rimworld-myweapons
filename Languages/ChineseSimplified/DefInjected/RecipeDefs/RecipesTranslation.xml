@@ -56,4 +56,20 @@
     <RunningBugs_Make_SuperShieldBelt.description>从虚空中制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.description>
     <RunningBugs_Make_SuperShieldBelt.jobString>正在制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.jobString>
 
+    <RunningBugs_Make_SuperGun.label>制作超级枪</RunningBugs_Make_SuperGun.label>
+    <RunningBugs_Make_SuperGun.description>从虚空中制作超级枪。这是一种非常强力的枪械。</RunningBugs_Make_SuperGun.description>
+    <RunningBugs_Make_SuperGun.jobString>制作超级枪</RunningBugs_Make_SuperGun.jobString>
+    
+    <RunningBugs_Make_SuperGunPersona.label>制作人格超级枪</RunningBugs_Make_SuperGunPersona.label>
+    <RunningBugs_Make_SuperGunPersona.description>从虚空中制作人格超级枪。这是一种非常强力的枪械。</RunningBugs_Make_SuperGunPersona.description>
+    <RunningBugs_Make_SuperGunPersona.jobString>制作人格超级枪</RunningBugs_Make_SuperGunPersona.jobString>
+
+    <RunningBugs_Make_SuperGun.label>制作超级火箭炮</RunningBugs_Make_SuperGun.label>
+    <RunningBugs_Make_SuperGun.description>从虚空中制作超级火箭炮。这是一种非常强力的火箭炮。</RunningBugs_Make_SuperGun.description>
+    <RunningBugs_Make_SuperGun.jobString>制作超级火箭炮</RunningBugs_Make_SuperGun.jobString>
+
+    <RunningBugs_Make_SuperGun.label>制作超级EMP发射器</RunningBugs_Make_SuperGun.label>
+    <RunningBugs_Make_SuperGun.description>从虚空中制作超级EMP发射器。这是一种非常强力的EMP发射器，射程大，子弹快，影响范围大。</RunningBugs_Make_SuperGun.description>
+    <RunningBugs_Make_SuperGun.jobString>制作超级EMP发射器</RunningBugs_Make_SuperGun.jobString>
+
 </LanguageData>

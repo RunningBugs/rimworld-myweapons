@@ -35,6 +35,12 @@
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
     <statBases>
       <DeteriorationRate>0</DeteriorationRate>
       <Beauty>100</Beauty>
@@ -49,17 +55,9 @@
       <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <WoodLog>5</WoodLog>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>0</Crafting>
-      </skillRequirements>
-      <recipeUsers>
-        <li>Campfire</li>
-      </recipeUsers>
-      <researchPrerequisite>Electricity</researchPrerequisite>
-    </recipeMaker>
     <comps>
       <li>
         <compClass>CompTargetEffect_PsychicShock</compClass>
@@ -134,12 +132,20 @@
   <!-- Defs for Persona Super Gun!-->
   <ThingDef ParentName="SuperGun">
     <defName>Gun_SuperGunPersona</defName>
+    <label>super persona bolt-action rifle</label>
+    <description>An ancient pattern super persona bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
     <comps>
       <li Class="MyWeapons.CompProperties_BladelinkWeapon_SpecificWeaponTraits">
         <biocodeOnEquip>true</biocodeOnEquip>
         <personas>
           <li>ThoughtKind</li>
-          <li>ThoughtCalm</li>
+          <li>OnKill_ThoughtGood</li>
+          <li>OnKill_PsyfocusGain</li>
+          <li>PsyfocusMeditationBonus</li>
+          <li>NoPain</li>
+          <li>SpeedBoost</li>
+          <li>NeuralHeatRecoveryGain</li>
+          <!-- <li>NeverBond</li> -->
         </personas>
       </li>
       <li Class="CompProperties_GeneratedName">

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef Name="RunningBugs_SmithRecipe" Abstract="true">
+        <!-- <label>make resource</label> -->
+        <description>Make guns from void.</description>
+        <jobString>Making...</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>Campfire</li>
+        </recipeUsers>
+        <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+        <researchPrerequisite></researchPrerequisite>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <workAmount>10</workAmount>
+        <targetCountAdjustment>100</targetCountAdjustment>
+    </RecipeDef>
+
+
+    <RecipeDef ParentName="RunningBugs_SmithRecipe">
+        <defName>RunningBugs_Make_SuperGun</defName>
+        <label>Make Super Gun</label>
+        <description>Making Super Gun from void. It's a super powerful gun that's very OP.</description>
+        <jobString>Making Super Gun</jobString>
+        <ingredients></ingredients>
+        <products>
+            <Gun_SuperGun>1</Gun_SuperGun>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gun_SuperGun</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_SmithRecipe">
+        <defName>RunningBugs_Make_SuperGunPersona</defName>
+        <label>Make Super Gun Persona</label>
+        <description>Making Super Gun Persona from void. It's a super powerful gun that's very OP.</description>
+        <jobString>Making Super Gun</jobString>
+        <ingredients></ingredients>
+        <products>
+            <Gun_SuperGunPersona>1</Gun_SuperGunPersona>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gun_SuperGunPersona</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_SmithRecipe">
+        <defName>RunningBugs_Make_SuperRocketGun</defName>
+        <label>Make Super Rocket Launcher</label>
+        <description>Making Super Rocket Launcher from void. It's a super powerful rocket launcher that's very OP.</description>
+        <jobString>Making Super Rocket Launcher</jobString>
+        <ingredients></ingredients>
+        <products>
+            <Gun_SuperRocketGun>1</Gun_SuperRocketGun>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gun_SuperRocketGun</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_SmithRecipe">
+        <defName>RunningBugs_Make_SuperEmpLauncher</defName>
+        <label>Make Super Emp Launcher</label>
+        <description>Making Emp Launcher from void. It's a super powerful EMP launcher that has a long range, fast bullet speed, and large affecting area.</description>
+        <jobString>Making Super Emp Launcher</jobString>
+        <ingredients></ingredients>
+        <products>
+            <Gun_SuperEmpLauncher>1</Gun_SuperEmpLauncher>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gun_SuperEmpLauncher</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+</Defs>

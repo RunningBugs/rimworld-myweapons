@@ -115,6 +115,7 @@ namespace MyWeapons
                 return;
             }
             base.Notify_Equipped(pawn);
+
             if (!traits.NullOrEmpty())
             {
                 for (int i = 0; i < traits.Count; i++)
@@ -124,17 +125,17 @@ namespace MyWeapons
             }
         }
 
-        public override void CodeFor(Pawn pawn)
-        {
-            if (base.Biocodable)
-            {
-                if (pawn.IsColonistPlayerControlled && base.CodedPawn == null)
-                {
-                    Find.LetterStack.ReceiveLetter("LetterBladelinkWeaponBondedLabel".Translate(pawn.Named("PAWN"), parent.Named("WEAPON")), "LetterBladelinkWeaponBonded".Translate(pawn.Named("PAWN"), parent.Named("WEAPON")), LetterDefOf.PositiveEvent, new LookTargets(pawn));
-                }
-                base.CodeFor(pawn);
-            }
-        }
+        //public override void CodeFor(Pawn pawn)
+        //{
+        //    if (base.Biocodable)
+        //    {
+        //        if (pawn.IsColonistPlayerControlled && base.CodedPawn == null)
+        //        {
+        //            Find.LetterStack.ReceiveLetter("LetterBladelinkWeaponBondedLabel".Translate(pawn.Named("PAWN"), parent.Named("WEAPON")), "LetterBladelinkWeaponBonded".Translate(pawn.Named("PAWN"), parent.Named("WEAPON")), LetterDefOf.PositiveEvent, new LookTargets(pawn));
+        //        }
+        //        base.CodeFor(pawn);
+        //    }
+        //}
 
         protected override void OnCodedFor(Pawn pawn)
         {
@@ -161,7 +162,7 @@ namespace MyWeapons
             }
         }
 
-        public void Notify_EquipmentLost(Pawn pawn)
+        public new void Notify_EquipmentLost(Pawn pawn)
         {
             if (!traits.NullOrEmpty())
             {
@@ -176,7 +177,7 @@ namespace MyWeapons
         ///     This method is specially for Jealous trait\n
         /// However, it requires to use the CompBladelinkWeapon class, and I'm trying not to extend that, so it's not working
         /// </summary>
-        public void Notify_WieldedOtherWeapon()
+        public new void Notify_WieldedOtherWeapon()
         {
             if (!traits.NullOrEmpty())
             {
@@ -263,10 +264,10 @@ namespace MyWeapons
             }
         }
 
-        public override string TransformLabel(string label)
-        {
-            return label;
-        }
+        //public override string TransformLabel(string label)
+        //{
+        //    return label;
+        //}
 
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
         {
