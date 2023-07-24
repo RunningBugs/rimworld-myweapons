@@ -22,23 +22,20 @@ namespace MyWeapons
 
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            Log.Warning("Triggered: ThoughtWorker_WeaponTraitBondedExtended.CurrentStateInternal");
             if (!baseCurrentStateInternal(p).Active)
             {
                 return ThoughtState.Inactive;
             }
-            Log.Warning("Get through: ThoughtWorker_WeaponTraitBondedExtended.CurrentStateInternal");
+
             List<WeaponTraitDef> traitsListForReading;
             CompBladelinkWeapon comp = p.equipment.bondedWeapon.TryGetComp<CompBladelinkWeapon>();
-            Log.Warning($"Comp is null? {comp == null}");
+
             if (comp is CompBladelinkWeapon_SpecificWeaponTraits)
             {
-                Log.Warning("Branch: true");
                 traitsListForReading = ((CompBladelinkWeapon_SpecificWeaponTraits)comp).TraitsListForReading;
             }
             else
             {
-                Log.Warning("Branch: false");
                 traitsListForReading = comp.TraitsListForReading;
             }
             //List<WeaponTraitDef> traitsListForReading = p.equipment.bondedWeapon.TryGetComp<CompBladelinkWeapon>().TraitsListForReading;

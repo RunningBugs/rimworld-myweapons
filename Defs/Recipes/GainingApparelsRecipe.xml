@@ -20,14 +20,9 @@
         <skillRequirements>
             <Crafting>0</Crafting>
         </skillRequirements>
-        <ingredients></ingredients>
-        <recipeUsers>
-            <li>Campfire</li>
-        </recipeUsers>
         <products>
             <Apparel_SuperShieldBelt>1</Apparel_SuperShieldBelt>
         </products>
-        <displayPriority>0</displayPriority>
         <descriptionHyperlinks>
             <ThingDef>Apparel_SuperShieldBelt</ThingDef>
         </descriptionHyperlinks>

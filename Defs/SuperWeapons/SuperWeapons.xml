@@ -31,6 +31,7 @@
     </graphicData>
     <generateCommonality>0</generateCommonality>
     <generateAllowChance>0</generateAllowChance>
+    <relicChance>0</relicChance>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
       <li>LongShots</li>
@@ -62,9 +63,6 @@
       <li>
         <compClass>CompTargetEffect_PsychicShock</compClass>
       </li>
-      <!-- <li Class="CompProperties_TargetEffect_BrainDamageChance">
-        <brainDamageChance>1</brainDamageChance>
-      </li> -->
       <li Class="CompProperties_TargetEffect_FleckOnTarget">
         <fleckDef>PsycastPsychicEffect</fleckDef>
       </li>
@@ -180,7 +178,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseMakeableGun">
     <defName>Gun_SuperRocketGun</defName>
     <label>Super Rocket Gun</label>
     <description>Super Rocket Gun</description>
@@ -219,15 +217,6 @@
     <costList>
       <WoodLog>5</WoodLog>
     </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>0</Crafting>
-      </skillRequirements>
-      <recipeUsers>
-        <li>Campfire</li>
-      </recipeUsers>
-      <researchPrerequisite>Electricity</researchPrerequisite>
-    </recipeMaker>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -239,7 +228,7 @@
         <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
         <range>500</range>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
+        <burstShotCount>3</burstShotCount>
         <soundCast>InfernoCannon_Fire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <onlyManualCast>true</onlyManualCast>
@@ -290,16 +279,14 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseMakeableGun">
     <defName>Gun_SuperEmpLauncher</defName>
     <label>Super EMP launcher</label>
     <useHitPoints>false</useHitPoints>
     <generateCommonality>0</generateCommonality>
     <generateAllowChance>0</generateAllowChance>
     <relicChance>0</relicChance>
-    <description>A super powerful wide-barreled EMP shell launcher. The shell will upon impact
-      release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets,
-      mortars) and depleting shields in the area of effect.</description>
+    <description>A super powerful wide-barreled EMP shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets, mortars) and depleting shields in the area of effect.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/EMPLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -322,15 +309,6 @@
     <costList>
       <WoodLog>1</WoodLog>
     </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>0</Crafting>
-      </skillRequirements>
-      <recipeUsers>
-        <li>Campfire</li>
-      </recipeUsers>
-      <researchPrerequisite>Electricity</researchPrerequisite>
-    </recipeMaker>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

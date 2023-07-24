@@ -71,11 +71,11 @@ namespace MyWeapons
 
         private void InitializeTraits()
         {
-            IEnumerable<WeaponTraitDef> allDefs = DefDatabase<WeaponTraitDef>.AllDefs;
-            foreach (WeaponTraitDef def in allDefs)
-            {
-                Log.Warning($"Adding trait {def.defName}, it's Worker {def.workerClass}");
-            }
+            //IEnumerable<WeaponTraitDef> allDefs = DefDatabase<WeaponTraitDef>.AllDefs;
+            //foreach (WeaponTraitDef def in allDefs)
+            //{
+            //    Log.Warning($"Adding trait {def.defName}, it's Worker {def.workerClass}");
+            //}
             if (traits == null)
             {
                 traits = new List<WeaponTraitDef>();
@@ -88,7 +88,6 @@ namespace MyWeapons
             {
                 string trait_name = pre_defined_traits[i];
                 WeaponTraitDef def = DefDatabase<WeaponTraitDef>.GetNamed(trait_name);
-                Log.Warning($"Adding trait {trait_name}, it's Worker {def.workerClass}");
                 traits.Add(DefDatabase<WeaponTraitDef>.GetNamed(trait_name));
             }
         }

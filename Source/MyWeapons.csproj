@@ -41,6 +41,15 @@
         <Reference Include="UnityEngine.CoreModule">
           <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
         </Reference>
+        <Reference Include="0Harmony">
+          <HintPath>..\..\..\..\..\.local\share\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+          <HintPath>..\..\..\..\..\.local\share\Steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="MyWeapons.cs" />
@@ -49,6 +58,7 @@
         <Compile Include="CompBladelinkWeapon_SpecificWeaponTraits.cs" />
         <Compile Include="CompProperties_BladelinkWeapon_SpecificWeaponTraits.cs" />
         <Compile Include="ThoughtWorker_WeaponTraitBondedExtended.cs" />
+        <Compile Include="TimedMailWindow.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

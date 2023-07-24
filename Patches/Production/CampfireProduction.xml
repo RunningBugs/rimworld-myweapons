@@ -26,6 +26,11 @@
             <li>RunningBugs_Make_HemogenPack</li>
             <li>RunningBugs_Make_Chemfuel</li>
             <li>RunningBugs_Cook_MealLavishBulk</li>
+            <li>RunningBugs_Make_SuperShieldBelt</li>
+            <li>RunningBugs_Make_SuperGun</li>
+            <li>RunningBugs_Make_SuperGunPersona</li>
+            <li>RunningBugs_Make_SuperRocketGun</li>
+            <li>RunningBugs_Make_SuperEmpLauncher</li>
         </value>
     </Operation>
 </Patch>

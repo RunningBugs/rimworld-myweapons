@@ -31,22 +31,6 @@
             <Steel>50</Steel>
             <Plasteel>20</Plasteel>
         </costList>
-        <recipeMaker>
-            <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-            <researchPrerequisite></researchPrerequisite>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Machining</soundWorking>
-            <recipeUsers>
-                <li>TableMachining</li>
-            </recipeUsers>
-            <useIngredientsForColor>false</useIngredientsForColor>
-            <skillRequirements>
-                <Crafting>0</Crafting>
-            </skillRequirements>
-            <displayPriority>300</displayPriority>
-        </recipeMaker>
         <thingCategories>
             <li>ApparelUtility</li>
         </thingCategories>
