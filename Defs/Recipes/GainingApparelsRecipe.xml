@@ -8,6 +8,9 @@
         <workSkill>Crafting</workSkill>
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>Campfire</li>
+        </recipeUsers>
         <!-- <allowMixingIngredients>true</allowMixingIngredients> -->
         <workAmount>10</workAmount>
         <targetCountAdjustment>100</targetCountAdjustment>

@@ -9,8 +9,10 @@
         <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Smith</soundWorking>
         <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-        <researchPrerequisite></researchPrerequisite>
-        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>Campfire</li>
+        </recipeUsers>
+        <!-- <allowMixingIngredients>true</allowMixingIngredients> -->
         <workAmount>10</workAmount>
         <targetCountAdjustment>100</targetCountAdjustment>
     </RecipeDef>
@@ -21,8 +23,6 @@
         <label>Make Super Gun</label>
         <description>Making Super Gun from void. It's a super powerful gun that's very OP.</description>
         <jobString>Making Super Gun</jobString>
-        <researchPrerequisite></researchPrerequisite>
-        <ingredients></ingredients>
         <products>
             <Gun_SuperGun>1</Gun_SuperGun>
         </products>
@@ -36,8 +36,6 @@
         <label>Make Super Gun Persona</label>
         <description>Making Super Gun Persona from void. It's a super powerful gun that's very OP.</description>
         <jobString>Making Super Gun</jobString>
-        <researchPrerequisite></researchPrerequisite>
-        <ingredients></ingredients>
         <products>
             <Gun_SuperGunPersona>1</Gun_SuperGunPersona>
         </products>
@@ -51,8 +49,6 @@
         <label>Make Super Rocket Launcher</label>
         <description>Making Super Rocket Launcher from void. It's a super powerful rocket launcher that's very OP.</description>
         <jobString>Making Super Rocket Launcher</jobString>
-        <researchPrerequisite></researchPrerequisite>
-        <ingredients></ingredients>
         <products>
             <Gun_SuperRocketGun>1</Gun_SuperRocketGun>
         </products>
@@ -66,8 +62,6 @@
         <label>Make Super Emp Launcher</label>
         <description>Making Emp Launcher from void. It's a super powerful EMP launcher that has a long range, fast bullet speed, and large affecting area.</description>
         <jobString>Making Super Emp Launcher</jobString>
-        <researchPrerequisite></researchPrerequisite>
-        <ingredients></ingredients>
         <products>
             <Gun_SuperEmpLauncher>1</Gun_SuperEmpLauncher>
         </products>
