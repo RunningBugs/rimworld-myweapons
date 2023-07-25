@@ -135,8 +135,52 @@
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_BlocksSandstone</defName>
+        <label>make sandstone blocks</label>
+        <products>
+            <BlocksSandstone>1000</BlocksSandstone>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>BlocksSandstone</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_BlocksGranite</defName>
+        <label>make granite blocks</label>
+        <products>
+            <BlocksGranite>1000</BlocksGranite>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>BlocksGranite</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_BlocksLimestone</defName>
+        <label>make limestone blocks</label>
+        <products>
+            <BlocksLimestone>1000</BlocksLimestone>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>BlocksLimestone</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_BlocksSlate</defName>
+        <label>make slate blocks</label>
+        <products>
+            <BlocksSlate>1000</BlocksSlate>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>BlocksSlate</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_BlocksMarble</defName>
-        <label>make blocksmarble</label>
+        <label>make marble blocks</label>
         <products>
             <BlocksMarble>1000</BlocksMarble>
         </products>

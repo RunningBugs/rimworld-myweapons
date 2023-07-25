@@ -13,7 +13,11 @@
             <li>RunningBugs_Make_Gold</li> 
             <li>RunningBugs_Make_MedicineUltratech</li> 
             <li>RunningBugs_Make_Kibble</li> 
-            <li>RunningBugs_Make_Plasteel</li> 
+            <li>RunningBugs_Make_Plasteel</li>
+            <li>RunningBugs_Make_BlocksSandstone</li> 
+            <li>RunningBugs_Make_BlocksGranite</li> 
+            <li>RunningBugs_Make_BlocksLimestone</li> 
+            <li>RunningBugs_Make_BlocksSlate</li> 
             <li>RunningBugs_Make_BlocksMarble</li> 
             <li MayRequire="Alaestor.MiscRobots.PlusPlus">RunningBugs_Make_Omni_V</li> 
             <li MayRequire="Alaestor.MiscRobots.PlusPlus">RunningBugs_Make_ER_V</li> 

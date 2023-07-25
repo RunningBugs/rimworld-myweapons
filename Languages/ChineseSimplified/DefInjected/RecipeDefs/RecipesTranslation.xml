@@ -25,8 +25,23 @@
     <RunningBugs_Make_Kibble.description>从虚空制作饲料</RunningBugs_Make_Kibble.description>
     <RunningBugs_Make_Plasteel.label>制作玻璃钢</RunningBugs_Make_Plasteel.label>
     <RunningBugs_Make_Plasteel.description>从虚空制作玻璃钢</RunningBugs_Make_Plasteel.description>
+    
+    <RunningBugs_Make_BlocksSandstone.label>制作砂岩砖</RunningBugs_Make_BlocksSandstone.label>
+    <RunningBugs_Make_BlocksSandstone.description>从虚空制作砂岩砖</RunningBugs_Make_BlocksSandstone.description>
+
+    <RunningBugs_Make_BlocksGranite.label>制作花岗岩砖</RunningBugs_Make_BlocksGranite.label>
+    <RunningBugs_Make_BlocksGranite.description>从虚空制作花岗岩砖</RunningBugs_Make_BlocksGranite.description>
+
+    <RunningBugs_Make_BlocksLimestone.label>制作石灰岩砖</RunningBugs_Make_BlocksLimestone.label>
+    <RunningBugs_Make_BlocksLimestone.description>从虚空制作石灰岩砖</RunningBugs_Make_BlocksLimestone.description>
+
+    <RunningBugs_Make_BlocksSlate.label>制作板岩砖</RunningBugs_Make_BlocksSlate.label>
+    <RunningBugs_Make_BlocksSlate.description>从虚空制作板岩砖</RunningBugs_Make_BlocksSlate.description>
+
     <RunningBugs_Make_BlocksMarble.label>制作大理石砖</RunningBugs_Make_BlocksMarble.label>
     <RunningBugs_Make_BlocksMarble.description>从虚空制作大理石砖</RunningBugs_Make_BlocksMarble.description>
+
+
     <RunningBugs_Make_Omni_V.label>制作万能机器人V</RunningBugs_Make_Omni_V.label>
     <RunningBugs_Make_Omni_V.description>从虚空制作万能机器人V</RunningBugs_Make_Omni_V.description>
     <RunningBugs_Make_ER_V.label>制作救援器人V</RunningBugs_Make_ER_V.label>
