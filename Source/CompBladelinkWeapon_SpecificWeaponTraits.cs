@@ -222,11 +222,20 @@ namespace MyWeapons
             return text;
         }
 
+        private static string ListToString<T>(List<T> ls)
+        {
+            string buffer = "";
+            foreach (var v in ls) {
+                buffer += v.ToString() + ", ";
+            }
+            return buffer;
+        }
+
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Values.Look(ref lastKillTick, "lastKillTick", -1);
-            Scribe_Collections.Look(ref traits, "traits", LookMode.Def);
+            Scribe_Collections.Look(ref traits, "specifictraits", LookMode.Def);
             if (Scribe.mode != LoadSaveMode.Saving)
             {
                 Scribe_Values.Look(ref oldBonded, "bonded", defaultValue: false);
