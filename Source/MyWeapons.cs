@@ -30,6 +30,53 @@ namespace MyWeapons
         }
     }
 
+    //[HarmonyPatch(typeof(FloatMenuMakerMap), "ChoicesAtFor")]
+    //public class InspectValue
+    //{
+    //    [HarmonyPrefix]
+    //    public static void ChoicesAtFor(Vector3 clickPos, Pawn pawn, bool suppressAutoTakeableGoto = false)
+    //    {
+    //        TargetingParameters targetingParameters = new TargetingParameters();
+    //        targetingParameters.canTargetPawns = true;
+    //        targetingParameters.canTargetBuildings = true;
+    //        targetingParameters.canTargetItems = true;
+    //        targetingParameters.mapObjectTargetsMustBeAutoAttackable = false;
+
+    //        string msg = "";
+
+
+    //        foreach (Thing item in GenUI.ThingsUnderMouse(clickPos, 1f, targetingParameters))
+    //        {
+    //            foreach (WorkTypeDef item2 in DefDatabase<WorkTypeDef>.AllDefsListForReading)
+    //            {
+    //                for (int i = 0; i < item2.workGiversByPriority.Count; ++i)
+    //                {
+    //                    WorkGiverDef workGiver = item2.workGiversByPriority[i];
+    //                    if (workGiver.Worker is WorkGiver_Scanner scanner)
+    //                    {
+    //                        //Log.Warning("Is WorkGiver_Scanner");
+    //                        try
+    //                        {
+    //                            msg += $"Target Worktype: {scanner.def.label}, {scanner.HasJobOnThing(pawn, item, true)}\n";
+    //                        }
+    //                        catch (System.Exception e)
+    //                        {
+
+    //                        }
+    //                    }
+    //                    else
+    //                    {
+    //                        //Log.Warning("Not WorkGiver_Scanner");
+    //                    }
+    //                }
+    //            }
+    //        }
+
+
+    //        Log.Warning(msg);
+    //    }
+    //}
+
     [HarmonyPatch(typeof(WorldComponentUtility), "WorldComponentTick")]
     public class AlertUtility
     {
@@ -51,6 +98,11 @@ namespace MyWeapons
         public static void Add(Event e)
         {
             events.Add(e);
+        }
+
+        public static List<Event> GetEvents()
+        {
+            return events;
         }
 
         [HarmonyPostfix]
@@ -93,7 +145,7 @@ namespace MyWeapons
             {
                 if (!Find.WindowStack.IsOpen(typeof(TimedMailWindow)))
                 {
-                    TimedMailWindow.DrawWindow();
+                    TimedMailWindow.DrawWindow(AlertUtility.GetEvents());
                 }
                 else
                 {

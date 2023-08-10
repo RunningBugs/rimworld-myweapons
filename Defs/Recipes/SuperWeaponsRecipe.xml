@@ -10,7 +10,7 @@
         <soundWorking>Recipe_Smith</soundWorking>
         <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
         <recipeUsers>
-            <li>Campfire</li>
+            <li>BegSpot</li>
         </recipeUsers>
         <!-- <allowMixingIngredients>true</allowMixingIngredients> -->
         <workAmount>10</workAmount>

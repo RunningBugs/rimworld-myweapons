@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Campfire"]/recipes</xpath>
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CraftingSpot"]/recipes</xpath>
         <value>
             <li>RunningBugs_Make_Hyperweave</li>
             <li>RunningBugs_Make_Wood</li> 
@@ -30,12 +30,6 @@
             <li>RunningBugs_Make_HemogenPack</li>
             <li>RunningBugs_Make_Chemfuel</li>
             <li>RunningBugs_Cook_MealLavishBulk</li>
-
-            <!-- <li>RunningBugs_Make_SuperShieldBelt</li>
-            <li>RunningBugs_Make_SuperGun</li>
-            <li>RunningBugs_Make_SuperGunPersona</li>
-            <li>RunningBugs_Make_SuperRocketGun</li>
-            <li>RunningBugs_Make_SuperEmpLauncher</li> -->
         </value>
-    </Operation>
+    </Operation> -->
 </Patch>

@@ -11,6 +11,9 @@
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>10</workAmount>
         <targetCountAdjustment>100</targetCountAdjustment>
+        <recipeUsers>
+            <li>BegSpot</li>
+        </recipeUsers>
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
@@ -222,7 +225,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <!-- <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_VanometricPowerCell</defName>
         <label>make VanometricPowerCell</label>
         <products>
@@ -231,7 +234,7 @@
         <descriptionHyperlinks>
             <ThingDef>VanometricPowerCell</ThingDef>
         </descriptionHyperlinks>
-    </RecipeDef>
+    </RecipeDef> -->
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_AIPersonaCore</defName>
