@@ -30,70 +30,40 @@ namespace MyWeapons
         }
     }
 
-    //[HarmonyPatch(typeof(FloatMenuMakerMap), "ChoicesAtFor")]
-    //public class InspectValue
-    //{
-    //    [HarmonyPrefix]
-    //    public static void ChoicesAtFor(Vector3 clickPos, Pawn pawn, bool suppressAutoTakeableGoto = false)
-    //    {
-    //        TargetingParameters targetingParameters = new TargetingParameters();
-    //        targetingParameters.canTargetPawns = true;
-    //        targetingParameters.canTargetBuildings = true;
-    //        targetingParameters.canTargetItems = true;
-    //        targetingParameters.mapObjectTargetsMustBeAutoAttackable = false;
-
-    //        string msg = "";
-
-
-    //        foreach (Thing item in GenUI.ThingsUnderMouse(clickPos, 1f, targetingParameters))
-    //        {
-    //            foreach (WorkTypeDef item2 in DefDatabase<WorkTypeDef>.AllDefsListForReading)
-    //            {
-    //                for (int i = 0; i < item2.workGiversByPriority.Count; ++i)
-    //                {
-    //                    WorkGiverDef workGiver = item2.workGiversByPriority[i];
-    //                    if (workGiver.Worker is WorkGiver_Scanner scanner)
-    //                    {
-    //                        //Log.Warning("Is WorkGiver_Scanner");
-    //                        try
-    //                        {
-    //                            msg += $"Target Worktype: {scanner.def.label}, {scanner.HasJobOnThing(pawn, item, true)}\n";
-    //                        }
-    //                        catch (System.Exception e)
-    //                        {
-
-    //                        }
-    //                    }
-    //                    else
-    //                    {
-    //                        //Log.Warning("Not WorkGiver_Scanner");
-    //                    }
-    //                }
-    //            }
-    //        }
-
-
-    //        Log.Warning(msg);
-    //    }
-    //}
-
-    [HarmonyPatch(typeof(WorldComponentUtility), "WorldComponentTick")]
-    public class AlertUtility
+    //[HarmonyPatch(typeof(WorldComponentUtility), "WorldComponentTick")]
+    public class AlertUtility : WorldComponent
     {
-        public class Event
+        public class Event : IExposable
         {
             public int presetGameTicksToAlert;
             public string message;
+
+            public Event()
+            {
+                presetGameTicksToAlert = 0;
+                message = "";
+            }
 
             public Event(int tickTime, string msg)
             {
                 presetGameTicksToAlert = tickTime;
                 message = msg;
             }
+
+            public void ExposeData()
+            {
+                Scribe_Values.Look(ref presetGameTicksToAlert, "MyWeapons.AlertUtility.Event.ticks");
+                Scribe_Values.Look(ref message, "MyWeapons.AlertUtility.Event.message");
+            }
         }
 
         private static int defaultInterval = 60;   //  Check on every second in the slow speed
         private static List<Event> events = new List<Event>();
+
+        public AlertUtility(World world) : base(world)
+        {
+            Log.Warning("AlertUtility Initialized");
+        }
 
         public static void Add(Event e)
         {
@@ -105,7 +75,7 @@ namespace MyWeapons
             return events;
         }
 
-        [HarmonyPostfix]
+        //[HarmonyPostfix]
         public static void WorldComponentTickPostfix()
         {
             if (Find.World != null)
@@ -129,6 +99,19 @@ namespace MyWeapons
                     }
                 }
             }
+        }
+
+        public override void WorldComponentTick()
+        {
+            base.WorldComponentTick();
+            WorldComponentTickPostfix();
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Log.Warning("MyWeapons.AlertUtility.ExposeData");
+            Scribe_Collections.Look(ref events, "MyWeapons.AlertUtility.events", LookMode.Deep);
         }
     }
 

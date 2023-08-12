@@ -11,6 +11,9 @@
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>10</workAmount>
         <targetCountAdjustment>100</targetCountAdjustment>
+        <recipeUsers>
+          <li>BegSpot</li>
+        </recipeUsers>
     </RecipeDef>
     <RecipeDef ParentName="RunningBugs_CookRecipe">
         <defName>RunningBugs_Cook_MealLavishBulk</defName>
