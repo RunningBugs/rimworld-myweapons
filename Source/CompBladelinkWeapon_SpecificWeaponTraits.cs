@@ -234,13 +234,13 @@ namespace MyWeapons
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref lastKillTick, "lastKillTick", -1);
-            Scribe_Collections.Look(ref traits, "specifictraits", LookMode.Def);
+            Scribe_Values.Look(ref lastKillTick, "MyWeapons.CompBladelinkWeapon_SpecificWeaponTraits.lastKillTick", -1);
+            Scribe_Collections.Look(ref traits, "MyWeapons.CompBladelinkWeapon_SpecificWeaponTraits.specifictraits", LookMode.Def);
             if (Scribe.mode != LoadSaveMode.Saving)
             {
-                Scribe_Values.Look(ref oldBonded, "bonded", defaultValue: false);
-                Scribe_Values.Look(ref oldBondedPawnLabel, "bondedPawnLabel");
-                Scribe_References.Look(ref oldBondedPawn, "bondedPawn", saveDestroyedThings: true);
+                Scribe_Values.Look(ref oldBonded, "MyWeapons.CompBladelinkWeapon_SpecificWeaponTraits.bonded", defaultValue: false);
+                Scribe_Values.Look(ref oldBondedPawnLabel, "MyWeapons.CompBladelinkWeapon_SpecificWeaponTraits.bondedPawnLabel");
+                Scribe_References.Look(ref oldBondedPawn, "MyWeapons.CompBladelinkWeapon_SpecificWeaponTraits.bondedPawn", saveDestroyedThings: true);
             }
             if (Scribe.mode != LoadSaveMode.PostLoadInit)
             {

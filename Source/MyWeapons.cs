@@ -89,7 +89,8 @@ namespace MyWeapons
                         if (ticks >= e.presetGameTicksToAlert)
                         {
                             // Trigger Alert then remove this element
-                            Find.LetterStack.ReceiveLetter("TimerTimeOut".Translate(e.message.Truncate(5)), e.message, LetterDefOf.ThreatBig);
+                            Find.LetterStack.ReceiveLetter("TimerTimeOut".Translate(e.message.Truncate(5)), e.message, LetterDefOf.NeutralEvent);
+                            Find.TickManager.Pause();
                             eventsToRemove.Add(e);
                         }
                     }
@@ -110,7 +111,7 @@ namespace MyWeapons
         public override void ExposeData()
         {
             base.ExposeData();
-            Log.Warning("MyWeapons.AlertUtility.ExposeData");
+            //Log.Warning("MyWeapons.AlertUtility.ExposeData");
             Scribe_Collections.Look(ref events, "MyWeapons.AlertUtility.events", LookMode.Deep);
         }
     }

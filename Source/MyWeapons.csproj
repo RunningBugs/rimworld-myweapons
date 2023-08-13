@@ -63,6 +63,7 @@
         <Compile Include="ThoughtWorker_WeaponTraitBondedExtended.cs" />
         <Compile Include="TimedMailWindow.cs" />
         <Compile Include="CaravanGizmoPatch.cs" />
+        <Compile Include="CounterBullet.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 	<ItemDefinitionGroup>

@@ -3,6 +3,7 @@
   <!-- Defs for Supler Gun -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MySuperGun</defName>
+    <thingClass>MyWeapons.CounterBullet</thingClass>
     <label>my super gun blast</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
@@ -18,9 +19,24 @@
       <armorPenetrationBase>0.14</armorPenetrationBase>
       <speed>200</speed>
     </projectile>
+    <modExtensions>
+      <li Class="MyWeapons.CounterBulletProps">
+        <counters>
+          <li>
+            <damageDef>Bullet</damageDef>
+            <fleshType>Mechanoid</fleshType>
+            <extraDamage>
+              <amount>20.5</amount>
+              <armorPenetration>5.14</armorPenetration>
+              <chance>1.0</chance>
+            </extraDamage>
+          </li>
+        </counters>
+      </li>
+    </modExtensions>
   </ThingDef>
 
-  <ThingDef Name="SuperGun" ParentName="BaseMakeableGun">
+  <ThingDef Name="SuperGun" ParentName="BaseGunWithQuality">
     <defName>Gun_SuperGun</defName>
     <label>super bolt-action rifle</label>
     <description>An ancient pattern super bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
@@ -69,7 +85,6 @@
       <li Class="CompProperties_TargetEffect_FleckConnecting">
         <fleckDef>PsycastPsychicLine</fleckDef>
       </li>
-      <li Class="CompProperties_Styleable"></li>
     </comps>
     <verbs>
       <li>
@@ -178,7 +193,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseMakeableGun">
+  <ThingDef ParentName="BaseGunWithQuality">
     <defName>Gun_SuperRocketGun</defName>
     <label>Super Rocket Gun</label>
     <description>Super Rocket Gun</description>
@@ -279,7 +294,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseMakeableGun">
+  <ThingDef ParentName="BaseGunWithQuality">
     <defName>Gun_SuperEmpLauncher</defName>
     <label>Super EMP launcher</label>
     <useHitPoints>false</useHitPoints>
