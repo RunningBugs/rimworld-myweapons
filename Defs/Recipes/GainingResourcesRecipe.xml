@@ -225,17 +225,6 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <!-- <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
-        <defName>RunningBugs_Make_VanometricPowerCell</defName>
-        <label>make VanometricPowerCell</label>
-        <products>
-            <VanometricPowerCell>1</VanometricPowerCell>
-        </products>
-        <descriptionHyperlinks>
-            <ThingDef>VanometricPowerCell</ThingDef>
-        </descriptionHyperlinks>
-    </RecipeDef> -->
-
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_AIPersonaCore</defName>
         <label>make AIPersonaCore</label>
@@ -244,6 +233,17 @@
         </products>
         <descriptionHyperlinks>
             <ThingDef>AIPersonaCore</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_TechprofSubpersonaCore</defName>
+        <label>make TechprofSubpersonaCore</label>
+        <products>
+            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>TechprofSubpersonaCore</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
 
@@ -277,6 +277,17 @@
         </products>
         <descriptionHyperlinks>
             <ThingDef>Chemfuel</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Neutroamine</defName>
+        <label>make Neutroamine</label>
+        <products>
+            <Neutroamine>1000</Neutroamine>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Neutroamine</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
 </Defs>

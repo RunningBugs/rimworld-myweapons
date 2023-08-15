@@ -87,4 +87,12 @@
     <RunningBugs_Make_SuperEmpLauncher.description>从虚空中制作超级EMP发射器。这是一种非常强力的EMP发射器，射程大，子弹快，影响范围大。</RunningBugs_Make_SuperEmpLauncher.description>
     <RunningBugs_Make_SuperEmpLauncher.jobString>制作超级EMP发射器</RunningBugs_Make_SuperEmpLauncher.jobString>
 
+    <RunningBugs_Make_Neutroamine.label>制作中性胺</RunningBugs_Make_Neutroamine.label>
+    <RunningBugs_Make_Neutroamine.description>从虚空中制作中性胺</RunningBugs_Make_Neutroamine.description>
+    <RunningBugs_Make_Neutroamine.jobString>正在制作中性胺</RunningBugs_Make_Neutroamine.jobString>
+
+    <RunningBugs_Make_TechprofSubpersonaCore.label>制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.label>
+    <RunningBugs_Make_TechprofSubpersonaCore.description>从虚空中制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.description>
+    <RunningBugs_Make_TechprofSubpersonaCore.jobString>正在制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.jobString>
+
 </LanguageData>
