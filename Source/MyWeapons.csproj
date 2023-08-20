@@ -3,7 +3,16 @@
   <PropertyGroup>
     <AssemblyName>MyWeapons</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Assemblies\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Assemblies\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
       <Reference Include="System" />
@@ -18,20 +27,16 @@
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
         <Private>false</Private>
       </Reference>
-      <Reference Include="UnityEngine.IMGUIModule">
-        <HintPath>..\..\..\..\..\.local\share\Steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-        <Private>false</Private>
-      </Reference>
       <Reference Include="UnityEngine.TextRenderingModule">
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
         <Private>false</Private>
       </Reference>
-      <Reference Include="SRTS">
-        <HintPath>..\..\TransportShuttleStandalone\v1.4\Assemblies\SRTS.dll</HintPath>
+      <Reference Include="0Harmony">
+        <HintPath>..\..\Harmony\Current\Assemblies\0Harmony.dll</HintPath>
         <Private>false</Private>
       </Reference>
-      <Reference Include="0Harmony">
-        <HintPath>..\..\..\..\..\.local\share\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Reference Include="UnityEngine">
+        <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.dll</HintPath>
         <Private>false</Private>
       </Reference>
   </ItemGroup>
