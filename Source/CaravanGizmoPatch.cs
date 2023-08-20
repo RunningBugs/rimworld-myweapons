@@ -1,11 +1,9 @@
 ﻿using RimWorld.Planet;
 using RimWorld;
 using Verse;
-using HarmonyLib;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-using SRTS;
 
 namespace MyWeapons
 {

@@ -2,6 +2,7 @@
 <Defs>
     <ThingDef ParentName="BaseBullet">
         <defName>Bullet_SuperMiniTurret</defName>
+        <thingClass>MyWeapons.CounterBullet</thingClass>
         <label>mini-turret bullet</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -12,6 +13,21 @@
             <damageAmountBase>25</damageAmountBase>
             <speed>200</speed>
         </projectile>
+        <modExtensions>
+            <li Class="MyWeapons.CounterBulletProps">
+                <counters>
+                    <li>
+                        <damageDef>Bullet</damageDef>
+                        <fleshType>Mechanoid</fleshType>
+                        <extraDamage>
+                            <amount>20.5</amount>
+                            <armorPenetration>5.14</armorPenetration>
+                            <chance>1.0</chance>
+                        </extraDamage>
+                    </li>
+                </counters>
+            </li>
+        </modExtensions>
     </ThingDef>
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>Gun_SuperMiniTurret</defName>
@@ -88,7 +104,7 @@
         <tickerType>Normal</tickerType>
         <comps>
             <li Class="CompProperties_Forbiddable" />
-            <li Class="CompProperties_Breakdownable" />
+            <!-- <li Class="CompProperties_Breakdownable" /> -->
         </comps>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
