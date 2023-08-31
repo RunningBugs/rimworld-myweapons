@@ -39,5 +39,13 @@
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.dll</HintPath>
         <Private>false</Private>
       </Reference>
+      <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        <Private>false</Private>
+      </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Items.cs" />
+    <Compile Remove="CaravanGizmoPatch.cs" />
   </ItemGroup>
 </Project>
