@@ -58,6 +58,19 @@
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_SmithRecipe">
+        <defName>RunningBugs_Make_SuperStunLauncher</defName>
+        <label>Make Super Stun Launcher</label>
+        <description>Making Stun Launcher from void. It's a super powerful Stun launcher that has a long range, fast bullet speed, and large affecting area.</description>
+        <jobString>Making Super Stun Launcher</jobString>
+        <products>
+            <Gun_SuperStunLauncher>1</Gun_SuperStunLauncher>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gun_SuperStunLauncher</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_SmithRecipe">
         <defName>RunningBugs_Make_SuperEmpLauncher</defName>
         <label>Make Super Emp Launcher</label>
         <description>Making Emp Launcher from void. It's a super powerful EMP launcher that has a long range, fast bullet speed, and large affecting area.</description>

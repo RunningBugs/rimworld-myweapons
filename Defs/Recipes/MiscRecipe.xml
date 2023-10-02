@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RecipeDef Name="RunningBugs_MiscRecipe" Abstract="true">
+        <!-- <label>make resource</label> -->
+        <description>Misc recipe</description>
+        <jobString>Making misc.</jobString>
+        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Brewing</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <workAmount>1</workAmount>
+        <targetCountAdjustment>100</targetCountAdjustment>
+        <recipeUsers>
+            <li>Campfire</li>
+        </recipeUsers>
+    </RecipeDef>
+    <RecipeDef ParentName="RunningBugs_MiscRecipe">
+        <defName>RunningBugs_BurnTrash</defName>
+        <label>Burning Wastepack to gain gold</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wastepack</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <Gold>1</Gold>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Wastepack</ThingDef>
+            <ThingDef>Gold</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+    <RecipeDef ParentName="RunningBugs_MiscRecipe">
+        <defName>RunningBugs_BurnMultipleTrash</defName>
+        <label>Burning multiple Wastepack to gain gold</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wastepack</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <products>
+            <Gold>5</Gold>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Wastepack</ThingDef>
+            <ThingDef>Gold</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+</Defs>
