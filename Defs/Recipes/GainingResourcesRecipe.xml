@@ -16,16 +16,7 @@
         </recipeUsers>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
-        <defName>RunningBugs_Make_Hyperweave</defName>
-        <label>make Hyperweave</label>
-        <products>
-            <Hyperweave>1000</Hyperweave>
-        </products>
-        <descriptionHyperlinks>
-            <ThingDef>Hyperweave</ThingDef>
-        </descriptionHyperlinks>
-    </RecipeDef>
+
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Wood</defName>
@@ -50,6 +41,28 @@
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Plasteel</defName>
+        <label>make plasteel</label>
+        <products>
+            <Plasteel>1000</Plasteel>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Plasteel</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Uranium</defName>
+        <label>make Uranium</label>
+        <products>
+            <Uranium>1000</Uranium>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Uranium</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Silver</defName>
         <label>make silver</label>
         <products>
@@ -59,6 +72,19 @@
             <ThingDef>Silver</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Gold</defName>
+        <label>make gold</label>
+        <products>
+            <Gold>1000</Gold>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gold</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Components</defName>
@@ -82,6 +108,41 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
+
+    
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Hyperweave</defName>
+        <label>make Hyperweave</label>
+        <products>
+            <Hyperweave>1000</Hyperweave>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Hyperweave</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_DevilstrandCloth</defName>
+        <label>make DevilstrandCloth</label>
+        <products>
+            <DevilstrandCloth>1000</DevilstrandCloth>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>DevilstrandCloth</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Synthread</defName>
+        <label>make Synthread</label>
+        <products>
+            <Synthread>1000</Synthread>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Synthread</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Cloth</defName>
         <label>make cloth</label>
@@ -93,14 +154,16 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
+    
+
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
-        <defName>RunningBugs_Make_Gold</defName>
-        <label>make gold</label>
+        <defName>RunningBugs_Make_MedicineIndustrial</defName>
+        <label>make MedicineIndustrial</label>
         <products>
-            <Gold>1000</Gold>
+            <MedicineIndustrial>1000</MedicineIndustrial>
         </products>
         <descriptionHyperlinks>
-            <ThingDef>Gold</ThingDef>
+            <ThingDef>MedicineIndustrial</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
 
@@ -115,27 +178,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
-        <defName>RunningBugs_Make_Kibble</defName>
-        <label>make kibble</label>
-        <products>
-            <Kibble>1000</Kibble>
-        </products>
-        <descriptionHyperlinks>
-            <ThingDef>Kibble</ThingDef>
-        </descriptionHyperlinks>
-    </RecipeDef>
-
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
-        <defName>RunningBugs_Make_Plasteel</defName>
-        <label>make plasteel</label>
-        <products>
-            <Plasteel>1000</Plasteel>
-        </products>
-        <descriptionHyperlinks>
-            <ThingDef>Plasteel</ThingDef>
-        </descriptionHyperlinks>
-    </RecipeDef>
+    
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_BlocksSandstone</defName>
@@ -192,6 +235,8 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
+
+
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Omni_V</defName>
         <label>make Omni_V</label>
@@ -225,6 +270,8 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
+
+
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_AIPersonaCore</defName>
         <label>make AIPersonaCore</label>
@@ -247,16 +294,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
-        <defName>RunningBugs_Make_Uranium</defName>
-        <label>make Uranium</label>
-        <products>
-            <Uranium>1000</Uranium>
-        </products>
-        <descriptionHyperlinks>
-            <ThingDef>Uranium</ThingDef>
-        </descriptionHyperlinks>
-    </RecipeDef>
+    
 
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_HemogenPack</defName>

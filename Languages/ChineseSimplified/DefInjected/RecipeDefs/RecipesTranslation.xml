@@ -3,29 +3,54 @@
 
     <RunningBugs_Make_SuperVanometricPowerCell.label>制作超级虚空电池</RunningBugs_Make_SuperVanometricPowerCell.label>
     <RunningBugs_Make_SuperVanometricPowerCell.description>从虚空制作超级虚空电池</RunningBugs_Make_SuperVanometricPowerCell.description>
-    <RunningBugs_Make_Hyperweave.label>制作超织物</RunningBugs_Make_Hyperweave.label>
-    <RunningBugs_Make_Hyperweave.description>从虚空制作超织物</RunningBugs_Make_Hyperweave.description>
+
+
     <RunningBugs_Make_Wood.label>制作原木</RunningBugs_Make_Wood.label>
     <RunningBugs_Make_Wood.description>从虚空制作原木</RunningBugs_Make_Wood.description>
+
     <RunningBugs_Make_Steel.label>制作钢材</RunningBugs_Make_Steel.label>
     <RunningBugs_Make_Steel.description>从虚空制作钢材</RunningBugs_Make_Steel.description>
-    <RunningBugs_Make_Silver.label>制作白银</RunningBugs_Make_Silver.label>
-    <RunningBugs_Make_Silver.description>从虚空制作白银</RunningBugs_Make_Silver.description>
-    <RunningBugs_Make_Components.label>制作零件</RunningBugs_Make_Components.label>
-    <RunningBugs_Make_Components.description>从虚空制作零件</RunningBugs_Make_Components.description>
-    <RunningBugs_Make_ComponentSpacer.label>制作高级零件</RunningBugs_Make_ComponentSpacer.label>
-    <RunningBugs_Make_ComponentSpacer.description>从虚空制作高级零件</RunningBugs_Make_ComponentSpacer.description>
-    <RunningBugs_Make_Cloth.label>制作布料</RunningBugs_Make_Cloth.label>
-    <RunningBugs_Make_Cloth.description>从虚空制作布料</RunningBugs_Make_Cloth.description>
-    <RunningBugs_Make_Gold.label>制作黄金</RunningBugs_Make_Gold.label>
-    <RunningBugs_Make_Gold.description>从虚空制作黄金</RunningBugs_Make_Gold.description>
-    <RunningBugs_Make_MedicineUltratech.label>制作闪耀世界医药</RunningBugs_Make_MedicineUltratech.label>
-    <RunningBugs_Make_MedicineUltratech.description>从虚空制作闪耀世界医药</RunningBugs_Make_MedicineUltratech.description>
-    <RunningBugs_Make_Kibble.label>制作饲料</RunningBugs_Make_Kibble.label>
-    <RunningBugs_Make_Kibble.description>从虚空制作饲料</RunningBugs_Make_Kibble.description>
+
     <RunningBugs_Make_Plasteel.label>制作玻璃钢</RunningBugs_Make_Plasteel.label>
     <RunningBugs_Make_Plasteel.description>从虚空制作玻璃钢</RunningBugs_Make_Plasteel.description>
+
+    <RunningBugs_Make_Uranium.label>制作铀</RunningBugs_Make_Uranium.label>
+    <RunningBugs_Make_Uranium.description>从虚空制作铀</RunningBugs_Make_Uranium.description>
+
+    <RunningBugs_Make_Silver.label>制作白银</RunningBugs_Make_Silver.label>
+    <RunningBugs_Make_Silver.description>从虚空制作白银</RunningBugs_Make_Silver.description>
+
+    <RunningBugs_Make_Gold.label>制作黄金</RunningBugs_Make_Gold.label>
+    <RunningBugs_Make_Gold.description>从虚空制作黄金</RunningBugs_Make_Gold.description>
+
+
+    <RunningBugs_Make_Components.label>制作零件</RunningBugs_Make_Components.label>
+    <RunningBugs_Make_Components.description>从虚空制作零件</RunningBugs_Make_Components.description>
+
+    <RunningBugs_Make_ComponentSpacer.label>制作高级零件</RunningBugs_Make_ComponentSpacer.label>
+    <RunningBugs_Make_ComponentSpacer.description>从虚空制作高级零件</RunningBugs_Make_ComponentSpacer.description>
+
+
+    <RunningBugs_Make_Hyperweave.label>制作超织物</RunningBugs_Make_Hyperweave.label>
+    <RunningBugs_Make_Hyperweave.description>从虚空制作超织物</RunningBugs_Make_Hyperweave.description>
+
+    <RunningBugs_Make_DevilstrandCloth.label>制作魔菇布</RunningBugs_Make_DevilstrandCloth.label>
+    <RunningBugs_Make_DevilstrandCloth.description>从虚空制作魔菇布</RunningBugs_Make_DevilstrandCloth.description>
+
+    <RunningBugs_Make_Synthread.label>制作合成纤维</RunningBugs_Make_Synthread.label>
+    <RunningBugs_Make_Synthread.description>从虚空制作合成纤维</RunningBugs_Make_Synthread.description>
+
+    <RunningBugs_Make_Cloth.label>制作布料</RunningBugs_Make_Cloth.label>
+    <RunningBugs_Make_Cloth.description>从虚空制作布料</RunningBugs_Make_Cloth.description>
     
+
+    <RunningBugs_Make_MedicineIndustrial.label>制作医药</RunningBugs_Make_MedicineIndustrial.label>
+    <RunningBugs_Make_MedicineIndustrial.description>从虚空制作医药</RunningBugs_Make_MedicineIndustrial.description>
+
+    <RunningBugs_Make_MedicineUltratech.label>制作闪耀世界医药</RunningBugs_Make_MedicineUltratech.label>
+    <RunningBugs_Make_MedicineUltratech.description>从虚空制作闪耀世界医药</RunningBugs_Make_MedicineUltratech.description>
+    
+
     <RunningBugs_Make_BlocksSandstone.label>制作砂岩砖</RunningBugs_Make_BlocksSandstone.label>
     <RunningBugs_Make_BlocksSandstone.description>从虚空制作砂岩砖</RunningBugs_Make_BlocksSandstone.description>
 
@@ -44,37 +69,58 @@
 
     <RunningBugs_Make_Omni_V.label>制作万能机器人V</RunningBugs_Make_Omni_V.label>
     <RunningBugs_Make_Omni_V.description>从虚空制作万能机器人V</RunningBugs_Make_Omni_V.description>
+
     <RunningBugs_Make_ER_V.label>制作救援器人V</RunningBugs_Make_ER_V.label>
     <RunningBugs_Make_ER_V.description>从虚空制作救援器人V</RunningBugs_Make_ER_V.description>
+
     <RunningBugs_Make_Cleaner_V.label>制作清洁器人V</RunningBugs_Make_Cleaner_V.label>
     <RunningBugs_Make_Cleaner_V.description>从虚空制作清洁器人V</RunningBugs_Make_Cleaner_V.description>
+
+
     <RunningBugs_Make_AIPersonaCore.label>制作人格核心</RunningBugs_Make_AIPersonaCore.label>
     <RunningBugs_Make_AIPersonaCore.description>从虚空制作人格核心</RunningBugs_Make_AIPersonaCore.description>
-    <RunningBugs_Make_Uranium.label>制作铀</RunningBugs_Make_Uranium.label>
-    <RunningBugs_Make_Uranium.description>从虚空制作铀</RunningBugs_Make_Uranium.description>
+
+    <RunningBugs_Make_TechprofSubpersonaCore.label>制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.label>
+    <RunningBugs_Make_TechprofSubpersonaCore.description>从虚空中制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.description>
+    <RunningBugs_Make_TechprofSubpersonaCore.jobString>正在制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.jobString>
+    
+
     <RunningBugs_Make_MechSerumHealer.label>制作治愈机械液</RunningBugs_Make_MechSerumHealer.label>
     <RunningBugs_Make_MechSerumHealer.description>从虚空制作治愈机械液</RunningBugs_Make_MechSerumHealer.description>
+
     <RunningBugs_Make_PsychicSoothePulser.label>制作心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.label>
     <RunningBugs_Make_PsychicSoothePulser.description>从虚空制作心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.description>
-    <RunningBugs_Make_HemogenPack.label>制作血原包</RunningBugs_Make_HemogenPack.label>
-    <RunningBugs_Make_HemogenPack.description>从虚空中制作血原包</RunningBugs_Make_HemogenPack.description>
+
 
     <RunningBugs_Cook_MealLavishBulk.label>烹饪奢侈食物 x40</RunningBugs_Cook_MealLavishBulk.label>
     <RunningBugs_Cook_MealLavishBulk.description>如同神的祝福一般，从虚空中烹饪出四十份非常复杂的食物。</RunningBugs_Cook_MealLavishBulk.description>
     <RunningBugs_Cook_MealLavishBulk.jobString>正在烹饪四十份奢侈食物。</RunningBugs_Cook_MealLavishBulk.jobString>
 
+    <RunningBugs_Make_Kibble.label>制作饲料</RunningBugs_Make_Kibble.label>
+    <RunningBugs_Make_Kibble.description>从虚空制作饲料</RunningBugs_Make_Kibble.description>
+
+
+    <RunningBugs_Make_HemogenPack.label>制作血原包</RunningBugs_Make_HemogenPack.label>
+    <RunningBugs_Make_HemogenPack.description>从虚空中制作血原包</RunningBugs_Make_HemogenPack.description>
+
     <RunningBugs_Make_Chemfuel.label>制作化合燃料</RunningBugs_Make_Chemfuel.label>
     <RunningBugs_Make_Chemfuel.description>从虚空中制作化合燃料</RunningBugs_Make_Chemfuel.description>
     <RunningBugs_Make_Chemfuel.jobString>正在制作化合燃料</RunningBugs_Make_Chemfuel.jobString>
+
+    <RunningBugs_Make_Neutroamine.label>制作中性胺</RunningBugs_Make_Neutroamine.label>
+    <RunningBugs_Make_Neutroamine.description>从虚空中制作中性胺</RunningBugs_Make_Neutroamine.description>
+    <RunningBugs_Make_Neutroamine.jobString>正在制作中性胺</RunningBugs_Make_Neutroamine.jobString>
+
 
     <RunningBugs_Make_SuperShieldBelt.label>制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.label>
     <RunningBugs_Make_SuperShieldBelt.description>从虚空中制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.description>
     <RunningBugs_Make_SuperShieldBelt.jobString>正在制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.jobString>
 
+
     <RunningBugs_Make_SuperGun.label>制作超级栓动步枪</RunningBugs_Make_SuperGun.label>
     <RunningBugs_Make_SuperGun.description>从虚空中制作超级栓动步枪。这是一种非常强力的枪械。</RunningBugs_Make_SuperGun.description>
     <RunningBugs_Make_SuperGun.jobString>制作超级栓动步枪</RunningBugs_Make_SuperGun.jobString>
-    
+
     <RunningBugs_Make_SuperGunPersona.label>制作人格超级栓动步枪</RunningBugs_Make_SuperGunPersona.label>
     <RunningBugs_Make_SuperGunPersona.description>从虚空中制作人格超级栓动步枪。这是一种非常强力的枪械。</RunningBugs_Make_SuperGunPersona.description>
     <RunningBugs_Make_SuperGunPersona.jobString>制作人格超级栓动步枪</RunningBugs_Make_SuperGunPersona.jobString>
@@ -82,17 +128,9 @@
     <RunningBugs_Make_SuperRocketGun.label>制作超级火箭炮</RunningBugs_Make_SuperRocketGun.label>
     <RunningBugs_Make_SuperRocketGun.description>从虚空中制作超级火箭炮。这是一种非常强力的火箭炮。</RunningBugs_Make_SuperRocketGun.description>
     <RunningBugs_Make_SuperRocketGun.jobString>制作超级火箭炮</RunningBugs_Make_SuperRocketGun.jobString>
-
+    
     <RunningBugs_Make_SuperEmpLauncher.label>制作超级EMP发射器</RunningBugs_Make_SuperEmpLauncher.label>
     <RunningBugs_Make_SuperEmpLauncher.description>从虚空中制作超级EMP发射器。这是一种非常强力的EMP发射器，射程大，子弹快，影响范围大。</RunningBugs_Make_SuperEmpLauncher.description>
     <RunningBugs_Make_SuperEmpLauncher.jobString>制作超级EMP发射器</RunningBugs_Make_SuperEmpLauncher.jobString>
-
-    <RunningBugs_Make_Neutroamine.label>制作中性胺</RunningBugs_Make_Neutroamine.label>
-    <RunningBugs_Make_Neutroamine.description>从虚空中制作中性胺</RunningBugs_Make_Neutroamine.description>
-    <RunningBugs_Make_Neutroamine.jobString>正在制作中性胺</RunningBugs_Make_Neutroamine.jobString>
-
-    <RunningBugs_Make_TechprofSubpersonaCore.label>制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.label>
-    <RunningBugs_Make_TechprofSubpersonaCore.description>从虚空中制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.description>
-    <RunningBugs_Make_TechprofSubpersonaCore.jobString>正在制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.jobString>
 
 </LanguageData>
