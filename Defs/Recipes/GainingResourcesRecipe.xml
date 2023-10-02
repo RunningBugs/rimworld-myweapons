@@ -111,6 +111,17 @@
 
     
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_Leather_Plain</defName>
+        <label>make Leather_Plain</label>
+        <products>
+            <Leather_Plain>1000</Leather_Plain>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Leather_Plain</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Leather_Thrumbo</defName>
         <label>make Leather_Thrumbo</label>
         <products>
