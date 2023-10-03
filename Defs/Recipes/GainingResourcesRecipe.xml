@@ -178,6 +178,18 @@
 
     
 
+    <!-- MedicineHerbal -->
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_MedicineHerbal</defName>
+        <label>make MedicineHerbal</label>
+        <products>
+            <MedicineHerbal>1000</MedicineHerbal>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>MedicineHerbal</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_MedicineIndustrial</defName>
         <label>make MedicineIndustrial</label>

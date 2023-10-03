@@ -50,6 +50,9 @@
     <RunningBugs_Make_Cloth.description>从虚空制作布料</RunningBugs_Make_Cloth.description>
     
 
+    <RunningBugs_Make_MedicineHerbal.label>制作草药</RunningBugs_Make_MedicineHerbal.label>
+    <RunningBugs_Make_MedicineHerbal.description>从虚空制作草药</RunningBugs_Make_MedicineHerbal.description>
+
     <RunningBugs_Make_MedicineIndustrial.label>制作医药</RunningBugs_Make_MedicineIndustrial.label>
     <RunningBugs_Make_MedicineIndustrial.description>从虚空制作医药</RunningBugs_Make_MedicineIndustrial.description>
 
