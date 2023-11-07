@@ -89,8 +89,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Components</defName>
         <label>make components</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <ComponentIndustrial>1000</ComponentIndustrial>
+            <ComponentIndustrial>50</ComponentIndustrial>
         </products>
         <descriptionHyperlinks>
             <ThingDef>ComponentIndustrial</ThingDef>
@@ -100,8 +101,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_ComponentSpacer</defName>
         <label>make advanced components</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <ComponentSpacer>1000</ComponentSpacer>
+            <ComponentSpacer>50</ComponentSpacer>
         </products>
         <descriptionHyperlinks>
             <ThingDef>ComponentSpacer</ThingDef>
@@ -182,8 +184,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_MedicineHerbal</defName>
         <label>make MedicineHerbal</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <MedicineHerbal>1000</MedicineHerbal>
+            <MedicineHerbal>50</MedicineHerbal>
         </products>
         <descriptionHyperlinks>
             <ThingDef>MedicineHerbal</ThingDef>
@@ -193,8 +196,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_MedicineIndustrial</defName>
         <label>make MedicineIndustrial</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <MedicineIndustrial>1000</MedicineIndustrial>
+            <MedicineIndustrial>50</MedicineIndustrial>
         </products>
         <descriptionHyperlinks>
             <ThingDef>MedicineIndustrial</ThingDef>
@@ -204,8 +208,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_MedicineUltratech</defName>
         <label>make MedicineUltratech</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <MedicineUltratech>1000</MedicineUltratech>
+            <MedicineUltratech>50</MedicineUltratech>
         </products>
         <descriptionHyperlinks>
             <ThingDef>MedicineUltratech</ThingDef>
@@ -274,6 +279,7 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Omni_V</defName>
         <label>make Omni_V</label>
+        <targetCountAdjustment>5</targetCountAdjustment>
         <products>
             <RPP_RechargeStation_Omni_V>1</RPP_RechargeStation_Omni_V>
         </products>
@@ -288,6 +294,7 @@
         <products>
             <RPP_RechargeStation_ER_V>1</RPP_RechargeStation_ER_V>
         </products>
+        <targetCountAdjustment>5</targetCountAdjustment>
         <descriptionHyperlinks>
             <ThingDef>RPP_RechargeStation_ER_V</ThingDef>
         </descriptionHyperlinks>
@@ -296,6 +303,7 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Cleaner_V</defName>
         <label>make Cleaner_V</label>
+        <targetCountAdjustment>5</targetCountAdjustment>
         <products>
             <AIRobot_RechargeStation_Cleaner_V>1</AIRobot_RechargeStation_Cleaner_V>
         </products>
@@ -309,6 +317,7 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_AIPersonaCore</defName>
         <label>make AIPersonaCore</label>
+        <targetCountAdjustment>1</targetCountAdjustment>
         <products>
             <AIPersonaCore>1</AIPersonaCore>
         </products>
@@ -320,6 +329,7 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_TechprofSubpersonaCore</defName>
         <label>make TechprofSubpersonaCore</label>
+        <targetCountAdjustment>1</targetCountAdjustment>
         <products>
             <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
         </products>
@@ -333,8 +343,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_HemogenPack</defName>
         <label>make HemogenPack</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <HemogenPack>1000</HemogenPack>
+            <HemogenPack>50</HemogenPack>
         </products>
         <descriptionHyperlinks>
             <ThingDef>HemogenPack</ThingDef>
@@ -344,8 +355,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Chemfuel</defName>
         <label>make Chemfuel</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <Chemfuel>1000</Chemfuel>
+            <Chemfuel>100</Chemfuel>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Chemfuel</ThingDef>
@@ -355,8 +367,9 @@
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_Neutroamine</defName>
         <label>make Neutroamine</label>
+        <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <Neutroamine>1000</Neutroamine>
+            <Neutroamine>100</Neutroamine>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Neutroamine</ThingDef>

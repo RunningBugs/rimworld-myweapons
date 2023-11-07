@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <ThingDef Name="MyBaseWeaponsRanged" ParentName="BaseGunWithQuality" Abstract="True">
+    <thingCategories Inherit="False">
+			<li>MW_Weapons</li>
+		</thingCategories>
+    <statBases Inherit="False">
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>100</Beauty>
+      <MarketValue>0</MarketValue>
+      <Flammability>0</Flammability>
+      <WorkToMake>1</WorkToMake>
+      <Mass>0</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+    </statBases>
+  </ThingDef>
+
   <!-- Defs for Supler Gun -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MySuperGun</defName>
@@ -36,7 +55,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef Name="SuperGun" ParentName="BaseGunWithQuality">
+  <ThingDef Name="SuperGun" ParentName="MyBaseWeaponsRanged">
     <defName>Gun_SuperGun</defName>
     <label>super bolt-action rifle</label>
     <description>An ancient pattern super bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
@@ -58,19 +77,6 @@
     <tradeTags>
       <li>WeaponRanged</li>
     </tradeTags>
-    <statBases>
-      <DeteriorationRate>0</DeteriorationRate>
-      <Beauty>100</Beauty>
-      <MarketValue>1</MarketValue>
-      <Flammability>0</Flammability>
-      <WorkToMake>100</WorkToMake>
-      <Mass>0.5</Mass>
-      <AccuracyTouch>1</AccuracyTouch>
-      <AccuracyShort>1</AccuracyShort>
-      <AccuracyMedium>1</AccuracyMedium>
-      <AccuracyLong>1</AccuracyLong>
-      <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
-    </statBases>
     <costList>
       <Steel>60</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
@@ -145,7 +151,7 @@
   <!-- Defs for Persona Super Gun!-->
   <ThingDef ParentName="SuperGun">
     <defName>Gun_SuperGunPersona</defName>
-    <label>super persona bolt-action rifle</label>
+    <label>Δ' bolt-action rifle</label>
     <description>An ancient pattern super persona bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
     <comps>
       <li Class="MyWeapons.CompProperties_BladelinkWeapon_SpecificWeaponTraits">
@@ -193,7 +199,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="MyBaseWeaponsRanged">
     <defName>Gun_SuperRocketGun</defName>
     <label>Super Rocket Gun</label>
     <description>Super Rocket Gun</description>
@@ -216,19 +222,6 @@
       <li>ExoticMisc</li>
       <li>WeaponRanged</li>
     </tradeTags>
-    <statBases>
-      <DeteriorationRate>0</DeteriorationRate>
-      <Beauty>100</Beauty>
-      <MarketValue>1</MarketValue>
-      <Flammability>0</Flammability>
-      <WorkToMake>100</WorkToMake>
-      <Mass>0.5</Mass>
-      <AccuracyTouch>1</AccuracyTouch>
-      <AccuracyShort>1</AccuracyShort>
-      <AccuracyMedium>1</AccuracyMedium>
-      <AccuracyLong>1</AccuracyLong>
-      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-    </statBases>
     <costList>
       <WoodLog>5</WoodLog>
     </costList>
@@ -254,6 +247,91 @@
         <muzzleFlashScale>14</muzzleFlashScale>
       </li>
     </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- SuperDoomsDay-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MySuperDoomsDay</defName>
+    <label>super doomsday bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <damageAmountBase>9999</damageAmountBase>
+      <flyOverhead>true</flyOverhead>
+      <explosionRadius>10</explosionRadius>
+      <speed>4000</speed>
+      <armorPenetrationBase>85</armorPenetrationBase>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="MyBaseWeaponsRanged">
+    <defName>Gun_MySuperDoomsDay</defName>
+    <label>Super DoomsDay</label>
+    <description>Super DoomsDay</description>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DoomsdayLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MySuperDoomsDay</defaultProjectile>
+        <forcedMissRadius>1</forcedMissRadius>
+        <requireLineOfSight>false</requireLineOfSight>
+        <warmupTime>1</warmupTime>
+        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+        <range>500</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <relicChance>0</relicChance>
+    <!-- <soundInteract>Interact_Rifle</soundInteract> -->
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <costList>
+      <WoodLog>5</WoodLog>
+    </costList>
     <tools>
       <li>
         <label>barrel</label>
@@ -293,7 +371,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="MyBaseWeaponsRanged">
     <defName>Gun_SuperStunLauncher</defName>
     <label>Super Stun launcher</label>
     <useHitPoints>false</useHitPoints>
@@ -312,14 +390,6 @@
     <weaponTags>
       <li>GrenadeEMP</li>
     </weaponTags>
-    <statBases>
-      <MarketValue>1</MarketValue>
-      <Flammability>0</Flammability>
-      <DeteriorationRate>0</DeteriorationRate>
-      <WorkToMake>3</WorkToMake>
-      <Mass>0.4</Mass>
-      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-    </statBases>
     <costList>
       <WoodLog>1</WoodLog>
     </costList>
@@ -387,7 +457,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="MyBaseWeaponsRanged">
     <defName>Gun_SuperEmpLauncher</defName>
     <label>Super EMP launcher</label>
     <useHitPoints>false</useHitPoints>
@@ -406,14 +476,6 @@
     <weaponTags>
       <li>GrenadeEMP</li>
     </weaponTags>
-    <statBases>
-      <MarketValue>1</MarketValue>
-      <Flammability>0</Flammability>
-      <DeteriorationRate>0</DeteriorationRate>
-      <WorkToMake>3</WorkToMake>
-      <Mass>0.4</Mass>
-      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-    </statBases>
     <costList>
       <WoodLog>1</WoodLog>
     </costList>

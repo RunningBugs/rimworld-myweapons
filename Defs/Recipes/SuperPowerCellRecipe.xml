@@ -11,7 +11,7 @@
         <soundWorking>Recipe_Tailor</soundWorking>
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>5</workAmount>
-        <targetCountAdjustment>100</targetCountAdjustment>
+        <targetCountAdjustment>1</targetCountAdjustment>
         <products>
             <SuperVanometricPowerCell>1</SuperVanometricPowerCell>
         </products>

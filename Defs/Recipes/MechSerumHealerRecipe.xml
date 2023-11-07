@@ -11,6 +11,16 @@
         </descriptionHyperlinks>
     </RecipeDef>
     <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+        <defName>RunningBugs_Make_MechSerumResurrector</defName>
+        <label>make MechSerumResurrector</label>
+        <products>
+            <MechSerumResurrector>10</MechSerumResurrector>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>MechSerumResurrector</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
         <defName>RunningBugs_Make_PsychicSoothePulser</defName>
         <label>make PsychicSoothePulser</label>
         <products>

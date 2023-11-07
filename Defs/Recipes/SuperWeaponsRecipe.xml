@@ -58,6 +58,19 @@
     </RecipeDef>
 
     <RecipeDef ParentName="RunningBugs_SmithRecipe">
+        <defName>RunningBugs_Make_SuperDoomsDay</defName>
+        <label>Make Super DoomsDay Launcher</label>
+        <description>Making Super DoomsDay Launcher from void. It's a super powerful rocket launcher that enough to kill everything.</description>
+        <jobString>Making Super DoomsDay Launcher</jobString>
+        <products>
+            <Gun_MySuperDoomsDay>1</Gun_MySuperDoomsDay>
+        </products>
+        <descriptionHyperlinks>
+            <ThingDef>Gun_MySuperDoomsDay</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RunningBugs_SmithRecipe">
         <defName>RunningBugs_Make_SuperStunLauncher</defName>
         <label>Make Super Stun Launcher</label>
         <description>Making Stun Launcher from void. It's a super powerful Stun launcher that has a long range, fast bullet speed, and large affecting area.</description>

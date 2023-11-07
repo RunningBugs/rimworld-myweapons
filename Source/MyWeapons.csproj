@@ -7,6 +7,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DebugType>none</DebugType>
 		<DebugSymbols>false</DebugSymbols>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\Assemblies\</OutputPath>
@@ -31,10 +32,9 @@
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
         <Private>false</Private>
       </Reference>
-      <Reference Include="0Harmony">
-        <HintPath>..\..\Harmony\Current\Assemblies\0Harmony.dll</HintPath>
+      <PackageReference Include="Lib.Harmony" Version="2.2.2">
         <Private>false</Private>
-      </Reference>
+        </PackageReference>
       <Reference Include="UnityEngine">
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.dll</HintPath>
         <Private>false</Private>

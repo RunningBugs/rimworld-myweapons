@@ -35,6 +35,7 @@
     <description>Cook 40 very complex meals from void. It's like the god's blessing.</description>
     <jobString>Cooking 40 lavish meals.</jobString>
     <ingredients></ingredients>
+    <targetCountAdjustment>40</targetCountAdjustment>
     <products>
       <MealLavish>40</MealLavish>
     </products>

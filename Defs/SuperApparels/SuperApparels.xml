@@ -18,8 +18,10 @@
             <Mass>0</Mass>
             <WorkToMake>4</WorkToMake>
             <Flammability>0</Flammability>
+            <MarketValue>0</MarketValue>
             <DeteriorationRate>0</DeteriorationRate>
             <EnergyShieldRechargeRate>1000</EnergyShieldRechargeRate>
+            <!-- <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate> -->
             <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
             <EquipDelay>0</EquipDelay>
         </statBases>
@@ -31,8 +33,8 @@
             <Steel>50</Steel>
             <Plasteel>20</Plasteel>
         </costList>
-        <thingCategories>
-            <li>ApparelUtility</li>
+        <thingCategories Inherit="False">
+            <li>MW_Apparels</li>
         </thingCategories>
         <apparel>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -72,7 +74,7 @@
             </options>
         </colorGenerator>
         <comps>
-            <li Class="CompProperties_Shield">
+            <li Class="MyWeapons.CompProperties_ShieldAllTypes">
                 <blocksRangedWeapons>false</blocksRangedWeapons>
                 <startingTicksToReset>0</startingTicksToReset>
                 <energyOnReset>1.0</energyOnReset>

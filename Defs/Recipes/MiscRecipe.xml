@@ -18,6 +18,7 @@
     <RecipeDef ParentName="RunningBugs_MiscRecipe">
         <defName>RunningBugs_BurnTrash</defName>
         <label>Burning Wastepack to gain gold</label>
+        <jobString>Extracting gold</jobString>
         <ingredients>
             <li>
                 <filter>
@@ -39,6 +40,7 @@
     <RecipeDef ParentName="RunningBugs_MiscRecipe">
         <defName>RunningBugs_BurnMultipleTrash</defName>
         <label>Burning multiple Wastepack to gain gold</label>
+        <jobString>Extracting gold</jobString>
         <ingredients>
             <li>
                 <filter>

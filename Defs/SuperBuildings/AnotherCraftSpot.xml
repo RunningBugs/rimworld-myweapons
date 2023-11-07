@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>BegSpot</defName>
     <label>Begging spot</label>
     <description>A place for begging things like super weapons apparels or resources. Production here is fast because of the kind of the Void.</description>
@@ -18,7 +18,7 @@
     <scatterableOnMapGen>false</scatterableOnMapGen>
     <useHitPoints>false</useHitPoints>
     <size>(1,1)</size>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>RimGod</designationCategory>
     <uiOrder>2000</uiOrder>
     <passability>Standable</passability>
     <hasInteractionCell>True</hasInteractionCell>
