@@ -10,7 +10,7 @@
       <MarketValue>0</MarketValue>
       <Flammability>0</Flammability>
       <WorkToMake>1</WorkToMake>
-      <Mass>0</Mass>
+      <Mass>0.000001</Mass>
       <AccuracyTouch>1</AccuracyTouch>
       <AccuracyShort>1</AccuracyShort>
       <AccuracyMedium>1</AccuracyMedium>

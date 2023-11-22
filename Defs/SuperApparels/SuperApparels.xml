@@ -15,7 +15,7 @@
         <tickerType>Normal</tickerType>
         <techLevel>Spacer</techLevel>
         <statBases>
-            <Mass>0</Mass>
+            <Mass>0.000001</Mass>
             <WorkToMake>4</WorkToMake>
             <Flammability>0</Flammability>
             <MarketValue>0</MarketValue>

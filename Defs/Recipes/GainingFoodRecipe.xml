@@ -16,7 +16,27 @@
     </recipeUsers>
   </RecipeDef>
 
+  <RecipeDef ParentName="RunningBugs_CookRecipe">
+    <defName>RunningBugs_Make_Chicken</defName>
+    <label>make chicken meat</label>
+    <products>
+      <Meat_Chicken>75</Meat_Chicken>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Meat_Chicken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
 
+  <RecipeDef ParentName="RunningBugs_CookRecipe">
+    <defName>RunningBugs_Make_RawRice</defName>
+    <label>make RawRice</label>
+    <products>
+      <RawRice>75</RawRice>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>RawRice</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
 
   <RecipeDef ParentName="RunningBugs_CookRecipe">
     <defName>RunningBugs_Make_Kibble</defName>

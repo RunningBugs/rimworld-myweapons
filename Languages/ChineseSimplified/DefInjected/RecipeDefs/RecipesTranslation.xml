@@ -101,6 +101,16 @@
     <RunningBugs_Make_PsychicSoothePulser.description>从虚空制作心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.description>
 
 
+    <!-- RunningBugs_Make_Chicken -->
+    <RunningBugs_Make_Chicken.label>请求鸡肉 x75</RunningBugs_Make_Chicken.label>
+    <RunningBugs_Make_Chicken.description>请求神赐予75块鸡肉</RunningBugs_Make_Chicken.description>
+    <RunningBugs_Make_Chicken.jobString>正在向神祈祷</RunningBugs_Make_Chicken.jobString>
+
+    <!-- RunningBugs_Make_RawRice -->
+    <RunningBugs_Make_RawRice.label>请求稻米 x75</RunningBugs_Make_RawRice.label>
+    <RunningBugs_Make_RawRice.description>请求神赐予75块稻米</RunningBugs_Make_RawRice.description>
+    <RunningBugs_Make_RawRice.jobString>正在向神祈祷</RunningBugs_Make_RawRice.jobString>
+
     <RunningBugs_Cook_MealLavishBulk.label>烹饪奢侈食物 x40</RunningBugs_Cook_MealLavishBulk.label>
     <RunningBugs_Cook_MealLavishBulk.description>如同神的祝福一般，从虚空中烹饪出四十份非常复杂的食物。</RunningBugs_Cook_MealLavishBulk.description>
     <RunningBugs_Cook_MealLavishBulk.jobString>正在烹饪四十份奢侈食物。</RunningBugs_Cook_MealLavishBulk.jobString>
