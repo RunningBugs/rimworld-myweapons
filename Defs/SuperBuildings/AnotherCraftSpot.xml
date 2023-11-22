@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
-    <defName>BegSpot</defName>
+    <defName>PraySpot</defName>
     <label>Pray spot</label>
     <description>A place for begging things like super weapons apparels or resources. Production here is fast because of the kind of the Void.</description>
     <thingClass>Building_WorkTable</thingClass>

@@ -7,7 +7,7 @@
         <workType>Crafting</workType>
         <priorityInType>100</priorityInType>
         <fixedBillGiverDefs>
-          <li>BegSpot</li>
+          <li>PraySpot</li>
         </fixedBillGiverDefs>
         <verb>craft</verb>
         <gerund>begging at </gerund>
