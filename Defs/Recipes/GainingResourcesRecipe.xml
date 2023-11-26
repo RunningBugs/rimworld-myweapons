@@ -119,7 +119,7 @@
         <defName>RunningBugs_Make_Leather_Plain</defName>
         <label>make Leather_Plain</label>
         <products>
-            <Leather_Plain>1000</Leather_Plain>
+            <Leather_Plain>300</Leather_Plain>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Leather_Plain</ThingDef>
@@ -130,7 +130,7 @@
         <defName>RunningBugs_Make_Leather_Thrumbo</defName>
         <label>make Leather_Thrumbo</label>
         <products>
-            <Leather_Thrumbo>1000</Leather_Thrumbo>
+            <Leather_Thrumbo>300</Leather_Thrumbo>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Leather_Thrumbo</ThingDef>
@@ -141,7 +141,7 @@
         <defName>RunningBugs_Make_Hyperweave</defName>
         <label>make Hyperweave</label>
         <products>
-            <Hyperweave>1000</Hyperweave>
+            <Hyperweave>300</Hyperweave>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Hyperweave</ThingDef>
@@ -152,7 +152,7 @@
         <defName>RunningBugs_Make_DevilstrandCloth</defName>
         <label>make DevilstrandCloth</label>
         <products>
-            <DevilstrandCloth>1000</DevilstrandCloth>
+            <DevilstrandCloth>300</DevilstrandCloth>
         </products>
         <descriptionHyperlinks>
             <ThingDef>DevilstrandCloth</ThingDef>
@@ -163,7 +163,7 @@
         <defName>RunningBugs_Make_Synthread</defName>
         <label>make Synthread</label>
         <products>
-            <Synthread>1000</Synthread>
+            <Synthread>300</Synthread>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Synthread</ThingDef>
@@ -174,7 +174,7 @@
         <defName>RunningBugs_Make_Cloth</defName>
         <label>make cloth</label>
         <products>
-            <Cloth>1000</Cloth>
+            <Cloth>300</Cloth>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Cloth</ThingDef>
@@ -226,7 +226,7 @@
         <defName>RunningBugs_Make_BlocksSandstone</defName>
         <label>make sandstone blocks</label>
         <products>
-            <BlocksSandstone>1000</BlocksSandstone>
+            <BlocksSandstone>300</BlocksSandstone>
         </products>
         <descriptionHyperlinks>
             <ThingDef>BlocksSandstone</ThingDef>
@@ -237,7 +237,7 @@
         <defName>RunningBugs_Make_BlocksGranite</defName>
         <label>make granite blocks</label>
         <products>
-            <BlocksGranite>1000</BlocksGranite>
+            <BlocksGranite>300</BlocksGranite>
         </products>
         <descriptionHyperlinks>
             <ThingDef>BlocksGranite</ThingDef>
@@ -248,7 +248,7 @@
         <defName>RunningBugs_Make_BlocksLimestone</defName>
         <label>make limestone blocks</label>
         <products>
-            <BlocksLimestone>1000</BlocksLimestone>
+            <BlocksLimestone>300</BlocksLimestone>
         </products>
         <descriptionHyperlinks>
             <ThingDef>BlocksLimestone</ThingDef>
@@ -259,7 +259,7 @@
         <defName>RunningBugs_Make_BlocksSlate</defName>
         <label>make slate blocks</label>
         <products>
-            <BlocksSlate>1000</BlocksSlate>
+            <BlocksSlate>300</BlocksSlate>
         </products>
         <descriptionHyperlinks>
             <ThingDef>BlocksSlate</ThingDef>
@@ -270,7 +270,7 @@
         <defName>RunningBugs_Make_BlocksMarble</defName>
         <label>make marble blocks</label>
         <products>
-            <BlocksMarble>1000</BlocksMarble>
+            <BlocksMarble>300</BlocksMarble>
         </products>
         <descriptionHyperlinks>
             <ThingDef>BlocksMarble</ThingDef>
@@ -360,7 +360,7 @@
         <label>make Chemfuel</label>
         <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <Chemfuel>100</Chemfuel>
+            <Chemfuel>150</Chemfuel>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Chemfuel</ThingDef>
@@ -372,7 +372,7 @@
         <label>make Neutroamine</label>
         <targetCountAdjustment>50</targetCountAdjustment>
         <products>
-            <Neutroamine>100</Neutroamine>
+            <Neutroamine>150</Neutroamine>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Neutroamine</ThingDef>

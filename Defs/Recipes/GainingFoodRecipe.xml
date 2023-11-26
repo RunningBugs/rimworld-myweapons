@@ -42,7 +42,7 @@
     <defName>RunningBugs_Make_Kibble</defName>
     <label>make kibble</label>
     <products>
-      <Kibble>1000</Kibble>
+      <Kibble>75</Kibble>
     </products>
     <descriptionHyperlinks>
       <ThingDef>Kibble</ThingDef>
@@ -57,7 +57,7 @@
     <ingredients></ingredients>
     <targetCountAdjustment>40</targetCountAdjustment>
     <products>
-      <MealLavish>40</MealLavish>
+      <MealLavish>4</MealLavish>
     </products>
     <displayPriority>600</displayPriority>
     <descriptionHyperlinks>
