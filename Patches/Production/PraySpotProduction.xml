@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Misc. Robots++</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PraySpot"]/recipes</xpath>
+            <value>
+                <li>RunningBugs_Make_Omni_V</li>
+                <li>RunningBugs_Make_ER_V</li>
+                <li>RunningBugs_Make_Cleaner_V</li>
+            </value>
+        </match>
+    </Operation> -->
+</Patch>

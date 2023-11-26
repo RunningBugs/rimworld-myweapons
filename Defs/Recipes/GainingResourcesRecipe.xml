@@ -11,6 +11,9 @@
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>10</workAmount>
         <targetCountAdjustment>100</targetCountAdjustment>
+    </RecipeDef>
+
+    <RecipeDef Name="RunningBugs_ResourceGainRecipe_PraySpot" ParentName="RunningBugs_ResourceGainRecipe" Abstract="true">
         <recipeUsers>
             <li>PraySpot</li>
         </recipeUsers>
@@ -18,7 +21,7 @@
 
 
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Wood</defName>
         <label>make wood</label>
         <products>
@@ -29,7 +32,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Steel</defName>
         <label>make steel</label>
         <products>
@@ -40,7 +43,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Plasteel</defName>
         <label>make plasteel</label>
         <products>
@@ -51,7 +54,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Uranium</defName>
         <label>make Uranium</label>
         <products>
@@ -62,7 +65,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Silver</defName>
         <label>make silver</label>
         <products>
@@ -73,7 +76,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Gold</defName>
         <label>make gold</label>
         <products>
@@ -86,7 +89,7 @@
 
 
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Components</defName>
         <label>make components</label>
         <targetCountAdjustment>50</targetCountAdjustment>
@@ -98,7 +101,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_ComponentSpacer</defName>
         <label>make advanced components</label>
         <targetCountAdjustment>50</targetCountAdjustment>
@@ -112,7 +115,7 @@
 
 
     
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Leather_Plain</defName>
         <label>make Leather_Plain</label>
         <products>
@@ -123,7 +126,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Leather_Thrumbo</defName>
         <label>make Leather_Thrumbo</label>
         <products>
@@ -134,7 +137,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Hyperweave</defName>
         <label>make Hyperweave</label>
         <products>
@@ -145,7 +148,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_DevilstrandCloth</defName>
         <label>make DevilstrandCloth</label>
         <products>
@@ -156,7 +159,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Synthread</defName>
         <label>make Synthread</label>
         <products>
@@ -167,7 +170,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Cloth</defName>
         <label>make cloth</label>
         <products>
@@ -181,7 +184,7 @@
     
 
     <!-- MedicineHerbal -->
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_MedicineHerbal</defName>
         <label>make MedicineHerbal</label>
         <targetCountAdjustment>50</targetCountAdjustment>
@@ -193,7 +196,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_MedicineIndustrial</defName>
         <label>make MedicineIndustrial</label>
         <targetCountAdjustment>50</targetCountAdjustment>
@@ -205,7 +208,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_MedicineUltratech</defName>
         <label>make MedicineUltratech</label>
         <targetCountAdjustment>50</targetCountAdjustment>
@@ -219,7 +222,7 @@
 
     
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_BlocksSandstone</defName>
         <label>make sandstone blocks</label>
         <products>
@@ -230,7 +233,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_BlocksGranite</defName>
         <label>make granite blocks</label>
         <products>
@@ -241,7 +244,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_BlocksLimestone</defName>
         <label>make limestone blocks</label>
         <products>
@@ -252,7 +255,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_BlocksSlate</defName>
         <label>make slate blocks</label>
         <products>
@@ -263,7 +266,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_BlocksMarble</defName>
         <label>make marble blocks</label>
         <products>
@@ -276,7 +279,7 @@
 
 
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef MayRequire="Alaestor.MiscRobots.PlusPlus" ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Omni_V</defName>
         <label>make Omni_V</label>
         <targetCountAdjustment>5</targetCountAdjustment>
@@ -288,7 +291,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef MayRequire="Alaestor.MiscRobots.PlusPlus" ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_ER_V</defName>
         <label>make ER_V</label>
         <products>
@@ -300,7 +303,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef MayRequire="Alaestor.MiscRobots.PlusPlus" ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Cleaner_V</defName>
         <label>make Cleaner_V</label>
         <targetCountAdjustment>5</targetCountAdjustment>
@@ -314,7 +317,7 @@
 
 
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_AIPersonaCore</defName>
         <label>make AIPersonaCore</label>
         <targetCountAdjustment>1</targetCountAdjustment>
@@ -326,7 +329,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_TechprofSubpersonaCore</defName>
         <label>make TechprofSubpersonaCore</label>
         <targetCountAdjustment>1</targetCountAdjustment>
@@ -340,7 +343,7 @@
 
     
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_HemogenPack</defName>
         <label>make HemogenPack</label>
         <targetCountAdjustment>50</targetCountAdjustment>
@@ -352,7 +355,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Chemfuel</defName>
         <label>make Chemfuel</label>
         <targetCountAdjustment>50</targetCountAdjustment>
@@ -364,7 +367,7 @@
         </descriptionHyperlinks>
     </RecipeDef>
 
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_Neutroamine</defName>
         <label>make Neutroamine</label>
         <targetCountAdjustment>50</targetCountAdjustment>
