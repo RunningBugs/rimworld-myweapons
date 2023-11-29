@@ -29,7 +29,7 @@
 
     <!-- Gun_SuperStunLauncher -->
     <Gun_SuperStunLauncher.label>超级击晕炮</Gun_SuperStunLauncher.label>
-    <Gun_SuperStunLauncher.description>超级击晕炮，可以使范围内的角色进入长时间的眩晕状态，用以应对中心空投等进攻，控制敌人并减少对基地的损伤</Gun_SuperStunLauncher.description>
+    <Gun_SuperStunLauncher.description>超级击晕炮，可以使范围内的角色进入长时间的眩晕状态，用以应对中心空投等进攻，控制敌人并减少对基地的损伤。注意：爆炸物依然会被引爆</Gun_SuperStunLauncher.description>
     <Gun_SuperStunLauncher.tools.barrel.label>枪管</Gun_SuperStunLauncher.tools.barrel.label>
     <Gun_SuperStunLauncher.verbs.Verb_Shoot.label>超级击晕炮发射</Gun_SuperStunLauncher.verbs.Verb_Shoot.label>
 

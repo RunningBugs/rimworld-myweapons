@@ -12,6 +12,9 @@
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>5</workAmount>
         <targetCountAdjustment>1</targetCountAdjustment>
+        <recipeUsers>
+            <li>PraySpot</li>
+        </recipeUsers>
         <products>
             <SuperVanometricPowerCell>1</SuperVanometricPowerCell>
         </products>

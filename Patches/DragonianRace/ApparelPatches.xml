@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationFindMod">
+    <!-- <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Gloomy Dragonian race</li>
         </mods>
         <match Class="PatchOperationAdd">
             <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Dragonian_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+            <value>
+                <li>Apparel_SuperShieldBelt</li>
+            </value>
+        </match>
+    </Operation> -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Humanoid Alien Races</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction/whiteApparelList</xpath>
             <value>
                 <li>Apparel_SuperShieldBelt</li>
             </value>

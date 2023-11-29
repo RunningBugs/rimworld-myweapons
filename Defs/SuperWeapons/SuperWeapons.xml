@@ -45,7 +45,7 @@
             <damageDef>Bullet</damageDef>
             <fleshType>Mechanoid</fleshType>
             <extraDamage>
-              <amount>20.5</amount>
+              <amount>200.5</amount>
               <armorPenetration>5.14</armorPenetration>
               <chance>1.0</chance>
             </extraDamage>
@@ -380,7 +380,7 @@
     <relicChance>0</relicChance>
     <description>A super powerful wide-barreled stun shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning all targets (pawns, mechanoids, turrets, mortars).</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/EMPLauncher</texPath>
+      <texPath>MyWeapons/StunLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>

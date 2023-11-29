@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <WorkGiverDef>
-        <defName>DoBillsUseBeggingSpot</defName>
-        <label>make things at begging spot</label>
+        <defName>DoBillsUsePraySpot</defName>
+        <label>make things at Pray spot</label>
         <giverClass>WorkGiver_DoBill</giverClass>
         <workType>Crafting</workType>
         <priorityInType>100</priorityInType>
@@ -10,7 +10,7 @@
           <li>PraySpot</li>
         </fixedBillGiverDefs>
         <verb>craft</verb>
-        <gerund>begging at </gerund>
+        <gerund>Pray at </gerund>
         <requiredCapacities>
           <li>Manipulation</li>
         </requiredCapacities>
