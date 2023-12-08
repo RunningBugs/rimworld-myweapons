@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="RPP_Bot"]</xpath>
+        <value>
+            <comps>
+                <li MayRequire="Ludeon.Rimworld.Biotech" Class="CompProperties_OverseerSubject">
+                    <needsOverseerEffect>MechUncontrolled</needsOverseerEffect>
+                    <delayUntilFeralCheck>60000</delayUntilFeralCheck>
+                    <feralMtbDays>10</feralMtbDays>
+                    <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
+                </li>
+            </comps>
+        </value>
+    </Operation> -->
+</Patch>
