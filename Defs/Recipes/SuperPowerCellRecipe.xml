@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_SuperVanometricPowerCell</defName>
         <label>make SuperVanometricPowerCell</label>
         <description>Make SuperVanometricPowerCell from void</description>
@@ -12,9 +12,6 @@
         <allowMixingIngredients>true</allowMixingIngredients>
         <workAmount>5</workAmount>
         <targetCountAdjustment>1</targetCountAdjustment>
-        <recipeUsers>
-            <li>PraySpot</li>
-        </recipeUsers>
         <products>
             <SuperVanometricPowerCell>1</SuperVanometricPowerCell>
         </products>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_MechSerumHealer</defName>
         <label>make MechSerumHealer</label>
         <products>
@@ -10,7 +10,7 @@
             <ThingDef>MechSerumHealer</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_MechSerumResurrector</defName>
         <label>make MechSerumResurrector</label>
         <products>
@@ -20,7 +20,7 @@
             <ThingDef>MechSerumResurrector</ThingDef>
         </descriptionHyperlinks>
     </RecipeDef>
-    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe">
+    <RecipeDef ParentName="RunningBugs_ResourceGainRecipe_PraySpot">
         <defName>RunningBugs_Make_PsychicSoothePulser</defName>
         <label>make PsychicSoothePulser</label>
         <products>
