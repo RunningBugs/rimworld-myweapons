@@ -3,7 +3,6 @@ using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
-using UnityEngine.Networking;
 using Verse;
 
 namespace MyWeapons

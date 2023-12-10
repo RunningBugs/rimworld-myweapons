@@ -38,7 +38,7 @@ namespace MyWeapons
     public class ToggleIconPatcher
     {
 
-        public static bool flag = true;
+        public static bool flag = false;
 
         [HarmonyPostfix]
         public static void AddIcon(WidgetRow row, bool worldView)
