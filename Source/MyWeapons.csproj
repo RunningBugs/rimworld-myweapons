@@ -6,7 +6,7 @@
     <TargetFramework>net48</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DebugType>none</DebugType>
-		<DebugSymbols>false</DebugSymbols>
+    <DebugSymbols>false</DebugSymbols>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -16,15 +16,18 @@
     <OutputPath>..\Assemblies\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-      <Reference Include="System" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3704" />
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+    <PackageReference Include="UnlimitedHugs.Rimworld.HugsLib" Version="10.0.1" />
+    <!-- <Reference Include="System" />
       <Reference Include="System.Core" />
       <Reference Include="System.Data" />
       <Reference Include="System.Xml" />
       <Reference Include="Assembly-CSharp">
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
         <Private>false</Private>
-      </Reference>
-      <Reference Include="UnityEngine.CoreModule">
+      </Reference> -->
+    <!-- <Reference Include="UnityEngine.CoreModule">
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
         <Private>false</Private>
       </Reference>
@@ -42,7 +45,7 @@
       <Reference Include="UnityEngine.IMGUIModule">
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
         <Private>false</Private>
-      </Reference>
+      </Reference> -->
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Items.cs" />

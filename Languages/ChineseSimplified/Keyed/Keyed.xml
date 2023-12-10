@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <Pray>祈求</Pray>
+    <PrayRecipeLabel>配方：{0}</PrayRecipeLabel>
+    <WorkingOnPrayedRecipe>正在完成祈求配方</WorkingOnPrayedRecipe>
+</LanguageData>

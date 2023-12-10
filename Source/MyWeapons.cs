@@ -3,7 +3,7 @@ using HarmonyLib;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using RimWorld;
-using Verse.AI;
+using UnityEngine;
 
 
 namespace MyWeapons
@@ -14,6 +14,11 @@ namespace MyWeapons
         static LoadingScreen()
         {
             Log.Warning("My Weapons Loaded");
+
+            ToggleIconData.setupToggleIcon(typeof(PrayRecipeWindow), ContentFinder<Texture2D>.Get("MyWeapons/WindowIcon", true), "SampleWindowTooltip".Translate(), SoundDefOf.Mouseover_ButtonToggle, delegate
+            {
+                Find.WindowStack.Add(new PrayRecipeWindow());
+            });
 
             var harmony = new Harmony("com.RunningBugs.MyWeapons");
             harmony.PatchAll(Assembly.GetExecutingAssembly());

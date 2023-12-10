@@ -8,6 +8,7 @@
         <priorityInType>100</priorityInType>
         <fixedBillGiverDefs>
           <li>PraySpot</li>
+          <li>PraySpotTwo</li>
         </fixedBillGiverDefs>
         <verb>craft</verb>
         <gerund>Pray at </gerund>
