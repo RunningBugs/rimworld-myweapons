@@ -17,11 +17,14 @@
         <mods>
             <li>Humanoid Alien Races</li>
         </mods>
-        <match Class="PatchOperationAdd">
+        <match Class="PatchOperationConditional">
             <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction/whiteApparelList</xpath>
-            <value>
-                <li>Apparel_SuperShieldBelt</li>
-            </value>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/AlienRace.ThingDef_AlienRace/alienRace/raceRestriction/whiteApparelList</xpath>
+                <value>
+                    <li>Apparel_SuperShieldBelt</li>
+                </value>
+            </match>
         </match>
     </Operation>
 
