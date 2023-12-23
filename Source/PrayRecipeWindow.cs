@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
@@ -24,6 +25,11 @@ namespace MyWeapons
 
         public static List<RecipeDef> CreatedRecipes { get => createdRecipes; set => createdRecipes = value; }
 
+
+        public static readonly AccessTools.FieldRef<Dictionary<Type, HashSet<ushort>>> takenShortHashes = AccessTools.StaticFieldRefAccess<Dictionary<Type, HashSet<ushort>>>(AccessTools.Field(typeof(ShortHashGiver), "takenHashesPerDeftype"));
+        private delegate void GiveShortHash(Def def, Type defType, HashSet<ushort> takenHashes);
+        private static readonly GiveShortHash giveShortHash = AccessTools.MethodDelegate<GiveShortHash>(AccessTools.Method(type: typeof(ShortHashGiver), name: "GiveShortHash"));
+
         private void GapVertical(float gap = lineHeight)
         {
             y += gap;
@@ -45,7 +51,8 @@ namespace MyWeapons
         {
             /// Search Widget
             GetRow(out Rect top, out Rect bot, inRect);
-            searchWidget.OnGUI(top, delegate { 
+            searchWidget.OnGUI(top, delegate
+            {
                 selectedDefs.Clear();
             });
             GetRow(out top, out bot, bot);
@@ -102,44 +109,54 @@ namespace MyWeapons
             /// Pray button
             GetRow(out top, out bot, bot);
             var buttonRect = top.LeftPartPixels(100f);
-            if (Widgets.ButtonText(buttonRect, "Pray".Translate())) {
-                RecipeDef recipe = new RecipeDef();
-                recipe.defName = "Pray_" + recipeId++;
-                recipe.label = "PrayRecipeLabel".Translate(string.Join(", ", selectedDefs.Keys.Select(d => d.label).ToArray()));
-                recipe.jobString = "WorkingOnPrayedRecipe".Translate();
-                recipe.workAmount = 1f;
-                var speedStat = DefDatabase<StatDef>.GetNamed("DrugCookingSpeed");
-                recipe.workSpeedStat = speedStat;
-                recipe.workSkill = SkillDefOf.Crafting;
-                recipe.effectWorking = DefDatabase<EffecterDef>.GetNamed("Cook");
-                recipe.targetCountAdjustment = 5;
-                ThingDef praySpot2 = DefDatabase<ThingDef>.GetNamed("PraySpotTwo");
-                recipe.recipeUsers = new List<ThingDef>
+            if (Widgets.ButtonText(buttonRect, "Pray".Translate()))
+            {
+                if (!selectedDefs.NullOrEmpty())
                 {
-                    praySpot2
-                };
-                recipe.defaultIngredientFilter = new ThingFilter();
-                recipe.descriptionHyperlinks = new List<DefHyperlink>();
-                foreach (ThingDef def in selectedDefs.Keys)
-                {
-                    recipe.products.Add(new ThingDefCountClass(def, def.stackLimit));
-                    recipe.descriptionHyperlinks.Add(new DefHyperlink(def));
+                    RecipeDef recipe = new RecipeDef();
+                    recipe.defName = "Pray_" + recipeId++;
+                    recipe.label = "PrayRecipeLabel".Translate(string.Join(", ", selectedDefs.Keys.Select(d => d.label).ToArray()));
+                    recipe.jobString = "WorkingOnPrayedRecipe".Translate();
+                    recipe.workAmount = 1f;
+                    var speedStat = DefDatabase<StatDef>.GetNamed("DrugCookingSpeed");
+                    recipe.workSpeedStat = speedStat;
+                    recipe.workSkill = SkillDefOf.Crafting;
+                    recipe.effectWorking = DefDatabase<EffecterDef>.GetNamed("Cook");
+                    recipe.targetCountAdjustment = 5;
+                    ThingDef praySpot2 = DefDatabase<ThingDef>.GetNamed("PraySpotTwo");
+                    recipe.recipeUsers = new List<ThingDef>
+                    {
+                        praySpot2
+                    };
+                    recipe.defaultIngredientFilter = new ThingFilter();
+                    recipe.descriptionHyperlinks = new List<DefHyperlink>();
+                    foreach (ThingDef def in selectedDefs.Keys)
+                    {
+                        recipe.products.Add(new ThingDefCountClass(def, def.stackLimit));
+                        recipe.descriptionHyperlinks.Add(new DefHyperlink(def));
+                    }
+
+                    recipe.ResolveReferences();
+                    recipe.PostLoad();
+                    giveShortHash(recipe, typeof(RecipeDef), takenShortHashes()[typeof(RecipeDef)]);
+
+                    DefDatabase<RecipeDef>.Add(recipe);
+                    CreatedRecipes.Insert(0, recipe);
                 }
 
-                DefDatabase<RecipeDef>.Add(recipe);
-                CreatedRecipes.Insert(0, recipe);
             }
-            
+
             /// Close button
             buttonRect = top.RightPartPixels(100f);
             GUI.color = new Color(1f, 0.3f, 0.35f);
-            if(Widgets.ButtonText(buttonRect, "Close".Translate())){
+            if (Widgets.ButtonText(buttonRect, "Close".Translate()))
+            {
                 // GUI.color = Color.white;
                 ToggleIconPatcher.flag = false;
                 Close();
             }
             GUI.color = Color.white;
-            
+
             /// Scrollview for created recipes
             viewRect = bot;
             scrollRect = viewRect;
@@ -159,15 +176,10 @@ namespace MyWeapons
                     toRemove.Add(recipe);
                 }
                 Widgets.Label(labelRect, string.Join(", ", recipe.products.ConvertAll(p => p.thingDef.label).ToArray()));
-                // Widgets.Label(top, string.Join(", ", recipe.products.ConvertAll(p => p.thingDef.label).ToArray()));
             }
             foreach (RecipeDef recipe in toRemove)
             {
-                // ThingDef praySpot2 = DefDatabase<ThingDef>.GetNamed("PraySpotTwo");
-                // praySpot2.AllRecipes.Remove(recipe);
-                // DefDatabase<RecipeDef>.AllDefsListForReading.Remove(recipe);
                 CreatedRecipes.Remove(recipe);
-                // Log.Warning($"Removed recipe: {DefDatabase<RecipeDef>.GetNamed(defName)} {createdRecipes.Find(r => r.defName == defName)}");
             }
             Widgets.EndScrollView();
         }
