@@ -7,6 +7,9 @@
     <supportedVersions>
         <li>1.4</li>
     </supportedVersions>
+    <incompatibleWith>
+		<li>bustedbunny.chooseyourrecipe</li>
+	</incompatibleWith>
     <forceLoadAfter>
         <li>Ludeon.RimWorld</li>
         <li>Alaestor.MiscRobots.PlusPlus</li>

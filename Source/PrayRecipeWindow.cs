@@ -8,27 +8,175 @@ using Verse;
 
 namespace MyWeapons
 {
-    class PrayRecipeWindow : Window
+
+    class SavableListOfDefs<T> : IExposable
+     where T : Def
     {
-        QuickSearchWidget searchWidget = new QuickSearchWidget();
+        public List<T> defs;
 
-        private float y = 0f;
+        public SavableListOfDefs()
+        {
+            defs = new List<T>();
+        }
 
-        private const float lineHeight = 30f;
-        private const float scrollbarWidth = 16f;
-        private static int recipeId = 0;
+        public static implicit operator List<T>(SavableListOfDefs<T> savable)
+        {
+            return savable.defs;
+        }
 
-        private Vector2 scrollPosition = Vector2.zero;
-        private Vector2 createdRecipesScrollPosition = Vector2.zero;
-        private Dictionary<ThingDef, Rect> selectedDefs = new Dictionary<ThingDef, Rect>();
-        static private List<RecipeDef> createdRecipes = new List<RecipeDef>();
+        public static implicit operator SavableListOfDefs<T>(List<T> list)
+        {
+            SavableListOfDefs<T> savable = new SavableListOfDefs<T>();
+            savable.defs = list;
+            return savable;
+        }
 
-        public static List<RecipeDef> CreatedRecipes { get => createdRecipes; set => createdRecipes = value; }
-
+        public void ExposeData()
+        {
+            Scribe_Collections.Look(ref defs, "MyWeapons.SavableListOfDefs.defs", LookMode.Def);
+        }
+    }
+    public class PrayRecipeGameComponent : GameComponent
+    {
+        private int recipeId = 0;
+        private List<int> recipeIds = new List<int>();
+        private List<int> recipeHashes = new List<int>();
+        private List<SavableListOfDefs<ThingDef>> recipeProducts = new List<SavableListOfDefs<ThingDef>>();
+        private List<RecipeDef> createdRecipes = new List<RecipeDef>();
+        public List<RecipeDef> CreatedRecipes { get => createdRecipes; set => createdRecipes = value; }
+        public int RecipeId { get => recipeId; set => recipeId = value; }
 
         public static readonly AccessTools.FieldRef<Dictionary<Type, HashSet<ushort>>> takenShortHashes = AccessTools.StaticFieldRefAccess<Dictionary<Type, HashSet<ushort>>>(AccessTools.Field(typeof(ShortHashGiver), "takenHashesPerDeftype"));
         private delegate void GiveShortHash(Def def, Type defType, HashSet<ushort> takenHashes);
         private static readonly GiveShortHash giveShortHash = AccessTools.MethodDelegate<GiveShortHash>(AccessTools.Method(type: typeof(ShortHashGiver), name: "GiveShortHash"));
+
+        public PrayRecipeGameComponent(Game game) : base()
+        {
+            recipeId = 0;
+            CreatedRecipes = new List<RecipeDef>();
+            recipeIds = new List<int>();
+            recipeHashes = new List<int>();
+            recipeProducts = new List<SavableListOfDefs<ThingDef>>();
+        }
+
+        public void AddRecipe(List<ThingDef> products, int recipeId = -1, int recipeHash = -1)
+        {
+            RecipeDef recipe = new RecipeDef();
+            if (recipeId != -1)
+            {
+                recipe.defName = "Pray_" + recipeId;
+            }
+            else
+            {
+                recipe.defName = "Pray_" + RecipeId++;
+            }
+            recipe.label = "PrayRecipeLabel".Translate(string.Join(", ", products.Select(d => d.label).ToArray()));
+            recipe.jobString = "WorkingOnPrayedRecipe".Translate();
+            recipe.workAmount = 1f;
+            var speedStat = DefDatabase<StatDef>.GetNamed("DrugCookingSpeed");
+            recipe.workSpeedStat = speedStat;
+            recipe.workSkill = SkillDefOf.Crafting;
+            recipe.effectWorking = DefDatabase<EffecterDef>.GetNamed("Cook");
+            recipe.targetCountAdjustment = 5;
+            ThingDef praySpot2 = DefDatabase<ThingDef>.GetNamed("PraySpotTwo");
+            recipe.recipeUsers = new List<ThingDef>
+                    {
+                        praySpot2
+                    };
+            recipe.defaultIngredientFilter = new ThingFilter();
+            recipe.descriptionHyperlinks = new List<DefHyperlink>();
+            foreach (ThingDef def in products)
+            {
+                Log.Warning($"Adding {def.defName} to recipe {recipe.defName}");
+                recipe.products.Add(new ThingDefCountClass(def, def.stackLimit));
+                recipe.descriptionHyperlinks.Add(new DefHyperlink(def));
+            }
+
+            recipe.ResolveReferences();
+            recipe.PostLoad();
+            var _takenHashes = takenShortHashes()[typeof(RecipeDef)];
+            if (recipeHash == -1)
+            {
+                giveShortHash(recipe, typeof(RecipeDef), _takenHashes);
+            }
+            else
+            {
+                recipe.shortHash = (ushort)recipeHash;
+                _takenHashes.Add(recipe.shortHash);
+            }
+
+            DefDatabase<RecipeDef>.Add(recipe);
+            CreatedRecipes.Insert(0, recipe);
+
+            if (recipeId == -1)
+            {
+                recipeIds.Insert(0, RecipeId - 1);
+                recipeHashes.Insert(0, recipe.shortHash);
+                recipeProducts.Insert(0, products);
+            }
+        }
+
+        public void RemoveRecipe(RecipeDef recipe)
+        {
+            var rid = int.Parse(recipe.defName.Split('_')[1]);
+            var idx = recipeIds.Find(id => id == rid);
+            recipeProducts.RemoveAt(idx);
+            recipeHashes.RemoveAt(idx);
+            recipeIds.RemoveAt(idx);
+            CreatedRecipes.Remove(recipe);
+        }
+
+        public override void FinalizeInit()
+        {
+            DefDatabase<RecipeDef>.AllDefsListForReading.FindAll(r => r.defName.StartsWith("Pray_")).ForEach(r => recipeId = Math.Max(recipeId, int.Parse(r.defName.Split('_')[1]) + 1));
+            for (int i = 0; i < recipeIds.Count; ++i)
+            {
+                var rid = recipeIds[i];
+                var rhash = recipeHashes[i];
+                var rproducts = recipeProducts[i];
+                AddRecipe(rproducts, rid, rhash);
+
+                recipeId = Math.Max(recipeId, rid + 1);
+            }
+        }
+
+        public override void ExposeData()
+        {
+            if (recipeIds == null)
+            {
+                recipeIds = new List<int>();
+            }
+            if (recipeHashes == null)
+            {
+                recipeHashes = new List<int>();
+            }
+            if (recipeProducts == null)
+            {
+                recipeProducts = new List<SavableListOfDefs<ThingDef>>();
+            }
+            if (createdRecipes == null)
+            {
+                createdRecipes = new List<RecipeDef>();
+            }
+
+            Scribe_Values.Look(ref recipeId, "MyWeapons.PrayRecipeWindow.recipeId");
+            Scribe_Collections.Look(ref recipeIds, "MyWeapons.PrayRecipeWindow.recipeIds", LookMode.Value);
+            Scribe_Collections.Look(ref recipeHashes, "MyWeapons.PrayRecipeWindow.recipeHashes", LookMode.Value);
+            Scribe_Collections.Look(ref recipeProducts, "MyWeapons.PrayRecipeWindow.recipeProducts", LookMode.Deep);
+        }
+    }
+
+    class PrayRecipeWindow : Window
+    {
+        QuickSearchWidget searchWidget = new QuickSearchWidget();
+        private float y = 0f;
+        private const float lineHeight = 30f;
+        private const float scrollbarWidth = 16f;
+        private Vector2 scrollPosition = Vector2.zero;
+        private Vector2 createdRecipesScrollPosition = Vector2.zero;
+
+        private Dictionary<ThingDef, Rect> selectedDefs = new Dictionary<ThingDef, Rect>();
+        PrayRecipeGameComponent gc = Current.Game.GetComponent<PrayRecipeGameComponent>();
 
         private void GapVertical(float gap = lineHeight)
         {
@@ -113,37 +261,9 @@ namespace MyWeapons
             {
                 if (!selectedDefs.NullOrEmpty())
                 {
-                    RecipeDef recipe = new RecipeDef();
-                    recipe.defName = "Pray_" + recipeId++;
-                    recipe.label = "PrayRecipeLabel".Translate(string.Join(", ", selectedDefs.Keys.Select(d => d.label).ToArray()));
-                    recipe.jobString = "WorkingOnPrayedRecipe".Translate();
-                    recipe.workAmount = 1f;
-                    var speedStat = DefDatabase<StatDef>.GetNamed("DrugCookingSpeed");
-                    recipe.workSpeedStat = speedStat;
-                    recipe.workSkill = SkillDefOf.Crafting;
-                    recipe.effectWorking = DefDatabase<EffecterDef>.GetNamed("Cook");
-                    recipe.targetCountAdjustment = 5;
-                    ThingDef praySpot2 = DefDatabase<ThingDef>.GetNamed("PraySpotTwo");
-                    recipe.recipeUsers = new List<ThingDef>
-                    {
-                        praySpot2
-                    };
-                    recipe.defaultIngredientFilter = new ThingFilter();
-                    recipe.descriptionHyperlinks = new List<DefHyperlink>();
-                    foreach (ThingDef def in selectedDefs.Keys)
-                    {
-                        recipe.products.Add(new ThingDefCountClass(def, def.stackLimit));
-                        recipe.descriptionHyperlinks.Add(new DefHyperlink(def));
-                    }
-
-                    recipe.ResolveReferences();
-                    recipe.PostLoad();
-                    giveShortHash(recipe, typeof(RecipeDef), takenShortHashes()[typeof(RecipeDef)]);
-
-                    DefDatabase<RecipeDef>.Add(recipe);
-                    CreatedRecipes.Insert(0, recipe);
+                    var products = selectedDefs.Keys.ToList();
+                    gc.AddRecipe(products);
                 }
-
             }
 
             /// Close button
@@ -161,10 +281,10 @@ namespace MyWeapons
             viewRect = bot;
             scrollRect = viewRect;
             scrollRect.width -= scrollbarWidth;
-            scrollRect.height = CreatedRecipes.Count * textLineHeight;
+            scrollRect.height = gc.CreatedRecipes.Count * textLineHeight;
             Widgets.BeginScrollView(viewRect, ref createdRecipesScrollPosition, scrollRect, true);
             List<RecipeDef> toRemove = new List<RecipeDef>();
-            foreach (RecipeDef recipe in CreatedRecipes)
+            foreach (RecipeDef recipe in gc.CreatedRecipes)
             {
                 GetRow(out top, out scrollRect, scrollRect, textLineHeight);
                 Rect iconRect = top.LeftPartPixels(textLineHeight);
@@ -179,7 +299,7 @@ namespace MyWeapons
             }
             foreach (RecipeDef recipe in toRemove)
             {
-                CreatedRecipes.Remove(recipe);
+                gc.RemoveRecipe(recipe);
             }
             Widgets.EndScrollView();
         }
@@ -194,7 +314,9 @@ namespace MyWeapons
         {
             if (__instance.defName == "PraySpotTwo")
             {
-                __result = PrayRecipeWindow.CreatedRecipes;
+                __result = Current.Game.GetComponent<PrayRecipeGameComponent>()?.CreatedRecipes;
+                // var res = Current.Game.GetComponent<PrayRecipeGameComponent>()?.CreatedRecipes;
+                // __result = res ?? __result ?? new List<RecipeDef>();
             }
         }
     }
