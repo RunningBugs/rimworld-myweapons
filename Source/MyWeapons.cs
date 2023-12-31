@@ -4,6 +4,10 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using RimWorld;
 using UnityEngine;
+using Revolus.MoreAutosaveSlots;
+using System.Linq;
+using System.IO;
+using aRandomKiwi.ARS;
 
 
 namespace MyWeapons
@@ -25,7 +29,7 @@ namespace MyWeapons
         }
     }
 
-    
+
 
     // public class Tracker : MapComponent
     // {
@@ -57,4 +61,73 @@ namespace MyWeapons
             Verse.Log.Warning(prefix + $"[ {fileName}:{lineNumber} {memberName} ]" + msg);
         }
     }
+
+
+    [HarmonyPatch(typeof(MoreAutosaveSlotsSettings))]
+    public static class PatchMoreSaveSlots
+    {
+        [HarmonyPrefix]
+        [HarmonyPatch("NextName")]
+        public static void NextName(ref string __result)
+        {
+            var texts = MoreAutosaveSlotsSettings.AutoSaveNames();
+            {
+                string info = "";
+                foreach (var txt in texts)
+                {
+                    info += $"{txt} {SaveGameFilesUtility.SavedGameNamedExists(txt)} exists\n";
+                }
+                {
+                    var txt = "食人族-麋鹿新居 (1)";
+                    info += $"{txt} {SaveGameFilesUtility.SavedGameNamedExists(txt)} exists\n";
+                }
+                Log.Warning(info);
+            }
+
+            var text = (from name in texts where !SaveGameFilesUtility.SavedGameNamedExists(name) select name).FirstOrDefault();
+            var text2 = texts.MinBy((string name) => new FileInfo(GenFilePaths.FilePathForSavedGame(name)).LastWriteTime);
+            Log.Warning($"{text}");
+            Log.Warning($"{text2}");
+        }
+    }
+
+    [HarmonyPatch]
+    public static class PatchSaveGameFilesUtilitySavedGameNamedExistsOnlyWhenRimSavesExists
+    {
+        public static readonly string VFOLDERSEP = "#§#";
+
+        private static bool SavedGameNamedExists(string fileName)
+        {
+            var curFolder = Settings.curFolder;
+            var fsep = VFOLDERSEP;
+
+            string prefix = "";
+
+            if (curFolder != "Default")
+                prefix = curFolder + fsep;
+
+            fileName = prefix + fileName;
+
+            foreach (string item in GenFilePaths.AllSavedGameFiles.Select((FileInfo f) => Path.GetFileNameWithoutExtension(f.Name)))
+            {
+                if (item == fileName)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        [HarmonyPatch(typeof(SaveGameFilesUtility))]
+        [HarmonyPatch("SavedGameNamedExists")]
+        [HarmonyPostfix]
+        public static void Postfix(ref bool __result, string fileName)
+        {
+            if (!__result)
+            {
+                __result = SavedGameNamedExists(fileName);
+            }
+        }
+    }
+
 }

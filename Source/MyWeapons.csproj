@@ -1,25 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <AssemblyName>MyWeapons</AssemblyName>
-    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net48</TargetFramework>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <DebugType>none</DebugType>
-    <DebugSymbols>false</DebugSymbols>
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\Assemblies\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\Assemblies\</OutputPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3704" />
-    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
-    <PackageReference Include="UnlimitedHugs.Rimworld.HugsLib" Version="10.0.1" />
-    <!-- <Reference Include="System" />
+	<PropertyGroup>
+		<AssemblyName>MyWeapons</AssemblyName>
+		<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+		<TargetFramework>net481</TargetFramework>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<OutputPath>..\Assemblies\</OutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<OutputPath>..\Assemblies\</OutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3704" />
+		<PackageReference Include="Lib.Harmony" Version="2.2.2" />
+		<PackageReference Include="UnlimitedHugs.Rimworld.HugsLib" Version="10.0.1" />
+		<Reference Include="Revolus.MoreAutosaveSlots">
+			<HintPath>Revolus.MoreAutosaveSlots.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="aRandomKiwi.ARS">
+			<HintPath>RimSaves.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<!-- <Reference Include="System" />
       <Reference Include="System.Core" />
       <Reference Include="System.Data" />
       <Reference Include="System.Xml" />
@@ -27,7 +35,7 @@
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
         <Private>false</Private>
       </Reference> -->
-    <!-- <Reference Include="UnityEngine.CoreModule">
+		<!-- <Reference Include="UnityEngine.CoreModule">
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
         <Private>false</Private>
       </Reference>
@@ -46,9 +54,9 @@
         <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
         <Private>false</Private>
       </Reference> -->
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Items.cs" />
-    <Compile Remove="CaravanGizmoPatch.cs" />
-  </ItemGroup>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Items.cs" />
+		<Compile Remove="CaravanGizmoPatch.cs" />
+	</ItemGroup>
 </Project>
