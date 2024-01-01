@@ -3,4 +3,6 @@
     <Pray>祈求</Pray>
     <PrayRecipeLabel>配方：{0}</PrayRecipeLabel>
     <WorkingOnPrayedRecipe>正在完成祈求配方</WorkingOnPrayedRecipe>
+    <WorldSeedLtterTitle>世界种子：{0}</WorldSeedLtterTitle>
+    <WorldSeedCopied>世界种子“{0}”已经复制进入剪贴板</WorldSeedCopied>
 </LanguageData>

@@ -19,14 +19,15 @@
 		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3704" />
 		<PackageReference Include="Lib.Harmony" Version="2.2.2" />
 		<PackageReference Include="UnlimitedHugs.Rimworld.HugsLib" Version="10.0.1" />
-		<Reference Include="Revolus.MoreAutosaveSlots">
+		<Reference Include="System.Windows.Forms" />
+		<!-- <Reference Include="Revolus.MoreAutosaveSlots">
 			<HintPath>Revolus.MoreAutosaveSlots.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="aRandomKiwi.ARS">
 			<HintPath>RimSaves.dll</HintPath>
 			<Private>false</Private>
-		</Reference>
+		</Reference> -->
 		<!-- <Reference Include="System" />
       <Reference Include="System.Core" />
       <Reference Include="System.Data" />
