@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>Defs/SoundDef[defName="Piano_Play"]/subSounds/li/volumeRange</xpath>
+        <value>
+            <volumeRange>75</volumeRange>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>Defs/SoundDef[defName="Harpsichord_Play"]/subSounds/li/volumeRange</xpath>
+        <value>
+            <volumeRange>75</volumeRange>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>Defs/SoundDef[defName="Harp_Play"]/subSounds/li/volumeRange</xpath>
+        <value>
+            <volumeRange>75</volumeRange>
+        </value>
+    </Operation>
+</Patch>
