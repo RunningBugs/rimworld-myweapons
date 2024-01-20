@@ -312,11 +312,15 @@ namespace MyWeapons
     {
         static void Postfix(ThingDef __instance, ref List<RecipeDef> __result)
         {
+            if (__instance == null)
+            {
+                return;
+            }
+
             if (__instance.defName == "PraySpotTwo")
             {
-                __result = Current.Game.GetComponent<PrayRecipeGameComponent>()?.CreatedRecipes;
-                // var res = Current.Game.GetComponent<PrayRecipeGameComponent>()?.CreatedRecipes;
-                // __result = res ?? __result ?? new List<RecipeDef>();
+                var res = Current.Game?.GetComponent<PrayRecipeGameComponent>()?.CreatedRecipes;
+                __result = res ?? __result ?? new List<RecipeDef>();
             }
         }
     }
