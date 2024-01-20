@@ -15,11 +15,15 @@
     <Gun_SuperGunPersona.verbs.Verb_Shoot.label>Δ'超级栓动步枪射击</Gun_SuperGunPersona.verbs.Verb_Shoot.label>
     <Gun_SuperGunPersona.verbs.Verb_CastTargetEffect.label>Δ'超级栓动步枪心灵冲击</Gun_SuperGunPersona.verbs.Verb_CastTargetEffect.label>
 
+    <Bullet_MySuperGun.label>超级栓动步枪反机械子弹</Bullet_MySuperGun.label>
+
     <!-- Gun_SuperRocketGun -->
     <Gun_SuperRocketGun.label>超级三连火箭炮</Gun_SuperRocketGun.label>
     <Gun_SuperRocketGun.description>超级三连火箭炮，和传统的三连火箭炮相比，具有射程更远，使用次数无限，可以在室内发射飞越障碍物直达目标点，火箭速度快，护甲穿透更高，等等优势</Gun_SuperRocketGun.description>
     <Gun_SuperRocketGun.tools.barrel.label>枪管</Gun_SuperRocketGun.tools.barrel.label>
     <Gun_SuperRocketGun.verbs.Verb_Shoot.label>超级三连火箭炮发射</Gun_SuperRocketGun.verbs.Verb_Shoot.label>
+
+    <Bullet_MySuperRocket.label>超级火箭弹</Bullet_MySuperRocket.label>
 
     <!-- Gun_MySuperDoomsDay -->
     <Gun_MySuperDoomsDay.label>超级末日火箭炮</Gun_MySuperDoomsDay.label>
@@ -27,16 +31,22 @@
     <Gun_MySuperDoomsDay.tools.barrel.label>枪管</Gun_MySuperDoomsDay.tools.barrel.label>
     <Gun_MySuperDoomsDay.verbs.Verb_Shoot.label>超级末日火箭炮发射</Gun_MySuperDoomsDay.verbs.Verb_Shoot.label>
 
+    <Bullet_MySuperDoomsDay.label>超级末日弹</Bullet_MySuperDoomsDay.label>
+
     <!-- Gun_SuperStunLauncher -->
     <Gun_SuperStunLauncher.label>超级击晕炮</Gun_SuperStunLauncher.label>
     <Gun_SuperStunLauncher.description>超级击晕炮，可以使范围内的角色进入长时间的眩晕状态，用以应对中心空投等进攻，控制敌人并减少对基地的损伤。注意：爆炸物依然会被引爆</Gun_SuperStunLauncher.description>
     <Gun_SuperStunLauncher.tools.barrel.label>枪管</Gun_SuperStunLauncher.tools.barrel.label>
     <Gun_SuperStunLauncher.verbs.Verb_Shoot.label>超级击晕炮发射</Gun_SuperStunLauncher.verbs.Verb_Shoot.label>
 
+    <StunBullet_SuperStunLauncher.label>晕眩火箭弹</StunBullet_SuperStunLauncher.label>
+
     <!-- Gun_SuperEmpLauncher -->
     <Gun_SuperEmpLauncher.label>超级EMP发射器</Gun_SuperEmpLauncher.label>
     <Gun_SuperEmpLauncher.description>超级EMP发射器，相当于超级三连火箭炮，换了EMP子弹，从而可以击碎护盾，确保伤害</Gun_SuperEmpLauncher.description>
     <Gun_SuperEmpLauncher.tools.barrel.label>枪管</Gun_SuperEmpLauncher.tools.barrel.label>
     <Gun_SuperEmpLauncher.verbs.Verb_Shoot.label>超级EMP发射器发射</Gun_SuperEmpLauncher.verbs.Verb_Shoot.label>
+
+    <Bullet_SuperEMPLauncher.label>EMP火箭弹</Bullet_SuperEMPLauncher.label>
 
 </LanguageData>

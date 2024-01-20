@@ -163,4 +163,13 @@
     <RunningBugs_Make_SuperStunLauncher.description>从虚空中制作超级击晕炮。这是一种没有伤害的范围武器，可以击晕范围内敌人相当长的时间，用于应对中心空投防止对基地造成损害。注意：爆炸物依然会被引爆</RunningBugs_Make_SuperStunLauncher.description>
     <RunningBugs_Make_SuperStunLauncher.jobString>制作超级击晕炮</RunningBugs_Make_SuperStunLauncher.jobString>
 
+    <RunningBugs_BurnTrash.label>从有益垃圾中提取黄金</RunningBugs_BurnTrash.label>
+    <RunningBugs_BurnTrash.description>从一单位有益垃圾中提取一单位黄金</RunningBugs_BurnTrash.description>
+    <RunningBugs_BurnTrash.jobString>正在提炼有益垃圾</RunningBugs_BurnTrash.jobString>
+
+    <RunningBugs_BurnMultipleTrash.label>从有益垃圾中提取黄金</RunningBugs_BurnMultipleTrash.label>
+    <RunningBugs_BurnMultipleTrash.description>从一单位有益垃圾中提取一单位黄金</RunningBugs_BurnMultipleTrash.description>
+    <RunningBugs_BurnMultipleTrash.jobString>正在提炼有益垃圾</RunningBugs_BurnMultipleTrash.jobString>
+
+
 </LanguageData>
