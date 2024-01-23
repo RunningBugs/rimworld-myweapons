@@ -57,7 +57,7 @@
 
 	<ThingDef Name="SuperGun" ParentName="MyBaseWeaponsRanged">
 		<defName>Gun_SuperGun</defName>
-		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>None</tradeability>
 		<label>super bolt-action rifle</label>
 		<description>An ancient pattern super bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
 		<useHitPoints>false</useHitPoints>
@@ -202,7 +202,7 @@
 
 	<ThingDef ParentName="MyBaseWeaponsRanged">
 		<defName>Gun_SuperRocketGun</defName>
-		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>None</tradeability>
 		<label>Super Rocket Gun</label>
 		<description>Super Rocket Gun</description>
 		<useHitPoints>false</useHitPoints>
@@ -288,7 +288,7 @@
 
 	<ThingDef ParentName="MyBaseWeaponsRanged">
 		<defName>Gun_MySuperDoomsDay</defName>
-		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>None</tradeability>
 		<label>Super DoomsDay</label>
 		<description>Super DoomsDay</description>
 		<useHitPoints>false</useHitPoints>
@@ -376,7 +376,7 @@
 
 	<ThingDef ParentName="MyBaseWeaponsRanged">
 		<defName>Gun_SuperStunLauncher</defName>
-		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>None</tradeability>
 		<label>Super Stun launcher</label>
 		<useHitPoints>false</useHitPoints>
 		<generateCommonality>0</generateCommonality>
@@ -463,7 +463,7 @@
 
 	<ThingDef ParentName="MyBaseWeaponsRanged">
 		<defName>Gun_SuperEmpLauncher</defName>
-		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>None</tradeability>
 		<label>Super EMP launcher</label>
 		<useHitPoints>false</useHitPoints>
 		<generateCommonality>0</generateCommonality>

@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="ApparelBase">
         <defName>Apparel_SuperShieldBelt</defName>
-		<tradeNeverStack>true</tradeNeverStack>
+        <tradeability>None</tradeability>
         <label>super shield belt</label>
         <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It doesn't prevent the wearer from firing out, and resets to full instantly if hit by EMP.</description>
         <thingClass>Apparel</thingClass>
@@ -21,15 +21,16 @@
             <Flammability>0</Flammability>
             <MarketValue>0</MarketValue>
             <DeteriorationRate>0</DeteriorationRate>
-            <EnergyShieldRechargeRate>1000</EnergyShieldRechargeRate>
+            <EnergyShieldRechargeRate>60000</EnergyShieldRechargeRate>
             <!-- <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate> -->
-            <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+            <EnergyShieldEnergyMax>1000</EnergyShieldEnergyMax>
             <EquipDelay>0</EquipDelay>
-
+        </statBases>
+        <equippedStatOffsets>
             <!-- <MeleeDamageFactor>1.5</MeleeDamageFactor> -->
             <MeleeDoorDamageFactor>4</MeleeDoorDamageFactor>
-            <StaggerDurationFactor>0</StaggerDurationFactor>
-        </statBases>
+            <StaggerDurationFactor>-1</StaggerDurationFactor>
+        </equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
