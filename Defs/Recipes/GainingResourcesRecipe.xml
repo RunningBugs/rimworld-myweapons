@@ -25,7 +25,7 @@
         <defName>RunningBugs_Make_Wood</defName>
         <label>make wood</label>
         <products>
-            <WoodLog>1000</WoodLog>
+            <WoodLog>75</WoodLog>
         </products>
         <descriptionHyperlinks>
             <ThingDef>WoodLog</ThingDef>
@@ -36,7 +36,7 @@
         <defName>RunningBugs_Make_Steel</defName>
         <label>make steel</label>
         <products>
-            <Steel>1000</Steel>
+            <Steel>75</Steel>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Steel</ThingDef>
@@ -47,7 +47,7 @@
         <defName>RunningBugs_Make_Plasteel</defName>
         <label>make plasteel</label>
         <products>
-            <Plasteel>1000</Plasteel>
+            <Plasteel>75</Plasteel>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Plasteel</ThingDef>
@@ -58,7 +58,7 @@
         <defName>RunningBugs_Make_Uranium</defName>
         <label>make Uranium</label>
         <products>
-            <Uranium>1000</Uranium>
+            <Uranium>75</Uranium>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Uranium</ThingDef>
@@ -69,7 +69,7 @@
         <defName>RunningBugs_Make_Silver</defName>
         <label>make silver</label>
         <products>
-            <Silver>1000</Silver>
+            <Silver>500</Silver>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Silver</ThingDef>
@@ -80,7 +80,7 @@
         <defName>RunningBugs_Make_Gold</defName>
         <label>make gold</label>
         <products>
-            <Gold>1000</Gold>
+            <Gold>500</Gold>
         </products>
         <descriptionHyperlinks>
             <ThingDef>Gold</ThingDef>

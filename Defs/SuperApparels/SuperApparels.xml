@@ -2,6 +2,7 @@
 <Defs>
     <ThingDef ParentName="ApparelBase">
         <defName>Apparel_SuperShieldBelt</defName>
+		<tradeNeverStack>true</tradeNeverStack>
         <label>super shield belt</label>
         <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It doesn't prevent the wearer from firing out, and resets to full instantly if hit by EMP.</description>
         <thingClass>Apparel</thingClass>
@@ -24,6 +25,10 @@
             <!-- <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate> -->
             <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
             <EquipDelay>0</EquipDelay>
+
+            <!-- <MeleeDamageFactor>1.5</MeleeDamageFactor> -->
+            <MeleeDoorDamageFactor>4</MeleeDoorDamageFactor>
+            <StaggerDurationFactor>0</StaggerDurationFactor>
         </statBases>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
@@ -45,7 +50,7 @@
                 <li>Waist</li>
             </bodyPartGroups>
             <layers>
-                <li>Belt</li>
+                <li>MW_CarryWith</li>
             </layers>
             <tags>
                 <li>BeltDefense</li>

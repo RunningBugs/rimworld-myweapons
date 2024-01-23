@@ -167,8 +167,8 @@
     <RunningBugs_BurnTrash.description>从一单位有益垃圾中提取一单位黄金</RunningBugs_BurnTrash.description>
     <RunningBugs_BurnTrash.jobString>正在提炼有益垃圾</RunningBugs_BurnTrash.jobString>
 
-    <RunningBugs_BurnMultipleTrash.label>从有益垃圾中提取黄金</RunningBugs_BurnMultipleTrash.label>
-    <RunningBugs_BurnMultipleTrash.description>从一单位有益垃圾中提取一单位黄金</RunningBugs_BurnMultipleTrash.description>
+    <RunningBugs_BurnMultipleTrash.label>从多份有益垃圾中提取黄金</RunningBugs_BurnMultipleTrash.label>
+    <RunningBugs_BurnMultipleTrash.description>从五单位有益垃圾中提取五单位黄金</RunningBugs_BurnMultipleTrash.description>
     <RunningBugs_BurnMultipleTrash.jobString>正在提炼有益垃圾</RunningBugs_BurnMultipleTrash.jobString>
 
 

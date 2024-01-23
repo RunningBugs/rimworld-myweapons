@@ -1,520 +1,525 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="MyBaseWeaponsRanged" ParentName="BaseGunWithQuality" Abstract="True">
-    <thingCategories Inherit="False">
+	<ThingDef Name="MyBaseWeaponsRanged" ParentName="BaseGunWithQuality" Abstract="True">
+		<thingCategories Inherit="False">
 			<li>MW_Weapons</li>
 		</thingCategories>
-    <statBases Inherit="False">
-      <DeteriorationRate>0</DeteriorationRate>
-      <Beauty>100</Beauty>
-      <MarketValue>0</MarketValue>
-      <Flammability>0</Flammability>
-      <WorkToMake>1</WorkToMake>
-      <Mass>0.000001</Mass>
-      <AccuracyTouch>1</AccuracyTouch>
-      <AccuracyShort>1</AccuracyShort>
-      <AccuracyMedium>1</AccuracyMedium>
-      <AccuracyLong>1</AccuracyLong>
-      <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
-    </statBases>
-  </ThingDef>
+		<statBases Inherit="False">
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>100</Beauty>
+			<MarketValue>0</MarketValue>
+			<Flammability>0</Flammability>
+			<WorkToMake>1</WorkToMake>
+			<Mass>0.000001</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+		</statBases>
+	</ThingDef>
 
-  <!-- Defs for Supler Gun -->
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MySuperGun</defName>
-    <thingClass>MyWeapons.CounterBullet</thingClass>
-    <label>my super gun blast</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <!-- <damageDef>Bullet</damageDef> -->
-      <damageDef>Bullet</damageDef>
-      <!-- <explosionRadius>1</explosionRadius> -->
-      <damageAmountBase>25</damageAmountBase>
-      <stoppingPower>4</stoppingPower>
-      <!-- <flyOverhead>true</flyOverhead> -->
-      <armorPenetrationBase>0.14</armorPenetrationBase>
-      <speed>200</speed>
-    </projectile>
-    <modExtensions>
-      <li Class="MyWeapons.CounterBulletProps">
-        <counters>
-          <li>
-            <damageDef>Bullet</damageDef>
-            <fleshType>Mechanoid</fleshType>
-            <extraDamage>
-              <amount>200.5</amount>
-              <armorPenetration>5.14</armorPenetration>
-              <chance>1.0</chance>
-            </extraDamage>
-          </li>
-        </counters>
-      </li>
-    </modExtensions>
-  </ThingDef>
+	<!-- Defs for Supler Gun -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MySuperGun</defName>
+		<thingClass>MyWeapons.CounterBullet</thingClass>
+		<label>my super gun blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<!-- <damageDef>Bullet</damageDef> -->
+			<damageDef>Bullet</damageDef>
+			<!-- <explosionRadius>1</explosionRadius> -->
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>4</stoppingPower>
+			<!-- <flyOverhead>true</flyOverhead> -->
+			<armorPenetrationBase>0.14</armorPenetrationBase>
+			<speed>200</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="MyWeapons.CounterBulletProps">
+				<counters>
+					<li>
+						<damageDef>Bullet</damageDef>
+						<fleshType>Mechanoid</fleshType>
+						<extraDamage>
+							<amount>200.5</amount>
+							<armorPenetration>5.14</armorPenetration>
+							<chance>1.0</chance>
+						</extraDamage>
+					</li>
+				</counters>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
-  <ThingDef Name="SuperGun" ParentName="MyBaseWeaponsRanged">
-    <defName>Gun_SuperGun</defName>
-    <label>super bolt-action rifle</label>
-    <description>An ancient pattern super bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
-    <useHitPoints>false</useHitPoints>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <generateCommonality>0</generateCommonality>
-    <generateAllowChance>0</generateAllowChance>
-    <relicChance>0</relicChance>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>LongShots</li>
-    </weaponClasses>
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
-    <tradeTags>
-      <li>WeaponRanged</li>
-    </tradeTags>
-    <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <comps>
-      <li>
-        <compClass>CompTargetEffect_PsychicShock</compClass>
-      </li>
-      <li Class="CompProperties_TargetEffect_FleckOnTarget">
-        <fleckDef>PsycastPsychicEffect</fleckDef>
-      </li>
-      <li Class="CompProperties_TargetEffect_FleckConnecting">
-        <fleckDef>PsycastPsychicLine</fleckDef>
-      </li>
-    </comps>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MySuperGun</defaultProjectile>
-        <requireLineOfSight>true</requireLineOfSight>
-        <warmupTime>1</warmupTime>
-        <range>50</range>
-        <burstShotCount>10</burstShotCount>
-        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-        <soundCast>Shot_BoltActionRifle</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>false</canTargetLocations>
-        </targetParams>
-      </li>
-      <li>
-        <verbClass>Verb_CastTargetEffect</verbClass>
-        <label>psychic shock lance that even affects mech bosses</label>
-        <hasStandardCommand>true</hasStandardCommand>
-        <targetable>true</targetable>
-        <!-- <onlyManualCast>True</onlyManualCast> -->
-        <onlyManualCast>false</onlyManualCast>
-        <range>200</range>
-        <warmupTime>0.1</warmupTime>
-        <!-- <invalidTargetPawn>Psychic shock immune</invalidTargetPawn> -->
-        <targetParams>
-          <canTargetBuildings>false</canTargetBuildings>
-          <!-- <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive> -->
-          <!-- <neverTargetIncapacitated>true</neverTargetIncapacitated> -->
-        </targetParams>
-        <soundCast>PsychicShockLanceCast</soundCast>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+	<ThingDef Name="SuperGun" ParentName="MyBaseWeaponsRanged">
+		<defName>Gun_SuperGun</defName>
+		<tradeNeverStack>true</tradeNeverStack>
+		<label>super bolt-action rifle</label>
+		<description>An ancient pattern super bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
+		<useHitPoints>false</useHitPoints>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<relicChance>0</relicChance>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li>
+				<compClass>CompTargetEffect_PsychicShock</compClass>
+			</li>
+			<li Class="CompProperties_TargetEffect_FleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="CompProperties_TargetEffect_FleckConnecting">
+				<fleckDef>PsycastPsychicLine</fleckDef>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MySuperGun</defaultProjectile>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>1</warmupTime>
+				<range>50</range>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<soundCast>Shot_BoltActionRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>false</canTargetLocations>
+				</targetParams>
+			</li>
+			<li>
+				<verbClass>Verb_CastTargetEffect</verbClass>
+				<label>psychic shock lance that even affects mech bosses</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<!-- <onlyManualCast>True</onlyManualCast> -->
+				<onlyManualCast>false</onlyManualCast>
+				<range>200</range>
+				<warmupTime>0.1</warmupTime>
+				<!-- <invalidTargetPawn>Psychic shock immune</invalidTargetPawn> -->
+				<targetParams>
+					<canTargetBuildings>false</canTargetBuildings>
+					<!-- <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive> -->
+					<!-- <neverTargetIncapacitated>true</neverTargetIncapacitated> -->
+				</targetParams>
+				<soundCast>PsychicShockLanceCast</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
-  <!-- Defs for Persona Super Gun!-->
-  <ThingDef ParentName="SuperGun">
-    <defName>Gun_SuperGunPersona</defName>
-    <label>Δ' bolt-action rifle</label>
-    <description>An ancient pattern super persona bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
-    <comps>
-      <li Class="MyWeapons.CompProperties_BladelinkWeapon_SpecificWeaponTraits">
-        <biocodeOnEquip>true</biocodeOnEquip>
-        <personas>
-          <li>ThoughtKind</li>
-          <li>OnKill_ThoughtGood</li>
-          <li>OnKill_PsyfocusGain</li>
-          <li>PsyfocusMeditationBonus</li>
-          <li>NoPain</li>
-          <li>SpeedBoost</li>
-          <li>NeuralHeatRecoveryGain</li>
-          <!-- <li>NeverBond</li> -->
-        </personas>
-      </li>
-      <li Class="CompProperties_GeneratedName">
-        <nameMaker>NamerWeaponBladelink</nameMaker>
-      </li>
-    </comps>
-  </ThingDef>
+	<!-- Defs for Persona Super Gun!-->
+	<ThingDef ParentName="SuperGun">
+		<defName>Gun_SuperGunPersona</defName>
+		<label>Δ' bolt-action rifle</label>
+		<description>An ancient pattern super persona bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
+		<comps>
+			<li Class="MyWeapons.CompProperties_BladelinkWeapon_SpecificWeaponTraits">
+				<biocodeOnEquip>true</biocodeOnEquip>
+				<personas>
+					<li>ThoughtKind</li>
+					<li>OnKill_ThoughtGood</li>
+					<li>OnKill_PsyfocusGain</li>
+					<li>PsyfocusMeditationBonus</li>
+					<li>NoPain</li>
+					<li>SpeedBoost</li>
+					<li>NeuralHeatRecoveryGain</li>
+					<!-- <li>NeverBond</li> -->
+				</personas>
+			</li>
+			<li Class="CompProperties_GeneratedName">
+				<nameMaker>NamerWeaponBladelink</nameMaker>
+			</li>
+		</comps>
+	</ThingDef>
 
 
-  <!-- Defs for Super Rocket Gun! -->
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MySuperRocket</defName>
-    <label>super rocket</label>
-    <graphicData>
-      <texPath>Things/Projectile/Rocket_Big</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <damageDef>Bomb</damageDef>
-      <!-- Use default damage from explosion def -->
-      <damageAmountBase>75</damageAmountBase>
-      <flyOverhead>true</flyOverhead>
-      <explosionRadius>10</explosionRadius>
-      <speed>200</speed>
-      <armorPenetrationBase>0.85</armorPenetrationBase>
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>MortarBomb_Explode</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
-    </projectile>
-  </ThingDef>
+	<!-- Defs for Super Rocket Gun! -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MySuperRocket</defName>
+		<label>super rocket</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<damageAmountBase>75</damageAmountBase>
+			<flyOverhead>true</flyOverhead>
+			<explosionRadius>10</explosionRadius>
+			<speed>200</speed>
+			<armorPenetrationBase>0.85</armorPenetrationBase>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
 
-  <ThingDef ParentName="MyBaseWeaponsRanged">
-    <defName>Gun_SuperRocketGun</defName>
-    <label>Super Rocket Gun</label>
-    <description>Super Rocket Gun</description>
-    <useHitPoints>false</useHitPoints>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <generateCommonality>0</generateCommonality>
-    <generateAllowChance>0</generateAllowChance>
-    <relicChance>0</relicChance>
-    <!-- <soundInteract>Interact_Rifle</soundInteract> -->
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
-    <tradeTags>
-      <li>ExoticMisc</li>
-      <li>WeaponRanged</li>
-    </tradeTags>
-    <costList>
-      <WoodLog>5</WoodLog>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MySuperRocket</defaultProjectile>
-        <forcedMissRadius>1</forcedMissRadius>
-        <requireLineOfSight>false</requireLineOfSight>
-        <warmupTime>1</warmupTime>
-        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
-        <range>500</range>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <burstShotCount>2</burstShotCount>
-        <soundCast>InfernoCannon_Fire</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <onlyManualCast>true</onlyManualCast>
-        <stopBurstWithoutLos>false</stopBurstWithoutLos>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <muzzleFlashScale>14</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+	<ThingDef ParentName="MyBaseWeaponsRanged">
+		<defName>Gun_SuperRocketGun</defName>
+		<tradeNeverStack>true</tradeNeverStack>
+		<label>Super Rocket Gun</label>
+		<description>Super Rocket Gun</description>
+		<useHitPoints>false</useHitPoints>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<relicChance>0</relicChance>
+		<!-- <soundInteract>Interact_Rifle</soundInteract> -->
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<costList>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MySuperRocket</defaultProjectile>
+				<forcedMissRadius>1</forcedMissRadius>
+				<requireLineOfSight>false</requireLineOfSight>
+				<warmupTime>1</warmupTime>
+				<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+				<range>500</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
-  <!-- SuperDoomsDay-->
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MySuperDoomsDay</defName>
-    <label>super doomsday bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Rocket_Big</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <damageDef>Bomb</damageDef>
-      <!-- Use default damage from explosion def -->
-      <damageAmountBase>9999</damageAmountBase>
-      <flyOverhead>true</flyOverhead>
-      <explosionRadius>10</explosionRadius>
-      <speed>4000</speed>
-      <armorPenetrationBase>85</armorPenetrationBase>
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>MortarBomb_Explode</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
-    </projectile>
-  </ThingDef>
+	<!-- SuperDoomsDay-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MySuperDoomsDay</defName>
+		<label>super doomsday bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<!-- Use default damage from explosion def -->
+			<damageAmountBase>9999</damageAmountBase>
+			<flyOverhead>true</flyOverhead>
+			<explosionRadius>10</explosionRadius>
+			<speed>4000</speed>
+			<armorPenetrationBase>85</armorPenetrationBase>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
 
-  <ThingDef ParentName="MyBaseWeaponsRanged">
-    <defName>Gun_MySuperDoomsDay</defName>
-    <label>Super DoomsDay</label>
-    <description>Super DoomsDay</description>
-    <useHitPoints>false</useHitPoints>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/DoomsdayLauncher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MySuperDoomsDay</defaultProjectile>
-        <forcedMissRadius>1</forcedMissRadius>
-        <requireLineOfSight>false</requireLineOfSight>
-        <warmupTime>1</warmupTime>
-        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
-        <range>500</range>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>InfernoCannon_Fire</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <onlyManualCast>true</onlyManualCast>
-        <stopBurstWithoutLos>false</stopBurstWithoutLos>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <muzzleFlashScale>14</muzzleFlashScale>
-      </li>
-    </verbs>
-    <generateCommonality>0</generateCommonality>
-    <generateAllowChance>0</generateAllowChance>
-    <relicChance>0</relicChance>
-    <!-- <soundInteract>Interact_Rifle</soundInteract> -->
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
-    <tradeTags>
-      <li>ExoticMisc</li>
-      <li>WeaponRanged</li>
-    </tradeTags>
-    <costList>
-      <WoodLog>5</WoodLog>
-    </costList>
-    <tools>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+	<ThingDef ParentName="MyBaseWeaponsRanged">
+		<defName>Gun_MySuperDoomsDay</defName>
+		<tradeNeverStack>true</tradeNeverStack>
+		<label>Super DoomsDay</label>
+		<description>Super DoomsDay</description>
+		<useHitPoints>false</useHitPoints>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/DoomsdayLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MySuperDoomsDay</defaultProjectile>
+				<forcedMissRadius>1</forcedMissRadius>
+				<requireLineOfSight>false</requireLineOfSight>
+				<warmupTime>1</warmupTime>
+				<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+				<range>500</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<relicChance>0</relicChance>
+		<!-- <soundInteract>Interact_Rifle</soundInteract> -->
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<costList>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
-  <!-- Super stun launcher -->
-  <ThingDef ParentName="BaseBullet">
-    <defName>StunBullet_SuperStunLauncher</defName>
-    <label>super rocket stunning bullets</label>
-    <graphicData>
-      <texPath>Things/Projectile/Rocket_Big</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <damageDef>Stun</damageDef>
-      <!-- each damage amount will stun the target for 30 ticks, 1000 * 30 = 30k ticks = 0.5 day in game -->
-      <damageAmountBase>1000</damageAmountBase>
-      <flyOverhead>true</flyOverhead>
-      <explosionRadius>10</explosionRadius>
-      <speed>200</speed>
-      <ai_IsIncendiary>false</ai_IsIncendiary>
-      <armorPenetrationBase>0.85</armorPenetrationBase>
-      <shadowSize>0.6</shadowSize>
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>Explosion_EMP</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
-    </projectile>
-  </ThingDef>
+	<!-- Super stun launcher -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>StunBullet_SuperStunLauncher</defName>
+		<label>super rocket stunning bullets</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<!-- each damage amount will stun the target for 30 ticks, 1000 * 30 = 30k ticks = 0.5 day in game -->
+			<damageAmountBase>1000</damageAmountBase>
+			<flyOverhead>true</flyOverhead>
+			<explosionRadius>10</explosionRadius>
+			<speed>200</speed>
+			<ai_IsIncendiary>false</ai_IsIncendiary>
+			<armorPenetrationBase>0.85</armorPenetrationBase>
+			<shadowSize>0.6</shadowSize>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
 
-  <ThingDef ParentName="MyBaseWeaponsRanged">
-    <defName>Gun_SuperStunLauncher</defName>
-    <label>Super Stun launcher</label>
-    <useHitPoints>false</useHitPoints>
-    <generateCommonality>0</generateCommonality>
-    <generateAllowChance>0</generateAllowChance>
-    <relicChance>0</relicChance>
-    <description>A super powerful wide-barreled stun shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning all targets (pawns, mechanoids, turrets, mortars).</description>
-    <graphicData>
-      <texPath>MyWeapons/StunLauncher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <weaponTags>
-      <li>GrenadeEMP</li>
-    </weaponTags>
-    <costList>
-      <WoodLog>1</WoodLog>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>StunBullet_SuperStunLauncher</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>500</range>
-        <forcedMissRadius>1</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-        <requireLineOfSight>false</requireLineOfSight>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+	<ThingDef ParentName="MyBaseWeaponsRanged">
+		<defName>Gun_SuperStunLauncher</defName>
+		<tradeNeverStack>true</tradeNeverStack>
+		<label>Super Stun launcher</label>
+		<useHitPoints>false</useHitPoints>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<relicChance>0</relicChance>
+		<description>A super powerful wide-barreled stun shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning all targets (pawns, mechanoids, turrets, mortars).</description>
+		<graphicData>
+			<texPath>MyWeapons/StunLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>GrenadeEMP</li>
+		</weaponTags>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>StunBullet_SuperStunLauncher</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>500</range>
+				<forcedMissRadius>1</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<requireLineOfSight>false</requireLineOfSight>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
-  <!-- Super EMP launcher -->
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_SuperEMPLauncher</defName>
-    <label>EMP launcher shell</label>
-    <graphicData>
-      <texPath>Things/Projectile/LauncherShot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-      <color>(68,150,215)</color>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <speed>200</speed>
-      <damageDef>EMP</damageDef>
-      <explosionRadius>10</explosionRadius>
-      <ai_IsIncendiary>false</ai_IsIncendiary>
-      <flyOverhead>true</flyOverhead>
-      <shadowSize>0.6</shadowSize>
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>Explosion_EMP</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
-    </projectile>
-  </ThingDef>
+	<!-- Super EMP launcher -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SuperEMPLauncher</defName>
+		<label>EMP launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(68,150,215)</color>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>200</speed>
+			<damageDef>EMP</damageDef>
+			<explosionRadius>10</explosionRadius>
+			<ai_IsIncendiary>false</ai_IsIncendiary>
+			<flyOverhead>true</flyOverhead>
+			<shadowSize>0.6</shadowSize>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
 
-  <ThingDef ParentName="MyBaseWeaponsRanged">
-    <defName>Gun_SuperEmpLauncher</defName>
-    <label>Super EMP launcher</label>
-    <useHitPoints>false</useHitPoints>
-    <generateCommonality>0</generateCommonality>
-    <generateAllowChance>0</generateAllowChance>
-    <relicChance>0</relicChance>
-    <description>A super powerful wide-barreled EMP shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets, mortars) and depleting shields in the area of effect.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/EMPLauncher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <weaponTags>
-      <li>GrenadeEMP</li>
-    </weaponTags>
-    <costList>
-      <WoodLog>1</WoodLog>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_SuperEMPLauncher</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>500</range>
-        <forcedMissRadius>1</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
-        <requireLineOfSight>false</requireLineOfSight>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>14</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.6</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+	<ThingDef ParentName="MyBaseWeaponsRanged">
+		<defName>Gun_SuperEmpLauncher</defName>
+		<tradeNeverStack>true</tradeNeverStack>
+		<label>Super EMP launcher</label>
+		<useHitPoints>false</useHitPoints>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<relicChance>0</relicChance>
+		<description>A super powerful wide-barreled EMP shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets, mortars) and depleting shields in the area of effect.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/EMPLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>GrenadeEMP</li>
+		</weaponTags>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_SuperEMPLauncher</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>500</range>
+				<forcedMissRadius>1</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<requireLineOfSight>false</requireLineOfSight>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 </Defs>

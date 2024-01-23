@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ApparelLayerDef>
+        <defName>MW_CarryWith</defName>
+        <label>CarryWith</label>
+        <drawOrder>1</drawOrder>
+    </ApparelLayerDef>
+</Defs>
