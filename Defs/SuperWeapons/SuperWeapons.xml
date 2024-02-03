@@ -152,6 +152,7 @@
 	<!-- Defs for Persona Super Gun!-->
 	<ThingDef ParentName="SuperGun">
 		<defName>Gun_SuperGunPersona</defName>
+		<tradeability>None</tradeability>
 		<label>Δ' bolt-action rifle</label>
 		<description>An ancient pattern super persona bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies.</description>
 		<comps>
@@ -519,6 +520,64 @@
 				</capacities>
 				<power>25</power>
 				<cooldownTime>0.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>MW_Toolbox</defName>
+		<label>toolbox</label>
+		<description>Toolbox that is capable of increasing the workspeed for the carrier significantly.</description>
+		<tradeability>None</tradeability>
+		<useHitPoints>false</useHitPoints>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<relicChance>0</relicChance>
+		<techLevel>Medieval</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<graphicData>
+			<texPath>MyWeapons/toolbox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<weaponClasses>
+			<li>MW_Tool</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>Tools</li>
+		</weaponTags>
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<Mass>0.0002</Mass>
+			<Flammability>0</Flammability>
+			<WorkToMake>1</WorkToMake>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>100</Beauty>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>49</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>1</costStuffCount>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<tools>
+			<li>
+				<label>tool</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>

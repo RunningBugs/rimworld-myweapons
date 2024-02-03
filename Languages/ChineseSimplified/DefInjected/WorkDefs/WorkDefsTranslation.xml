@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <MW_Praying.labelShort>祈讨</MW_Praying.labelShort>
+    <MW_Praying.pawnLabel>祈讨者</MW_Praying.pawnLabel>
+    <MW_Praying.gerundLabel>祈讨中</MW_Praying.gerundLabel>
+    <MW_Praying.description>在祈祷点向虚空之神祈讨</MW_Praying.description>
+    <MW_Praying.verb>在祈讨</MW_Praying.verb>
+
+    <DoBillsUsePraySpot.label>在祈祷点祈求物品</DoBillsUsePraySpot.label>
+    <DoBillsUsePraySpot.gerund>在祈讨</DoBillsUsePraySpot.gerund>
+</LanguageData>

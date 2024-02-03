@@ -45,6 +45,8 @@ namespace MyWeapons
         private List<RecipeDef> createdRecipes = new List<RecipeDef>();
         public List<RecipeDef> CreatedRecipes { get => createdRecipes; set => createdRecipes = value; }
         public int RecipeId { get => recipeId; set => recipeId = value; }
+        private bool existCheck = false;
+        private HashSet<int> existIds = new HashSet<int>();
 
         public static readonly AccessTools.FieldRef<Dictionary<Type, HashSet<ushort>>> takenShortHashes = AccessTools.StaticFieldRefAccess<Dictionary<Type, HashSet<ushort>>>(AccessTools.Field(typeof(ShortHashGiver), "takenHashesPerDeftype"));
         private delegate void GiveShortHash(Def def, Type defType, HashSet<ushort> takenHashes);
@@ -70,6 +72,16 @@ namespace MyWeapons
             {
                 recipe.defName = "Pray_" + RecipeId++;
             }
+
+            if (!existCheck) {
+                DefDatabase<RecipeDef>.AllDefsListForReading.Where(r => r.defName.StartsWith("Pray_")).ToList().ForEach(r => existIds.Add(int.Parse(r.defName.Split('_')[1])));
+                existCheck = true;
+            } else {
+                if (existIds.Contains(recipeId)) {
+                    return;
+                }
+            }
+
             recipe.label = "PrayRecipeLabel".Translate(string.Join(", ", products.Select(d => d.label).ToArray()));
             recipe.jobString = "WorkingOnPrayedRecipe".Translate();
             recipe.workAmount = 1f;

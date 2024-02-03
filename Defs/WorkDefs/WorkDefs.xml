@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<WorkTypeDef>
+		<defName>MW_Praying</defName>
+		<labelShort>pray</labelShort>
+		<pawnLabel>Prayer</pawnLabel>
+		<gerundLabel>praying</gerundLabel>
+		<description>Pray to the Void at Pray Spots.</description>
+		<verb>Pray at</verb>
+		<naturalPriority>400</naturalPriority>
+		<relevantSkills>
+			<li>Social</li>
+		</relevantSkills>
+		<requireCapableColonist>true</requireCapableColonist>
+	</WorkTypeDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsUsePraySpot</defName>
+		<label>make things at Pray spot</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>MW_Praying</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>PraySpot</li>
+			<li>PraySpotTwo</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>Pray at </gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+</Defs>

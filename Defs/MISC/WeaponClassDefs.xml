@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<WeaponClassDef>
+		<defName>MW_Tool</defName>
+		<label>Tool</label>
+	</WeaponClassDef>
+</Defs>
