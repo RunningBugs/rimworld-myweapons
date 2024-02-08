@@ -52,8 +52,5 @@
 
     <MW_Toolbox.label>工具箱</MW_Toolbox.label>
     <MW_Toolbox.description>工具箱，可以极大的加快持有者的工作速度</MW_Toolbox.description>
-    <MW_Toolbox.tools.tool.label>工具</MW_Toolbox.tools.tool.label>
-
-    <MW_Tool.label>工具类</MW_Tool.label>
 
 </LanguageData>

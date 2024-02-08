@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+    <!-- <ThingDef Name="SuperApparelBase" ParentName="ApparelBase">
+        <tradeability>None</tradeability>
+        <thingClass>Apparel</thingClass>
+        <useHitPoints>false</useHitPoints>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <tickerType>Normal</tickerType>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <Mass>0.000001</Mass>
+            <WorkToMake>4</WorkToMake>
+            <Flammability>0</Flammability>
+            <MarketValue>0</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <EquipDelay>0</EquipDelay>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <thingCategories Inherit="False">
+            <li>MW_Apparels</li>
+        </thingCategories>
+        <allowedArchonexusCount>1</allowedArchonexusCount>
+    </ThingDef> -->
+
     <ThingDef ParentName="ApparelBase">
         <defName>Apparel_SuperShieldBelt</defName>
         <tradeability>None</tradeability>
@@ -90,5 +115,66 @@
         <tradeTags>
             <li>Armor</li>
         </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>MW_Toolbox</defName>
+        <tradeability>None</tradeability>
+        <label>toolbox</label>
+        <description>Toolbox that is capable of increasing the workspeed for the carrier significantly.</description>
+        <thingClass>Apparel</thingClass>
+        <useHitPoints>false</useHitPoints>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <graphicData>
+            <texPath>MyWeapons/toolbox</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <tickerType>Normal</tickerType>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <Mass>0.000001</Mass>
+            <WorkToMake>1</WorkToMake>
+            <Flammability>0</Flammability>
+            <MarketValue>0</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <EquipDelay>0</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <WorkSpeedGlobal>49</WorkSpeedGlobal>
+            <MW_PawnCreatedQualityOffset>2</MW_PawnCreatedQualityOffset>
+        </equippedStatOffsets>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>1</costStuffCount>
+        <thingCategories Inherit="False">
+            <li>MW_Apparels</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>MW_CarryWith</li>
+            </layers>
+            <tags>
+                <li>BeltDefense</li>
+            </tags>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        </apparel>
     </ThingDef>
 </Defs>

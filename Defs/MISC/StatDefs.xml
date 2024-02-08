@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <StatDef>
+        <defName>MW_PawnCreatedQualityOffset</defName>
+        <label>Quality offset</label>
+        <description>An offset of the final quality of items created by pawn</description>
+        <category>PawnWork</category>
+        <defaultBaseValue>0</defaultBaseValue>
+        <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>true</showIfUndefined>
+        <hideAtValue>0</hideAtValue>
+        <minValue>-6</minValue>
+        <maxValue>6</maxValue>
+        <displayPriorityInCategory>4999</displayPriorityInCategory>
+    </StatDef>
+</Defs>

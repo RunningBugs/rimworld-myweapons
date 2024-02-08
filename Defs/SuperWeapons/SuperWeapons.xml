@@ -525,7 +525,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BaseWeapon">
+	<!-- <ThingDef ParentName="BaseWeapon">
 		<defName>MW_Toolbox</defName>
 		<label>toolbox</label>
 		<description>Toolbox that is capable of increasing the workspeed for the carrier significantly.</description>
@@ -580,5 +580,5 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef>
+	</ThingDef> -->
 </Defs>
