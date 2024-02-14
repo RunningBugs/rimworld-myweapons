@@ -1,16 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <!-- <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[@Name="RPP_Bot"]</xpath>
-        <value>
-            <comps>
-                <li MayRequire="Ludeon.Rimworld.Biotech" Class="CompProperties_OverseerSubject">
-                    <needsOverseerEffect>MechUncontrolled</needsOverseerEffect>
-                    <delayUntilFeralCheck>60000</delayUntilFeralCheck>
-                    <feralMtbDays>10</feralMtbDays>
-                    <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
-                </li>
-            </comps>
-        </value>
+    <!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>The Saiyans</li>
+        </mods>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_HalfSaiyanRace"]/alienRace/raceRestriction</xpath>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_HalfSaiyanRace"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackEndoCategories>
+                                <li>Melanin</li>
+                                <li>HairColor</li>
+                                <li>BodyType</li>
+                                <li>Headbone</li>
+                                <li>Head</li>
+                                <li>Ears</li>
+                                <li>Jaw</li>
+                            </blackEndoCategories>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_HalfSaiyanRace"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackGeneList>
+                                <li>Furskin</li>
+                            </blackGeneList>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_HalfSaiyanRace"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackGeneTags>
+                                <li>EyeColor</li>
+                            </blackGeneTags>
+                        </value>
+                    </li>
+                </operations>
+
+            </match>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>The Saiyans</li>
+        </mods>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_SaiyanRace"]/alienRace/raceRestriction</xpath>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_SaiyanRace"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackEndoCategories>
+                                <li>Melanin</li>
+                                <li>HairColor</li>
+                                <li>BodyType</li>
+                                <li>Headbone</li>
+                                <li>Head</li>
+                                <li>Ears</li>
+                                <li>Jaw</li>
+                            </blackEndoCategories>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_SaiyanRace"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackGeneList>
+                                <li>Furskin</li>
+                            </blackGeneList>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="SR_SaiyanRace"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackGeneTags>
+                                <li>EyeColor</li>
+                            </blackGeneTags>
+                        </value>
+                    </li>
+                </operations>
+
+            </match>
+        </match>
     </Operation> -->
 </Patch>
