@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
@@ -9,7 +10,7 @@ using Verse;
 namespace MyWeapons
 {
 
-    class SavableListOfDefs<T> : IExposable
+    class SavableListOfDefs<T> : IExposable, IEnumerable<T>
      where T : Def
     {
         public List<T> defs;
@@ -35,6 +36,16 @@ namespace MyWeapons
         {
             Scribe_Collections.Look(ref defs, "MyWeapons.SavableListOfDefs.defs", LookMode.Def);
         }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return defs.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return defs.GetEnumerator();
+        }
     }
     public class PrayRecipeGameComponent : GameComponent
     {
@@ -45,7 +56,6 @@ namespace MyWeapons
         private List<RecipeDef> createdRecipes = new List<RecipeDef>();
         public List<RecipeDef> CreatedRecipes { get => createdRecipes; set => createdRecipes = value; }
         public int RecipeId { get => recipeId; set => recipeId = value; }
-        private bool existCheck = false;
         private HashSet<int> existIds = new HashSet<int>();
 
         public static readonly AccessTools.FieldRef<Dictionary<Type, HashSet<ushort>>> takenShortHashes = AccessTools.StaticFieldRefAccess<Dictionary<Type, HashSet<ushort>>>(AccessTools.Field(typeof(ShortHashGiver), "takenHashesPerDeftype"));
@@ -73,13 +83,9 @@ namespace MyWeapons
                 recipe.defName = "Pray_" + RecipeId++;
             }
 
-            if (!existCheck) {
-                DefDatabase<RecipeDef>.AllDefsListForReading.Where(r => r.defName.StartsWith("Pray_")).ToList().ForEach(r => existIds.Add(int.Parse(r.defName.Split('_')[1])));
-                existCheck = true;
-            } else {
-                if (existIds.Contains(recipeId)) {
-                    return;
-                }
+            if (DefDatabase<RecipeDef>.GetNamed(recipe.defName, false) != null)
+            {
+                return;
             }
 
             recipe.label = "PrayRecipeLabel".Translate(string.Join(", ", products.Select(d => d.label).ToArray()));
@@ -104,8 +110,6 @@ namespace MyWeapons
                 recipe.descriptionHyperlinks.Add(new DefHyperlink(def));
             }
 
-            recipe.ResolveReferences();
-            recipe.PostLoad();
             var _takenHashes = takenShortHashes()[typeof(RecipeDef)];
             if (recipeHash == -1)
             {
@@ -128,6 +132,18 @@ namespace MyWeapons
             }
         }
 
+        private void ResolveReferences()
+        {
+            foreach (RecipeDef recipe in CreatedRecipes)
+            {
+                if (DefDatabase<RecipeDef>.GetNamed(recipe.defName, false) == null)
+                {
+                    recipe.ResolveReferences();
+                    recipe.PostLoad();
+                }
+            }
+        }
+
         public void RemoveRecipe(RecipeDef recipe)
         {
             var rid = int.Parse(recipe.defName.Split('_')[1]);
@@ -140,16 +156,7 @@ namespace MyWeapons
 
         public override void FinalizeInit()
         {
-            DefDatabase<RecipeDef>.AllDefsListForReading.FindAll(r => r.defName.StartsWith("Pray_")).ForEach(r => recipeId = Math.Max(recipeId, int.Parse(r.defName.Split('_')[1]) + 1));
-            for (int i = 0; i < recipeIds.Count; ++i)
-            {
-                var rid = recipeIds[i];
-                var rhash = recipeHashes[i];
-                var rproducts = recipeProducts[i];
-                AddRecipe(rproducts, rid, rhash);
 
-                recipeId = Math.Max(recipeId, rid + 1);
-            }
         }
 
         public override void ExposeData()
@@ -175,6 +182,23 @@ namespace MyWeapons
             Scribe_Collections.Look(ref recipeIds, "MyWeapons.PrayRecipeWindow.recipeIds", LookMode.Value);
             Scribe_Collections.Look(ref recipeHashes, "MyWeapons.PrayRecipeWindow.recipeHashes", LookMode.Value);
             Scribe_Collections.Look(ref recipeProducts, "MyWeapons.PrayRecipeWindow.recipeProducts", LookMode.Deep);
+
+            if (Scribe.mode == LoadSaveMode.LoadingVars)
+            {
+                DefDatabase<RecipeDef>.AllDefsListForReading.FindAll(r => r.defName.StartsWith("Pray_")).ForEach(r => recipeId = Math.Max(recipeId, int.Parse(r.defName.Split('_')[1]) + 1));
+                for (int i = 0; i < recipeIds.Count; ++i)
+                {
+                    var rid = recipeIds[i];
+                    var rhash = recipeHashes[i];
+                    var rproducts = recipeProducts[i];
+                    Log.Warning($"Adding recipe {rid} with hash {rhash}, products: {string.Join(", ", rproducts.Select(d => d.defName).ToArray())}");
+                    AddRecipe(rproducts, rid, rhash);
+
+                    recipeId = Math.Max(recipeId, rid + 1);
+                }
+
+                ResolveReferences();
+            }
         }
     }
 
