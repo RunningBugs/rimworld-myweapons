@@ -71,7 +71,7 @@ namespace MyWeapons
             recipeProducts = new List<SavableListOfDefs<ThingDef>>();
         }
 
-        public void AddRecipe(List<ThingDef> products, int recipeId = -1, int recipeHash = -1)
+        private RecipeDef GenRecipe(int recipeId, int recipeHash, List<ThingDef> products)
         {
             RecipeDef recipe = new RecipeDef();
             if (recipeId != -1)
@@ -81,11 +81,6 @@ namespace MyWeapons
             else
             {
                 recipe.defName = "Pray_" + RecipeId++;
-            }
-
-            if (DefDatabase<RecipeDef>.GetNamed(recipe.defName, false) != null)
-            {
-                return;
             }
 
             recipe.label = "PrayRecipeLabel".Translate(string.Join(", ", products.Select(d => d.label).ToArray()));
@@ -120,6 +115,43 @@ namespace MyWeapons
                 recipe.shortHash = (ushort)recipeHash;
                 _takenHashes.Add(recipe.shortHash);
             }
+            return recipe;
+        }
+
+        public void AddRecipe(List<ThingDef> products, int recipeId = -1, int recipeHash = -1)
+        {
+            string recipeDefname = "";
+            if (recipeId != -1)
+            {
+                recipeDefname = "Pray_" + recipeId;
+            }
+            else
+            {
+                recipeDefname = "Pray_" + RecipeId++;
+            }
+
+            bool inDefDatabase = false;
+            if (DefDatabase<RecipeDef>.GetNamed(recipeDefname, false) != null)
+            {
+                inDefDatabase = true;
+                if (CreatedRecipes.Find(r => r.defName == recipeDefname) != null)
+                {
+                    return;
+                }
+            }
+
+            if (inDefDatabase) {
+                RecipeDef rcp = DefDatabase<RecipeDef>.GetNamed(recipeDefname, false);
+                if (rcp != null)
+                {
+                    CreatedRecipes.Insert(0, rcp);
+                    return;
+                }
+                rcp.ResolveReferences();
+                return ;
+            }
+
+            RecipeDef recipe = GenRecipe(recipeId, recipeHash, products);
 
             DefDatabase<RecipeDef>.Add(recipe);
             CreatedRecipes.Insert(0, recipe);
@@ -131,7 +163,7 @@ namespace MyWeapons
                 recipeProducts.Insert(0, products);
             }
 
-            ResolveReferences();
+            recipe.ResolveReferences();
         }
 
         private void ResolveReferences()
@@ -139,12 +171,6 @@ namespace MyWeapons
             foreach (RecipeDef recipe in CreatedRecipes)
             {
                 recipe.ResolveReferences();
-                // recipe.PostLoad();
-                // if (DefDatabase<RecipeDef>.GetNamed(recipe.defName, false) != null)
-                // {
-                //     recipe.ResolveReferences();
-                //     recipe.PostLoad();
-                // }
             }
         }
 
@@ -152,18 +178,11 @@ namespace MyWeapons
         {
             var rid = int.Parse(recipe.defName.Split('_')[1]);
             var idx = recipeIds.FindIndex(id => id == rid);
-            Log.Warning($"Removing recipe {recipe} at index {idx} with rid {rid}");
-            Log.Warning($"Removing {string.Join(",", recipeIds.ToArray())}");
             // Log.Warning($"Removing {string.Join(",", recipeProducts)}");
-            Log.Warning($"Removing {string.Join(",", recipeHashes.ToArray())}");
             recipeProducts.RemoveAt(idx);
-            Log.Warning($"here!");
             recipeHashes.RemoveAt(idx);
-            Log.Warning($"here!");
             recipeIds.RemoveAt(idx);
-            Log.Warning($"here!");
             CreatedRecipes.Remove(recipe);
-            Log.Warning($"here!");
         }
 
         public override void FinalizeInit()
@@ -208,7 +227,6 @@ namespace MyWeapons
 
                     recipeId = Math.Max(recipeId, rid + 1);
                 }
-
                 ResolveReferences();
             }
         }
@@ -225,6 +243,8 @@ namespace MyWeapons
 
         private Dictionary<ThingDef, Rect> selectedDefs = new Dictionary<ThingDef, Rect>();
         PrayRecipeGameComponent gc = Current.Game.GetComponent<PrayRecipeGameComponent>();
+
+        public override Vector2 InitialSize => new Vector2(500f, 500f);
 
         private void GapVertical(float gap = lineHeight)
         {
@@ -246,6 +266,9 @@ namespace MyWeapons
         public override void DoWindowContents(Rect inRect)
         {
             /// Search Widget
+            Color color_state = GUI.color;
+            GameFont font_state = Text.Font;
+            Text.Font = GameFont.Small;
             GetRow(out Rect top, out Rect bot, inRect);
             searchWidget.OnGUI(top, delegate
             {
@@ -256,7 +279,7 @@ namespace MyWeapons
 
             /// Scroll area (searching results)
             var textLineHeight = Text.LineHeight + 2f;
-            GetRow(out top, out bot, bot, 10 * textLineHeight);
+            GetRow(out top, out bot, bot, 6 * textLineHeight);
             Rect viewRect = top;
             Rect scrollRect = viewRect;
             List<ThingDef> defs = new List<ThingDef>();
@@ -303,7 +326,7 @@ namespace MyWeapons
             GetRow(out top, out bot, bot);
             /// Bottom buttons
             /// Pray button
-            GetRow(out top, out bot, bot);
+            GetRow(out top, out bot, bot, lineHeight + 4f);
             var buttonRect = top.LeftPartPixels(100f);
             if (Widgets.ButtonText(buttonRect, "Pray".Translate()))
             {
@@ -323,22 +346,28 @@ namespace MyWeapons
                 ToggleIconPatcher.flag = false;
                 Close();
             }
-            GUI.color = Color.white;
+            GUI.color = color_state;
+
+            /// Gap
+            GetRow(out top, out bot, bot);
 
             /// Scrollview for created recipes
             viewRect = bot;
             scrollRect = viewRect;
             scrollRect.width -= scrollbarWidth;
-            scrollRect.height = gc.CreatedRecipes.Count * textLineHeight;
+            scrollRect.height = gc.CreatedRecipes.Count * (textLineHeight + 2);
             Widgets.BeginScrollView(viewRect, ref createdRecipesScrollPosition, scrollRect, true);
             List<RecipeDef> toRemove = new List<RecipeDef>();
             foreach (RecipeDef recipe in gc.CreatedRecipes)
             {
                 GetRow(out top, out scrollRect, scrollRect, textLineHeight);
-                Rect iconRect = top.LeftPartPixels(textLineHeight);
-                Rect labelRect = top.RightPartPixels(top.width - textLineHeight);
-                iconRect = iconRect.ContractedBy(2f);
-                labelRect = labelRect.ContractedBy(2f);
+                Rect iconRect = top.LeftPartPixels(textLineHeight - 4);
+                iconRect.y += 2f;
+                iconRect.height -= 4f;
+
+                Rect labelRect = top.RightPartPixels(top.width - textLineHeight - 2);
+                // iconRect = iconRect.ContractedBy(2f);
+                // labelRect = labelRect.ContractedBy(2f);
                 if (Widgets.ButtonImage(iconRect, TexButton.CloseXSmall))
                 {
                     toRemove.Add(recipe);
@@ -350,6 +379,8 @@ namespace MyWeapons
                 gc.RemoveRecipe(recipe);
             }
             Widgets.EndScrollView();
+            Text.Font = font_state;
+            GUI.color = color_state;
         }
     }
 
