@@ -1,0 +1,6 @@
+2024-02-23
+
+Bug left:
+PraySpot2 still has bugs:
+    1. Remove the recipes for a live bill (bill refer to null)
+    2. Create a recipe before the spot is created is still not working

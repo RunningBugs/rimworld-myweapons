@@ -130,28 +130,40 @@ namespace MyWeapons
                 recipeHashes.Insert(0, recipe.shortHash);
                 recipeProducts.Insert(0, products);
             }
+
+            ResolveReferences();
         }
 
         private void ResolveReferences()
         {
             foreach (RecipeDef recipe in CreatedRecipes)
             {
-                if (DefDatabase<RecipeDef>.GetNamed(recipe.defName, false) == null)
-                {
-                    recipe.ResolveReferences();
-                    recipe.PostLoad();
-                }
+                recipe.ResolveReferences();
+                // recipe.PostLoad();
+                // if (DefDatabase<RecipeDef>.GetNamed(recipe.defName, false) != null)
+                // {
+                //     recipe.ResolveReferences();
+                //     recipe.PostLoad();
+                // }
             }
         }
 
         public void RemoveRecipe(RecipeDef recipe)
         {
             var rid = int.Parse(recipe.defName.Split('_')[1]);
-            var idx = recipeIds.Find(id => id == rid);
+            var idx = recipeIds.FindIndex(id => id == rid);
+            Log.Warning($"Removing recipe {recipe} at index {idx} with rid {rid}");
+            Log.Warning($"Removing {string.Join(",", recipeIds.ToArray())}");
+            // Log.Warning($"Removing {string.Join(",", recipeProducts)}");
+            Log.Warning($"Removing {string.Join(",", recipeHashes.ToArray())}");
             recipeProducts.RemoveAt(idx);
+            Log.Warning($"here!");
             recipeHashes.RemoveAt(idx);
+            Log.Warning($"here!");
             recipeIds.RemoveAt(idx);
+            Log.Warning($"here!");
             CreatedRecipes.Remove(recipe);
+            Log.Warning($"here!");
         }
 
         public override void FinalizeInit()
