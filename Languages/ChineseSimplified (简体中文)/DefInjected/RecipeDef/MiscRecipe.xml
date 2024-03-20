@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Burning multiple Wastepack to gain gold -->
+  <RunningBugs_BurnMultipleTrash.label>从多份有益垃圾中提取黄金</RunningBugs_BurnMultipleTrash.label>
+  <!-- EN: Misc recipe -->
+  <RunningBugs_BurnMultipleTrash.description>从五单位有益垃圾中提取五单位黄金</RunningBugs_BurnMultipleTrash.description>
+  <!-- EN: Extracting gold -->
+  <RunningBugs_BurnMultipleTrash.jobString>正在提炼有益垃圾</RunningBugs_BurnMultipleTrash.jobString>
+  
+  <!-- EN: Burning Wastepack to gain gold -->
+  <RunningBugs_BurnTrash.label>从有益垃圾中提取黄金</RunningBugs_BurnTrash.label>
+  <!-- EN: Misc recipe -->
+  <RunningBugs_BurnTrash.description>从一单位有益垃圾中提取一单位黄金</RunningBugs_BurnTrash.description>
+  <!-- EN: Extracting gold -->
+  <RunningBugs_BurnTrash.jobString>正在提炼有益垃圾</RunningBugs_BurnTrash.jobString>
+  
+</LanguageData>

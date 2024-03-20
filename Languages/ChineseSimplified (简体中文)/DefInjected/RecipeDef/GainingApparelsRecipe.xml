@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make the super shield belt -->
+  <RunningBugs_Make_SuperShieldBelt.label>制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.label>
+  <!-- EN: make the super shield belt void. -->
+  <RunningBugs_Make_SuperShieldBelt.description>从虚空中制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.description>
+  <!-- EN: Making super shield belt. -->
+  <RunningBugs_Make_SuperShieldBelt.jobString>正在制作超级护盾腰带</RunningBugs_Make_SuperShieldBelt.jobString>
+  
+</LanguageData>

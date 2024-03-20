@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Pray to the Void at Pray Spots. -->
+  <MW_Praying.description>在祈祷点向边缘之神祈讨</MW_Praying.description>
+  <!-- EN: praying -->
+  <MW_Praying.gerundLabel>祈讨</MW_Praying.gerundLabel>
+  <!-- EN: pray -->
+  <MW_Praying.labelShort>祈讨</MW_Praying.labelShort>
+  <!-- EN: Prayer -->
+  <MW_Praying.pawnLabel>祈讨者</MW_Praying.pawnLabel>
+  <!-- EN: Pray at -->
+  <MW_Praying.verb>在祈讨</MW_Praying.verb>
+  
+</LanguageData>

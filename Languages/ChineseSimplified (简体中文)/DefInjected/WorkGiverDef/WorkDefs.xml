@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make things at Pray spot @ DoBillsUsePraySpot -->
+  <DoBillsUsePraySpot.label>在祈祷点祈求物品</DoBillsUsePraySpot.label>
+  <!-- EN: Pray at  -->
+  <DoBillsUsePraySpot.gerund>在祈祷点祈求</DoBillsUsePraySpot.gerund>
+  <!-- EN: craft -->
+  <DoBillsUsePraySpot.verb>祈求</DoBillsUsePraySpot.verb>
+  
+</LanguageData>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make MechSerumHealer -->
+  <RunningBugs_Make_MechSerumHealer.label>制作治愈机械液</RunningBugs_Make_MechSerumHealer.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_MechSerumHealer.description>从虚空制作治愈机械液</RunningBugs_Make_MechSerumHealer.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_MechSerumHealer.jobString>正在向神祈祷治愈机械液</RunningBugs_Make_MechSerumHealer.jobString>
+  
+  <!-- EN: make MechSerumResurrector -->
+  <RunningBugs_Make_MechSerumResurrector.label>制作复活机械液</RunningBugs_Make_MechSerumResurrector.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_MechSerumResurrector.description>制作复活机械液</RunningBugs_Make_MechSerumResurrector.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_MechSerumResurrector.jobString>正在向神祈祷复活机械液</RunningBugs_Make_MechSerumResurrector.jobString>
+  
+  <!-- EN: make PsychicSoothePulser -->
+  <RunningBugs_Make_PsychicSoothePulser.label>制作心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_PsychicSoothePulser.description>从虚空制作心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_PsychicSoothePulser.jobString>正在向神祈祷心灵抚慰脉冲发生器</RunningBugs_Make_PsychicSoothePulser.jobString>
+  
+</LanguageData>

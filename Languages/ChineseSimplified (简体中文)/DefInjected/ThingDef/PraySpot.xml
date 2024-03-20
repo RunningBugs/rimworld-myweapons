@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Pray spot -->
+  <PraySpot.label>祈祷点</PraySpot.label>
+  <!-- EN: A place for begging things like super weapons apparels or resources. Production here is fast because of the kind of the Void. -->
+  <PraySpot.description>向虚空中的神明祈求资源，武器，装备</PraySpot.description>
+  
+  <!-- EN: Pray spot 2 -->
+  <PraySpotTwo.label>祈祷点2</PraySpotTwo.label>
+  <!-- EN: A place for begging things with prayed recipes. Production here is fast because of the kind of the Void. -->
+  <PraySpotTwo.description>向虚空中的神明祈求，仅使用预先求到的配方</PraySpotTwo.description>
+  
+</LanguageData>

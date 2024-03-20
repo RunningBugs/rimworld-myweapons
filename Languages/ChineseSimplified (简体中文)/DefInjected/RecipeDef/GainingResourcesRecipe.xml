@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make AIPersonaCore -->
+  <RunningBugs_Make_AIPersonaCore.label>制作人格核心</RunningBugs_Make_AIPersonaCore.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_AIPersonaCore.description>从虚空制作人格核心</RunningBugs_Make_AIPersonaCore.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_AIPersonaCore.jobString>正在向神祈祷人格核心</RunningBugs_Make_AIPersonaCore.jobString>
+  
+  <!-- EN: make granite blocks -->
+  <RunningBugs_Make_BlocksGranite.label>制作花岗岩砖</RunningBugs_Make_BlocksGranite.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_BlocksGranite.description>从虚空制作花岗岩砖</RunningBugs_Make_BlocksGranite.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_BlocksGranite.jobString>正在向神祈祷花岗岩砖</RunningBugs_Make_BlocksGranite.jobString>
+  
+  <!-- EN: make limestone blocks -->
+  <RunningBugs_Make_BlocksLimestone.label>制作石灰岩砖</RunningBugs_Make_BlocksLimestone.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_BlocksLimestone.description>从虚空制作石灰岩砖</RunningBugs_Make_BlocksLimestone.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_BlocksLimestone.jobString>正在向神祈祷石灰岩砖</RunningBugs_Make_BlocksLimestone.jobString>
+  
+  <!-- EN: make marble blocks -->
+  <RunningBugs_Make_BlocksMarble.label>制作大理石砖</RunningBugs_Make_BlocksMarble.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_BlocksMarble.description>从虚空制作大理石砖</RunningBugs_Make_BlocksMarble.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_BlocksMarble.jobString>正在向神祈祷大理石砖</RunningBugs_Make_BlocksMarble.jobString>
+  
+  <!-- EN: make sandstone blocks -->
+  <RunningBugs_Make_BlocksSandstone.label>制作砂岩砖</RunningBugs_Make_BlocksSandstone.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_BlocksSandstone.description>从虚空制作砂岩砖</RunningBugs_Make_BlocksSandstone.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_BlocksSandstone.jobString>正在向神祈祷砂岩砖</RunningBugs_Make_BlocksSandstone.jobString>
+  
+  <!-- EN: make slate blocks -->
+  <RunningBugs_Make_BlocksSlate.label>制作板岩砖</RunningBugs_Make_BlocksSlate.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_BlocksSlate.description>从虚空制作板岩砖</RunningBugs_Make_BlocksSlate.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_BlocksSlate.jobString>正在向神祈祷板岩砖</RunningBugs_Make_BlocksSlate.jobString>
+  
+  <!-- EN: make Chemfuel -->
+  <RunningBugs_Make_Chemfuel.label>制作化合燃料</RunningBugs_Make_Chemfuel.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Chemfuel.description>从虚空中制作化合燃料</RunningBugs_Make_Chemfuel.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Chemfuel.jobString>正在制作化合燃料</RunningBugs_Make_Chemfuel.jobString>
+  
+  <!-- EN: make cloth -->
+  <RunningBugs_Make_Cloth.label>制作布料</RunningBugs_Make_Cloth.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Cloth.description>从虚空制作布料</RunningBugs_Make_Cloth.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Cloth.jobString>正在向神祈祷布料</RunningBugs_Make_Cloth.jobString>
+  
+  <!-- EN: make components -->
+  <RunningBugs_Make_Components.label>制作零件</RunningBugs_Make_Components.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Components.description>从虚空制作零件</RunningBugs_Make_Components.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Components.jobString>正在向神祈祷零件</RunningBugs_Make_Components.jobString>
+  
+  <!-- EN: make advanced components -->
+  <RunningBugs_Make_ComponentSpacer.label>制作高级零件</RunningBugs_Make_ComponentSpacer.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_ComponentSpacer.description>从虚空制作高级零件</RunningBugs_Make_ComponentSpacer.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_ComponentSpacer.jobString>正在向神祈祷高级零件</RunningBugs_Make_ComponentSpacer.jobString>
+  
+  <!-- EN: make DevilstrandCloth -->
+  <RunningBugs_Make_DevilstrandCloth.label>制作蘑菇布</RunningBugs_Make_DevilstrandCloth.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_DevilstrandCloth.description>从虚空制作蘑菇布</RunningBugs_Make_DevilstrandCloth.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_DevilstrandCloth.jobString>正在向神祈祷蘑菇布</RunningBugs_Make_DevilstrandCloth.jobString>
+  
+  <!-- EN: make gold -->
+  <RunningBugs_Make_Gold.label>制作黄金</RunningBugs_Make_Gold.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Gold.description>从虚空制作黄金</RunningBugs_Make_Gold.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Gold.jobString>正在向神祈祷黄金</RunningBugs_Make_Gold.jobString>
+  
+  <!-- EN: make HemogenPack -->
+  <RunningBugs_Make_HemogenPack.label>制作血原包</RunningBugs_Make_HemogenPack.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_HemogenPack.description>从虚空中制作血原包</RunningBugs_Make_HemogenPack.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_HemogenPack.jobString>正在向神祈祷血原包</RunningBugs_Make_HemogenPack.jobString>
+  
+  <!-- EN: make Hyperweave -->
+  <RunningBugs_Make_Hyperweave.label>制作超织物</RunningBugs_Make_Hyperweave.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Hyperweave.description>从虚空制作超织物</RunningBugs_Make_Hyperweave.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Hyperweave.jobString>正在向神祈祷超织物</RunningBugs_Make_Hyperweave.jobString>
+  
+  <!-- EN: make Leather_Plain -->
+  <RunningBugs_Make_Leather_Plain.label>制作普通皮革</RunningBugs_Make_Leather_Plain.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Leather_Plain.description>从虚空中制作普通皮革</RunningBugs_Make_Leather_Plain.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Leather_Plain.jobString>正在向神祈祷普通皮革</RunningBugs_Make_Leather_Plain.jobString>
+  
+  <!-- EN: make Leather_Thrumbo -->
+  <RunningBugs_Make_Leather_Thrumbo.label>制作敲击兽皮</RunningBugs_Make_Leather_Thrumbo.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Leather_Thrumbo.description>从虚空中制作敲击兽皮</RunningBugs_Make_Leather_Thrumbo.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Leather_Thrumbo.jobString>正在向神祈祷敲击兽皮</RunningBugs_Make_Leather_Thrumbo.jobString>
+  
+  <!-- EN: make MedicineHerbal -->
+  <RunningBugs_Make_MedicineHerbal.label>制作草药</RunningBugs_Make_MedicineHerbal.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_MedicineHerbal.description>从虚空制作草药</RunningBugs_Make_MedicineHerbal.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_MedicineHerbal.jobString>正在向神祈祷草药</RunningBugs_Make_MedicineHerbal.jobString>
+  
+  <!-- EN: make MedicineIndustrial -->
+  <RunningBugs_Make_MedicineIndustrial.label>制作医药</RunningBugs_Make_MedicineIndustrial.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_MedicineIndustrial.description>从虚空制作医药</RunningBugs_Make_MedicineIndustrial.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_MedicineIndustrial.jobString>正在向神祈祷医药</RunningBugs_Make_MedicineIndustrial.jobString>
+  
+  <!-- EN: make MedicineUltratech -->
+  <RunningBugs_Make_MedicineUltratech.label>制作闪耀世界医药</RunningBugs_Make_MedicineUltratech.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_MedicineUltratech.description>从虚空制作闪耀世界医药</RunningBugs_Make_MedicineUltratech.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_MedicineUltratech.jobString>正在向神祈祷闪耀世界医药</RunningBugs_Make_MedicineUltratech.jobString>
+  
+  <!-- EN: make Neutroamine -->
+  <RunningBugs_Make_Neutroamine.label>制作中性胺</RunningBugs_Make_Neutroamine.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Neutroamine.description>从虚空中制作中性胺</RunningBugs_Make_Neutroamine.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Neutroamine.jobString>正在制作中性胺</RunningBugs_Make_Neutroamine.jobString>
+  
+  <!-- EN: make plasteel -->
+  <RunningBugs_Make_Plasteel.label>制作玻璃钢</RunningBugs_Make_Plasteel.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Plasteel.description>从虚空制作玻璃钢</RunningBugs_Make_Plasteel.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Plasteel.jobString>正在向神祈祷玻璃钢</RunningBugs_Make_Plasteel.jobString>
+  
+  <!-- EN: make silver -->
+  <RunningBugs_Make_Silver.label>制作白银</RunningBugs_Make_Silver.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Silver.description>从虚空制作白银</RunningBugs_Make_Silver.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Silver.jobString>正在向神祈祷白银</RunningBugs_Make_Silver.jobString>
+  
+  <!-- EN: make steel -->
+  <RunningBugs_Make_Steel.label>制作钢材</RunningBugs_Make_Steel.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Steel.description>从虚空制作钢材</RunningBugs_Make_Steel.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Steel.jobString>正在向神祈祷钢材</RunningBugs_Make_Steel.jobString>
+  
+  <!-- EN: make Synthread -->
+  <RunningBugs_Make_Synthread.label>制作合成纤维</RunningBugs_Make_Synthread.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Synthread.description>从虚空制作合成纤维</RunningBugs_Make_Synthread.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Synthread.jobString>正在向神祈祷合成纤维</RunningBugs_Make_Synthread.jobString>
+  
+  <!-- EN: make TechprofSubpersonaCore -->
+  <RunningBugs_Make_TechprofSubpersonaCore.label>制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_TechprofSubpersonaCore.description>从虚空中制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_TechprofSubpersonaCore.jobString>正在制作科技核心</RunningBugs_Make_TechprofSubpersonaCore.jobString>
+  
+  <!-- EN: make Uranium -->
+  <RunningBugs_Make_Uranium.label>制作铀</RunningBugs_Make_Uranium.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Uranium.description>从虚空制作铀</RunningBugs_Make_Uranium.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Uranium.jobString>正在向神祈祷铀</RunningBugs_Make_Uranium.jobString>
+  
+  <!-- EN: make wood -->
+  <RunningBugs_Make_Wood.label>制作原木</RunningBugs_Make_Wood.label>
+  <!-- EN: Make resource from void. -->
+  <RunningBugs_Make_Wood.description>从虚空制作原木</RunningBugs_Make_Wood.description>
+  <!-- EN: Making resources. -->
+  <RunningBugs_Make_Wood.jobString>正在向神祈祷原木</RunningBugs_Make_Wood.jobString>
+  
+</LanguageData>

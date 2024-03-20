@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: super doomsday bullet -->
+  <Bullet_MySuperDoomsDay.label>超级末日弹</Bullet_MySuperDoomsDay.label>
+  
+  <!-- EN: my super gun blast -->
+  <Bullet_MySuperGun.label>超级栓动步枪反机械子弹</Bullet_MySuperGun.label>
+  
+  <!-- EN: super rocket -->
+  <Bullet_MySuperRocket.label>超级火箭弹</Bullet_MySuperRocket.label>
+  
+  <!-- EN: EMP launcher shell -->
+  <Bullet_SuperEMPLauncher.label>EMP火箭弹</Bullet_SuperEMPLauncher.label>
+  
+  <!-- EN: Super DoomsDay -->
+  <Gun_MySuperDoomsDay.label>超级末日火箭炮</Gun_MySuperDoomsDay.label>
+  <!-- EN: Super DoomsDay -->
+  <Gun_MySuperDoomsDay.description>超级末日火箭炮，和传统的末日火箭炮相比，具有射程更远，使用次数无限，没有前摇，可以在室内发射飞越障碍物直达目标点，火箭速度快，护甲穿透更高，等等优势</Gun_MySuperDoomsDay.description>
+  <!-- EN: barrel -->
+  <Gun_MySuperDoomsDay.tools.barrel.label>枪管</Gun_MySuperDoomsDay.tools.barrel.label>
+  <!-- EN: Super DoomsDay -->
+  <Gun_MySuperDoomsDay.verbs.Verb_Shoot.label>超级末日火箭炮发射</Gun_MySuperDoomsDay.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Super EMP launcher -->
+  <Gun_SuperEmpLauncher.label>超级EMP发射器</Gun_SuperEmpLauncher.label>
+  <!-- EN: A super powerful wide-barreled EMP shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning mechanical targets (mechanoids, turrets, mortars) and depleting shields in the area of effect. -->
+  <Gun_SuperEmpLauncher.description>超级EMP发射器，相当于超级三连火箭炮，换了EMP子弹，从而可以击碎护盾，确保伤害</Gun_SuperEmpLauncher.description>
+  <!-- EN: stock -->
+  <Gun_SuperEmpLauncher.tools.stock.label>枪托</Gun_SuperEmpLauncher.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_SuperEmpLauncher.tools.barrel.label>枪管</Gun_SuperEmpLauncher.tools.barrel.label>
+  <!-- EN: Super EMP launcher -->
+  <Gun_SuperEmpLauncher.verbs.Verb_Shoot.label>超级EMP发射器发射</Gun_SuperEmpLauncher.verbs.Verb_Shoot.label>
+  
+  <!-- EN: super bolt-action rifle -->
+  <Gun_SuperGun.label>超级栓动步枪</Gun_SuperGun.label>
+  <!-- EN: An ancient pattern super bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies. -->
+  <Gun_SuperGun.description>古老的栓动式步枪。拥有良好的射程。并且可以释放心灵冲击，用于控制疯狂的单位。</Gun_SuperGun.description>
+  <!-- EN: stock -->
+  <Gun_SuperGun.tools.stock.label>枪托</Gun_SuperGun.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_SuperGun.tools.barrel.label>枪管</Gun_SuperGun.tools.barrel.label>
+  <Gun_SuperGun.verbs.Verb_Shoot.label>超级栓动步枪射击</Gun_SuperGun.verbs.Verb_Shoot.label>
+  <!-- EN: psychic shock lance that even affects mech bosses -->
+  <Gun_SuperGun.verbs.psychic_shock_lance_that_even_affects_mech_bosses.label>超级栓动步枪心灵冲击</Gun_SuperGun.verbs.psychic_shock_lance_that_even_affects_mech_bosses.label>
+  
+  <!-- EN: Δ' bolt-action rifle -->
+  <Gun_SuperGunPersona.label>Δ'超级栓动步枪</Gun_SuperGunPersona.label>
+  <!-- EN: An ancient pattern super persona bolt-action rifle. With its long range, and high fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. It can also cast psychic shock to targets, useful to control crazy pawns and enemies. -->
+  <Gun_SuperGunPersona.description>古老的人格超级栓动式步枪。拥有良好的射程。并且可以释放心灵冲击，用于控制疯狂的单位。</Gun_SuperGunPersona.description>
+  <!-- EN: stock -->
+  <Gun_SuperGunPersona.tools.stock.label>枪托</Gun_SuperGunPersona.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_SuperGunPersona.tools.barrel.label>枪管</Gun_SuperGunPersona.tools.barrel.label>
+  <Gun_SuperGunPersona.verbs.Verb_Shoot.label>Δ'超级栓动步枪射击</Gun_SuperGunPersona.verbs.Verb_Shoot.label>
+  <!-- EN: psychic shock lance that even affects mech bosses -->
+  <Gun_SuperGunPersona.verbs.psychic_shock_lance_that_even_affects_mech_bosses.label>Δ'超级栓动步枪心灵冲击</Gun_SuperGunPersona.verbs.psychic_shock_lance_that_even_affects_mech_bosses.label>
+  
+  <!-- EN: Super Rocket Gun -->
+  <Gun_SuperRocketGun.label>超级三连火箭炮</Gun_SuperRocketGun.label>
+  <!-- EN: Super Rocket Gun -->
+  <Gun_SuperRocketGun.description>超级三连火箭炮，和传统的三连火箭炮相比，具有射程更远，使用次数无限，可以在室内发射飞越障碍物直达目标点，火箭速度快，护甲穿透更高，等等优势</Gun_SuperRocketGun.description>
+  <!-- EN: barrel -->
+  <Gun_SuperRocketGun.tools.barrel.label>枪管</Gun_SuperRocketGun.tools.barrel.label>
+  <!-- EN: Super Rocket Gun -->
+  <Gun_SuperRocketGun.verbs.Verb_Shoot.label>超级三连火箭炮发射</Gun_SuperRocketGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Super Stun launcher -->
+  <Gun_SuperStunLauncher.label>超级击晕炮</Gun_SuperStunLauncher.label>
+  <!-- EN: A super powerful wide-barreled stun shell launcher. The shell will upon impact release a burst of electromagnetic energy, stunning all targets (pawns, mechanoids, turrets, mortars). -->
+  <Gun_SuperStunLauncher.description>超级击晕炮，可以使范围内的角色进入长时间的眩晕状态，用以应对中心空投等进攻，控制敌人并减少对基地的损伤。注意：爆炸物依然会被引爆</Gun_SuperStunLauncher.description>
+  <!-- EN: stock -->
+  <Gun_SuperStunLauncher.tools.stock.label>枪托</Gun_SuperStunLauncher.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_SuperStunLauncher.tools.barrel.label>枪管</Gun_SuperStunLauncher.tools.barrel.label>
+  <!-- EN: Super Stun launcher -->
+  <Gun_SuperStunLauncher.verbs.Verb_Shoot.label>超级击晕炮发射</Gun_SuperStunLauncher.verbs.Verb_Shoot.label>
+  
+  <!-- EN: super rocket stunning bullets -->
+  <StunBullet_SuperStunLauncher.label>晕眩火箭弹</StunBullet_SuperStunLauncher.label>
+  
+</LanguageData>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cook lavish meal x4 -->
+  <RunningBugs_Cook_MealLavishBulk.label>烹饪奢侈食物 x4</RunningBugs_Cook_MealLavishBulk.label>
+  <!-- EN: Cook 4 very complex meals from void. It's like the god's blessing. -->
+  <RunningBugs_Cook_MealLavishBulk.description>如同神的祝福一般，从虚空中烹饪出四十份非常复杂的食物。</RunningBugs_Cook_MealLavishBulk.description>
+  <!-- EN: Cooking 40 lavish meals. -->
+  <RunningBugs_Cook_MealLavishBulk.jobString>正在烹饪四十份奢侈食物。</RunningBugs_Cook_MealLavishBulk.jobString>
+  
+  <!-- EN: make chicken meat -->
+  <RunningBugs_Make_Chicken.label>请求鸡肉 x75</RunningBugs_Make_Chicken.label>
+  <!-- EN: Make meals from void. -->
+  <RunningBugs_Make_Chicken.description>请求神赐予75块鸡肉</RunningBugs_Make_Chicken.description>
+  <!-- EN: Cooking... -->
+  <RunningBugs_Make_Chicken.jobString>正在向神祈祷</RunningBugs_Make_Chicken.jobString>
+  
+  <!-- EN: make kibble -->
+  <RunningBugs_Make_Kibble.label>制作饲料</RunningBugs_Make_Kibble.label>
+  <!-- EN: Make meals from void. -->
+  <RunningBugs_Make_Kibble.description>从虚空制作饲料</RunningBugs_Make_Kibble.description>
+  <!-- EN: Cooking... -->
+  <RunningBugs_Make_Kibble.jobString>正在向神祈祷饲料</RunningBugs_Make_Kibble.jobString>
+  
+  <!-- EN: make RawRice -->
+  <RunningBugs_Make_RawRice.label>请求稻米 x75</RunningBugs_Make_RawRice.label>
+  <!-- EN: Make meals from void. -->
+  <RunningBugs_Make_RawRice.description>请求神赐予75块稻米</RunningBugs_Make_RawRice.description>
+  <!-- EN: Cooking... -->
+  <RunningBugs_Make_RawRice.jobString>正在向神祈祷</RunningBugs_Make_RawRice.jobString>
+  
+</LanguageData>

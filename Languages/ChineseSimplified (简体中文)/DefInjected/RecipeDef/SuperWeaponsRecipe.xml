@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make Super DoomsDay Launcher -->
+  <RunningBugs_Make_SuperDoomsDay.label>超级末日火箭炮</RunningBugs_Make_SuperDoomsDay.label>
+  <!-- EN: Making Super DoomsDay Launcher from void. It's a super powerful rocket launcher that enough to kill everything. -->
+  <RunningBugs_Make_SuperDoomsDay.description>从虚空中制作超级末日火箭炮。这是一种非常强力的末日火箭炮。</RunningBugs_Make_SuperDoomsDay.description>
+  <!-- EN: Making Super DoomsDay Launcher -->
+  <RunningBugs_Make_SuperDoomsDay.jobString>制作超级末日火箭炮</RunningBugs_Make_SuperDoomsDay.jobString>
+  
+  <!-- EN: Make Super Emp Launcher -->
+  <RunningBugs_Make_SuperEmpLauncher.label>制作超级EMP发射器</RunningBugs_Make_SuperEmpLauncher.label>
+  <!-- EN: Making Emp Launcher from void. It's a super powerful EMP launcher that has a long range, fast bullet speed, and large affecting area. -->
+  <RunningBugs_Make_SuperEmpLauncher.description>从虚空中制作超级EMP发射器。这是一种非常强力的EMP发射器，射程大，子弹快，影响范围大。</RunningBugs_Make_SuperEmpLauncher.description>
+  <!-- EN: Making Super Emp Launcher -->
+  <RunningBugs_Make_SuperEmpLauncher.jobString>制作超级EMP发射器</RunningBugs_Make_SuperEmpLauncher.jobString>
+  
+  <!-- EN: Make Super Gun -->
+  <RunningBugs_Make_SuperGun.label>制作超级栓动步枪</RunningBugs_Make_SuperGun.label>
+  <!-- EN: Making Super Gun from void. It's a super powerful gun that's very OP. -->
+  <RunningBugs_Make_SuperGun.description>从虚空中制作超级栓动步枪。这是一种非常强力的枪械。</RunningBugs_Make_SuperGun.description>
+  <!-- EN: Making Super Gun -->
+  <RunningBugs_Make_SuperGun.jobString>制作超级栓动步枪</RunningBugs_Make_SuperGun.jobString>
+  
+  <!-- EN: Make Super Gun Persona -->
+  <RunningBugs_Make_SuperGunPersona.label>制作人格超级栓动步枪</RunningBugs_Make_SuperGunPersona.label>
+  <!-- EN: Making Super Gun Persona from void. It's a super powerful gun that's very OP. -->
+  <RunningBugs_Make_SuperGunPersona.description>从虚空中制作人格超级栓动步枪。这是一种非常强力的枪械。</RunningBugs_Make_SuperGunPersona.description>
+  <!-- EN: Making Super Gun -->
+  <RunningBugs_Make_SuperGunPersona.jobString>制作人格超级栓动步枪</RunningBugs_Make_SuperGunPersona.jobString>
+  
+  <!-- EN: Make Super Rocket Launcher -->
+  <RunningBugs_Make_SuperRocketGun.label>制作超级火箭炮</RunningBugs_Make_SuperRocketGun.label>
+  <!-- EN: Making Super Rocket Launcher from void. It's a super powerful rocket launcher that's very OP. -->
+  <RunningBugs_Make_SuperRocketGun.description>从虚空中制作超级火箭炮。这是一种非常强力的火箭炮。</RunningBugs_Make_SuperRocketGun.description>
+  <!-- EN: Making Super Rocket Launcher -->
+  <RunningBugs_Make_SuperRocketGun.jobString>制作超级火箭炮</RunningBugs_Make_SuperRocketGun.jobString>
+  
+  <!-- EN: Make Super Stun Launcher -->
+  <RunningBugs_Make_SuperStunLauncher.label>制作超级击晕炮</RunningBugs_Make_SuperStunLauncher.label>
+  <!-- EN: Making Stun Launcher from void. It's a super powerful Stun launcher that has a long range, fast bullet speed, and large affecting area. -->
+  <RunningBugs_Make_SuperStunLauncher.description>从虚空中制作超级击晕炮。这是一种没有伤害的范围武器，可以击晕范围内敌人相当长的时间，用于应对中心空投防止对基地造成损害。注意：爆炸物依然会被引爆</RunningBugs_Make_SuperStunLauncher.description>
+  <!-- EN: Making Super Stun Launcher -->
+  <RunningBugs_Make_SuperStunLauncher.jobString>制作超级击晕炮</RunningBugs_Make_SuperStunLauncher.jobString>
+  
+</LanguageData>

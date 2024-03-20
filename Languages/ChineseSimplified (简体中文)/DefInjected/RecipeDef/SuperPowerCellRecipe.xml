@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make SuperVanometricPowerCell -->
+  <RunningBugs_Make_SuperVanometricPowerCell.label>制作超级虚空电池</RunningBugs_Make_SuperVanometricPowerCell.label>
+  <!-- EN: Make SuperVanometricPowerCell from void -->
+  <RunningBugs_Make_SuperVanometricPowerCell.description>从虚空制作超级虚空电池</RunningBugs_Make_SuperVanometricPowerCell.description>
+  <!-- EN: Making SuperVanometricPowerCell. -->
+  <RunningBugs_Make_SuperVanometricPowerCell.jobString>正在向神祈祷超级虚空电池</RunningBugs_Make_SuperVanometricPowerCell.jobString>
+  
+</LanguageData>
