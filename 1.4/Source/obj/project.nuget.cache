@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "RSALm4A5MttIYE4GPV1XxsRJhPXKvbdf2lZZkIaOtcA55BqfibLEc/C5Y1zJLVip6MHUprirrgl1heBfvDpWgQ==",
+  "success": true,
+  "projectFilePath": "/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.4/Source/MyWeapons.csproj",
+  "expectedPackageFiles": [
+    "/home/lisanhu/.nuget/packages/krafs.rimworld.ref/1.4.3704/krafs.rimworld.ref.1.4.3704.nupkg.sha512",
+    "/home/lisanhu/.nuget/packages/lib.harmony/2.2.2/lib.harmony.2.2.2.nupkg.sha512",
+    "/home/lisanhu/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/lisanhu/.nuget/packages/microsoft.netframework.referenceassemblies.net481/1.0.3/microsoft.netframework.referenceassemblies.net481.1.0.3.nupkg.sha512",
+    "/home/lisanhu/.nuget/packages/unlimitedhugs.rimworld.hugslib/10.0.1/unlimitedhugs.rimworld.hugslib.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

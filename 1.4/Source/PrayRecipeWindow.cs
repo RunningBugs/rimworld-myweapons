@@ -2,10 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace MyWeapons
 {
@@ -100,7 +104,7 @@ namespace MyWeapons
             recipe.descriptionHyperlinks = new List<DefHyperlink>();
             foreach (ThingDef def in products)
             {
-                Log.Warning($"Adding {def.defName} to recipe {recipe.defName}");
+                // Log.Warning($"Adding {def.defName} to recipe {recipe.defName}");
                 recipe.products.Add(new ThingDefCountClass(def, def.stackLimit));
                 recipe.descriptionHyperlinks.Add(new DefHyperlink(def));
             }
@@ -140,7 +144,8 @@ namespace MyWeapons
                 }
             }
 
-            if (inDefDatabase) {
+            if (inDefDatabase)
+            {
                 RecipeDef rcp = DefDatabase<RecipeDef>.GetNamed(recipeDefname, false);
                 if (rcp != null)
                 {
@@ -148,7 +153,7 @@ namespace MyWeapons
                     return;
                 }
                 rcp.ResolveReferences();
-                return ;
+                return;
             }
 
             RecipeDef recipe = GenRecipe(recipeId, recipeHash, products);
@@ -166,7 +171,7 @@ namespace MyWeapons
             recipe.ResolveReferences();
         }
 
-        private void ResolveReferences()
+        public void ResolveReferences()
         {
             foreach (RecipeDef recipe in CreatedRecipes)
             {
@@ -222,7 +227,7 @@ namespace MyWeapons
                     var rid = recipeIds[i];
                     var rhash = recipeHashes[i];
                     var rproducts = recipeProducts[i];
-                    Log.Warning($"Adding recipe {rid} with hash {rhash}, products: {string.Join(", ", rproducts.Select(d => d.defName).ToArray())}");
+                    // Log.Warning($"Adding recipe {rid} with hash {rhash}, products: {string.Join(", ", rproducts.Select(d => d.defName).ToArray())}");
                     AddRecipe(rproducts, rid, rhash);
 
                     recipeId = Math.Max(recipeId, rid + 1);
@@ -381,6 +386,17 @@ namespace MyWeapons
             Widgets.EndScrollView();
             Text.Font = font_state;
             GUI.color = color_state;
+        }
+    }
+
+    [HarmonyPatch(typeof(ThingListGroupHelper), "Includes")]
+    public static class ThingListGroupHelper_Patch
+    {
+        static void Postfix(ThingRequestGroup group, ThingDef def, ref bool __result)
+        {
+            if (!__result) {
+                __result = group == ThingRequestGroup.PotentialBillGiver && def == DefDatabase<ThingDef>.GetNamed("PraySpotTwo");
+            }
         }
     }
 

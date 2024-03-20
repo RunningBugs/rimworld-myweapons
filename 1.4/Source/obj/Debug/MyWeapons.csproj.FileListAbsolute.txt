@@ -1,0 +1,10 @@
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Assemblies/MyWeapons.dll
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Source/obj/Debug/MyWeapons.csproj.AssemblyReference.cache
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Source/obj/Debug/MyWeapons.GeneratedMSBuildEditorConfig.editorconfig
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Source/obj/Debug/MyWeapons.csproj.CoreCompileInputs.cache
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/Source/obj/Debug/MyWeapons.dll
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.4/Assemblies/MyWeapons.dll
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.4/Source/obj/Debug/MyWeapons.csproj.AssemblyReference.cache
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.4/Source/obj/Debug/MyWeapons.GeneratedMSBuildEditorConfig.editorconfig
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.4/Source/obj/Debug/MyWeapons.csproj.CoreCompileInputs.cache
+/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.4/Source/obj/Debug/MyWeapons.dll
