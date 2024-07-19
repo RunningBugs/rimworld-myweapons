@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/fillPercent</xpath>
+        <value>
+            <fillPercent>1</fillPercent>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/fillPercent</xpath>
+        <value>
+            <fillPercent>1</fillPercent>
+        </value>
+    </Operation>
+</Patch>

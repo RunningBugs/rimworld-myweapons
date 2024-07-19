@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-    <PraySpot.label>祈祷点</PraySpot.label>
-    <PraySpot.description>向虚空中的神明祈求资源，武器，装备</PraySpot.description>
-
-    <PraySpotTwo.label>祈祷点2</PraySpotTwo.label>
-    <PraySpotTwo.description>向虚空中的神明祈求，仅使用预先求到的配方</PraySpotTwo.description>
-</LanguageData>

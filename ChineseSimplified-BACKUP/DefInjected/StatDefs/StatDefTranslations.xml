@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-    <MW_PawnCreatedQualityOffset.label>生产物品质量偏移</MW_PawnCreatedQualityOffset.label>
-    <MW_PawnCreatedQualityOffset.description>生产具有质量的物品时，物品质量偏移量，正数为更好</MW_PawnCreatedQualityOffset.description>
-</LanguageData>
