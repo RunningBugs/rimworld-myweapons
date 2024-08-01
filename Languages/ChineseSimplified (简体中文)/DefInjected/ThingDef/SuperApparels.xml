@@ -11,7 +11,7 @@
   <!-- EN: Toolbox that is capable of increasing the workspeed for the carrier significantly. -->
   <MW_Toolbox.description>工具箱，可以极大的加快持有者的工作速度</MW_Toolbox.description>
 
-  <MW_Toolbox2.label>小工具箱</MW_Toolbox2.label>
-  <MW_Toolbox2.description>小工具箱，可以很大的加快持有者的工作速度（增加1倍），并使生产物品质量偏移+2</MW_Toolbox2.description>
+  <MW_ToolboxTwo.label>小工具箱</MW_ToolboxTwo.label>
+  <MW_ToolboxTwo.description>小工具箱，可以很大的加快持有者的工作速度（增加1倍），并使生产物品质量偏移+2</MW_ToolboxTwo.description>
 
 </LanguageData>

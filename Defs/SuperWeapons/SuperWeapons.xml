@@ -359,7 +359,7 @@
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-			<damageDef>Stun</damageDef>
+			<damageDef>MyStun</damageDef>
 			<!-- each damage amount will stun the target for 30 ticks, 1000 * 30 = 30k ticks = 0.5 day in game -->
 			<damageAmountBase>1000</damageAmountBase>
 			<flyOverhead>true</flyOverhead>

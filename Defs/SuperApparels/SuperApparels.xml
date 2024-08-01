@@ -179,7 +179,7 @@
         </apparel>
     </ThingDef>
     <ThingDef ParentName="ApparelBase">
-        <defName>MW_Toolbox2</defName>
+        <defName>MW_ToolboxTwo</defName>
         <tradeability>None</tradeability>
         <label>small toolbox</label>
         <description>Toolbox that is capable of increasing the workspeed for the carrier significantly.</description>
