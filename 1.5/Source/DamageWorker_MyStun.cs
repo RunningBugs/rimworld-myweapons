@@ -24,18 +24,12 @@ class DamageWorker_MyStun : DamageWorker
             var ticks = (int)(dinfo.Amount * 30f);
             if (victim is Pawn pawn)
             {
-                if (pawn.stances != null)
-                {
-                    pawn.stances.stunner.StunFor(ticks, dinfo.Instigator);
-                }
+                pawn.stances?.stunner.StunFor(ticks, dinfo.Instigator);
             }
             else if (victim is Building)
             {
                 CompStunnable comp = victim.TryGetComp<CompStunnable>();
-                if (comp != null)
-                {
-                    comp.StunHandler.StunFor(ticks, dinfo.Instigator);
-                }
+                comp?.StunHandler.StunFor(ticks, dinfo.Instigator);
             }
             return new DamageWorker.DamageResult();
         }
