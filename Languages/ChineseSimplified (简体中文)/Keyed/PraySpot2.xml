@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
     <PrayRecipeLabel>祈求{0}</PrayRecipeLabel>
+    <PsychicSootherActOn>在心灵安抚装置的作用下，{0}已经恢复了正常</PsychicSootherActOn>
 </LanguageData>
