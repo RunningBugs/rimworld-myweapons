@@ -32,10 +32,14 @@ class CompPsychicSoother : ThingComp
                     var lord = map.lordManager.LordOf(pawn);
                     if (lord != null && lord.LordJob is LordJob_PrisonBreak)
                     {
+                        var pawns = lord.ownedPawns;
                         lord.RemoveAllPawns();
+                        foreach (var p in lord.ownedPawns)
+                        {
+                            pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                            Messages.Message("PsychicSootherActOn".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.PositiveEvent);
+                        }
                     }
-                    pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
-                    Messages.Message("PsychicSootherActOn".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.PositiveEvent);
                 }
             });
         }

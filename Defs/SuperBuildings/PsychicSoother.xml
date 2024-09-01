@@ -62,7 +62,7 @@
         <rotatable>false</rotatable>
         <canOverlapZones>false</canOverlapZones>
         <minifiedDef>MinifiedThing</minifiedDef>
-        <specialDisplayRadius>14.9</specialDisplayRadius>
+        <!-- <specialDisplayRadius>14.9</specialDisplayRadius> -->
         <tradeability>Sellable</tradeability>
         <tickerType>Normal</tickerType>
         <tradeTags>
