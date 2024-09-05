@@ -34,9 +34,16 @@ class CompPsychicSoother : ThingComp
                     {
                         var pawns = lord.ownedPawns;
                         lord.RemoveAllPawns();
-                        foreach (var p in lord.ownedPawns)
+                        foreach (var p in pawns)
                         {
                             pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                            var mentalStateHandler = pawn.mindState.mentalStateHandler;
+                            var curState = mentalStateHandler.CurState;
+                            if (curState != null)
+                            {
+                                mentalStateHandler.CurState.RecoverFromState();
+                            }
+                            mentalStateHandler.Reset();
                             Messages.Message("PsychicSootherActOn".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.PositiveEvent);
                         }
                     }
