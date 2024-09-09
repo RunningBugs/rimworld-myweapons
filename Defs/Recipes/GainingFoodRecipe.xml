@@ -42,7 +42,7 @@
     <defName>RunningBugs_Make_RawBerries</defName>
     <label>make RawBerries</label>
     <products>
-      <RawRice>75</RawRice>
+      <RawBerries>75</RawBerries>
     </products>
     <descriptionHyperlinks>
       <ThingDef>RawBerries</ThingDef>
