@@ -28,5 +28,12 @@
   <RunningBugs_Make_RawRice.description>请求神赐予75块稻米</RunningBugs_Make_RawRice.description>
   <!-- EN: Cooking... -->
   <RunningBugs_Make_RawRice.jobString>正在向神祈祷</RunningBugs_Make_RawRice.jobString>
+
+  <!-- EN: make RawBerries -->
+  <RunningBugs_Make_RawBerries.label>请求莓果 x75</RunningBugs_Make_RawBerries.label>
+  <!-- EN: Make meals from void. -->
+  <RunningBugs_Make_RawBerries.description>请求神赐予75个莓果</RunningBugs_Make_RawBerries.description>
+  <!-- EN: Cooking... -->
+  <RunningBugs_Make_RawBerries.jobString>正在向神祈祷</RunningBugs_Make_RawBerries.jobString>
   
 </LanguageData>

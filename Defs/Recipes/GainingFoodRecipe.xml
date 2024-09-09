@@ -39,6 +39,17 @@
   </RecipeDef>
 
   <RecipeDef ParentName="RunningBugs_CookRecipe">
+    <defName>RunningBugs_Make_RawBerries</defName>
+    <label>make RawBerries</label>
+    <products>
+      <RawRice>75</RawRice>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>RawBerries</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="RunningBugs_CookRecipe">
     <defName>RunningBugs_Make_Kibble</defName>
     <label>make kibble</label>
     <products>
