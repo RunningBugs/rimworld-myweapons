@@ -22,12 +22,16 @@ class CompPsychicSoother : ThingComp
         {
             map.mapPawns.SlavesAndPrisonersOfColonySpawned.Concat(map.mapPawns.FreeColonistsSpawned).ToList().ForEach(pawn =>
             {
-                if (pawn.InAggroMentalState)
+                var mentalStateHandler = pawn.mindState.mentalStateHandler;
+                var curState = mentalStateHandler.CurState;
+
+                if (curState != null)
                 {
-                    pawn.MentalState.RecoverFromState();
+                    mentalStateHandler.CurState.RecoverFromState();
                     Messages.Message("PsychicSootherActOn".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.PositiveEvent);
                 }
-                else if (GenHostility.HostileTo(pawn, Faction.OfPlayer))
+
+                if (GenHostility.HostileTo(pawn, Faction.OfPlayer))
                 {
                     var lord = map.lordManager.LordOf(pawn);
                     if (lord != null && lord.LordJob is LordJob_PrisonBreak)
@@ -36,18 +40,38 @@ class CompPsychicSoother : ThingComp
                         lord.RemoveAllPawns();
                         foreach (var p in pawns)
                         {
-                            pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
-                            var mentalStateHandler = pawn.mindState.mentalStateHandler;
-                            var curState = mentalStateHandler.CurState;
-                            if (curState != null)
-                            {
-                                mentalStateHandler.CurState.RecoverFromState();
-                            }
                             mentalStateHandler.Reset();
+                            pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
                             Messages.Message("PsychicSootherActOn".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.PositiveEvent);
                         }
                     }
                 }
+                // if (pawn.InAggroMentalState)
+                // {
+                //     pawn.MentalState.RecoverFromState();
+                //     Messages.Message("PsychicSootherActOn".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.PositiveEvent);
+                // }
+                // else if (GenHostility.HostileTo(pawn, Faction.OfPlayer))
+                // {
+                //     var lord = map.lordManager.LordOf(pawn);
+                //     if (lord != null && lord.LordJob is LordJob_PrisonBreak)
+                //     {
+                //         var pawns = lord.ownedPawns;
+                //         lord.RemoveAllPawns();
+                //         foreach (var p in pawns)
+                //         {
+                //             pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                //             var mentalStateHandler = pawn.mindState.mentalStateHandler;
+                //             var curState = mentalStateHandler.CurState;
+                //             if (curState != null)
+                //             {
+                //                 mentalStateHandler.CurState.RecoverFromState();
+                //             }
+                //             mentalStateHandler.Reset();
+                //             Messages.Message("PsychicSootherActOn".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.PositiveEvent);
+                //         }
+                //     }
+                // }
             });
         }
     }

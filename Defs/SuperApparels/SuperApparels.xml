@@ -188,8 +188,9 @@
         <generateCommonality>0</generateCommonality>
         <generateAllowChance>0</generateAllowChance>
         <graphicData>
-            <texPath>MyWeapons/toolbox</texPath>
+            <texPath>MyWeapons/toolbox2</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplexBlend</shaderType>
         </graphicData>
         <recipeMaker>
             <workSkill>Crafting</workSkill>
@@ -211,6 +212,8 @@
         <equippedStatOffsets>
             <WorkSpeedGlobal>1</WorkSpeedGlobal>
             <MW_PawnCreatedQualityOffset>2</MW_PawnCreatedQualityOffset>
+            <ResearchSpeed>20</ResearchSpeed>
+            <EntityStudyRate>20</EntityStudyRate>
         </equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
