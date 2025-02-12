@@ -7,7 +7,7 @@
 		<gerundLabel>praying</gerundLabel>
 		<description>Pray to the Void at Pray Spots.</description>
 		<verb>Pray at</verb>
-		<naturalPriority>400</naturalPriority>
+		<naturalPriority>1200</naturalPriority>
 		<relevantSkills>
 			<li>Social</li>
 		</relevantSkills>
