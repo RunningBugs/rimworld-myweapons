@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.6/Source/MyWeapons.csproj": {}
+  },
+  "projects": {
+    "/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.6/Source/MyWeapons.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.6/Source/MyWeapons.csproj",
+        "projectName": "MyWeapons",
+        "projectPath": "/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.6/Source/MyWeapons.csproj",
+        "packagesPath": "/home/lisanhu/.nuget/packages/",
+        "outputPath": "/home/lisanhu/mine/workspace/rimworld/MyWeapons/1.6/Source/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/lisanhu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net481"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net481": {
+            "targetAlias": "net481",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net481": {
+          "targetAlias": "net481",
+          "dependencies": {
+            "Krafs.Rimworld.Ref": {
+              "target": "Package",
+              "version": "[1.6.4488-beta, )"
+            },
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.3.1.1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "UnlimitedHugs.Rimworld.HugsLib": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/lisanhu/.dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
