@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- ========== SuperGun ========== -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperGun"]/comps</xpath>
+                    <value>
+                        <li Class="CombatExtended.CompProperties_AmmoUser">
+                            <magazineSize>10</magazineSize>
+                            <reloadTime>4</reloadTime>
+                            <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+                        </li>
+                        <li Class="CombatExtended.CompProperties_FireModes">
+                            <aiAimMode>AimedShot</aiAimMode>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperGun"]/verbs/li[verbClass="Verb_Shoot"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.VerbPropertiesCE">
+                            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+                            <warmupTime>1.5</warmupTime>
+                            <range>62</range>
+                            <soundCast>Shot_BoltActionRifle</soundCast>
+                            <soundCastTail>GunTail_Heavy</soundCastTail>
+                            <muzzleFlashScale>9</muzzleFlashScale>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperGun"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.5</cooldownTime>
+                                <armorPenetration>0.150</armorPenetration>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.5</cooldownTime>
+                                <armorPenetration>0.150</armorPenetration>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>bayonet</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>15</power>
+                                <cooldownTime>1.2</cooldownTime>
+                                <armorPenetration>0.50</armorPenetration>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperGun"]/statBases</xpath>
+                    <value>
+                        <Bulk>10.00</Bulk>
+                        <Mass>4.5</Mass>
+                        <SightsEfficiency>1.00</SightsEfficiency>
+                        <ShotSpread>0.05</ShotSpread>
+                        <SwayFactor>1.35</SwayFactor>
+                    </value>
+                </li>
+
+                <!-- ========== SuperRocketGun ========== -->
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]/comps</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]</xpath>
+                        <value>
+                            <comps/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]/comps</xpath>
+                    <value>
+                        <li Class="CombatExtended.CompProperties_AmmoUser">
+                            <magazineSize>1</magazineSize>
+                            <reloadTime>5.5</reloadTime>
+                            <ammoSet>AmmoSet_84x246mmR_HEAT</ammoSet>
+                        </li>
+                        <li Class="CombatExtended.CompProperties_FireModes">
+                            <aiAimMode>AimedShot</aiAimMode>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]/verbs/li[verbClass="Verb_Shoot"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.VerbPropertiesCE">
+                            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_84x246mmR_HEAT</defaultProjectile>
+                            <warmupTime>2.5</warmupTime>
+                            <range>45</range>
+                            <soundCast>Shot_Rocket</soundCast>
+                            <muzzleFlashScale>14</muzzleFlashScale>
+                            <targetParams>
+                                <canTargetLocations>true</canTargetLocations>
+                            </targetParams>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>2.0</cooldownTime>
+                                <armorPenetration>0.250</armorPenetration>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]/statBases</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]</xpath>
+                        <value>
+                            <statBases/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperRocketGun"]/statBases</xpath>
+                    <value>
+                        <Bulk>15.00</Bulk>
+                        <Mass>7.0</Mass>
+                        <SightsEfficiency>1.00</SightsEfficiency>
+                        <ShotSpread>0.15</ShotSpread>
+                        <SwayFactor>1.8</SwayFactor>
+                    </value>
+                </li>
+
+                <!-- ========== SuperDoomsDay ========== -->
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]/comps</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]</xpath>
+                        <value>
+                            <comps/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]/comps</xpath>
+                    <value>
+                        <li Class="CombatExtended.CompProperties_AmmoUser">
+                            <magazineSize>1</magazineSize>
+                            <reloadTime>8.0</reloadTime>
+                            <ammoSet>AmmoSet_84x246mmR_Thermobaric</ammoSet>
+                        </li>
+                        <li Class="CombatExtended.CompProperties_FireModes">
+                            <aiAimMode>AimedShot</aiAimMode>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]/verbs/li[verbClass="Verb_Shoot"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.VerbPropertiesCE">
+                            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_84x246mmR_Thermobaric</defaultProjectile>
+                            <warmupTime>3.5</warmupTime>
+                            <range>50</range>
+                            <soundCast>Shot_DoomsdayRocket</soundCast>
+                            <muzzleFlashScale>14</muzzleFlashScale>
+                            <targetParams>
+                                <canTargetLocations>true</canTargetLocations>
+                            </targetParams>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>12</power>
+                                <cooldownTime>2.5</cooldownTime>
+                                <armorPenetration>0.300</armorPenetration>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]/statBases</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]</xpath>
+                        <value>
+                            <statBases/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_MySuperDoomsDay"]/statBases</xpath>
+                    <value>
+                        <Bulk>20.00</Bulk>
+                        <Mass>10.0</Mass>
+                        <SightsEfficiency>1.00</SightsEfficiency>
+                        <ShotSpread>0.20</ShotSpread>
+                        <SwayFactor>2.0</SwayFactor>
+                    </value>
+                </li>
+
+                <!-- ========== SuperStunLauncher ========== -->
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]/comps</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]</xpath>
+                        <value>
+                            <comps/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]/comps</xpath>
+                    <value>
+                        <li Class="CombatExtended.CompProperties_AmmoUser">
+                            <magazineSize>1</magazineSize>
+                            <reloadTime>2.0</reloadTime>
+                            <ammoSet>AmmoSet_40x46mmGrenade_EMP</ammoSet>
+                        </li>
+                        <li Class="CombatExtended.CompProperties_FireModes">
+                            <aiAimMode>AimedShot</aiAimMode>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]/verbs/li[verbClass="Verb_Shoot"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.VerbPropertiesCE">
+                            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_40x46mmGrenade_EMP</defaultProjectile>
+                            <warmupTime>1.5</warmupTime>
+                            <range>40</range>
+                            <soundCast>Shot_IncendiaryLauncher</soundCast>
+                            <muzzleFlashScale>14</muzzleFlashScale>
+                            <targetParams>
+                                <canTargetLocations>true</canTargetLocations>
+                            </targetParams>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.8</cooldownTime>
+                                <armorPenetration>0.100</armorPenetration>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.8</cooldownTime>
+                                <armorPenetration>0.100</armorPenetration>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]/statBases</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]</xpath>
+                        <value>
+                            <statBases/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperStunLauncher"]/statBases</xpath>
+                    <value>
+                        <Bulk>8.00</Bulk>
+                        <Mass>3.5</Mass>
+                        <SightsEfficiency>1.00</SightsEfficiency>
+                        <ShotSpread>0.2</ShotSpread>
+                        <SwayFactor>1.5</SwayFactor>
+                    </value>
+                </li>
+
+                <!-- ========== SuperEmpLauncher ========== -->
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperEmpLauncher"]/comps</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_SuperEmpLauncher"]</xpath>
+                        <value>
+                            <comps/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperEmpLauncher"]/comps</xpath>
+                    <value>
+                        <li Class="CombatExtended.CompProperties_AmmoUser">
+                            <magazineSize>1</magazineSize>
+                            <reloadTime>2.0</reloadTime>
+                            <ammoSet>AmmoSet_40x46mmGrenade_EMP</ammoSet>
+                        </li>
+                        <li Class="CombatExtended.CompProperties_FireModes">
+                            <aiAimMode>AimedShot</aiAimMode>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperEmpLauncher"]/verbs/li[verbClass="Verb_Shoot"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.VerbPropertiesCE">
+                            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_40x46mmGrenade_EMP</defaultProjectile>
+                            <warmupTime>1.5</warmupTime>
+                            <range>40</range>
+                            <soundCast>Shot_IncendiaryLauncher</soundCast>
+                            <muzzleFlashScale>14</muzzleFlashScale>
+                            <targetParams>
+                                <canTargetLocations>true</canTargetLocations>
+                            </targetParams>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperEmpLauncher"]/statBases</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Gun_SuperEmpLauncher"]</xpath>
+                        <value>
+                            <statBases/>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Gun_SuperEmpLauncher"]/statBases</xpath>
+                    <value>
+                        <Bulk>8.00</Bulk>
+                        <Mass>3.5</Mass>
+                        <SightsEfficiency>1.00</SightsEfficiency>
+                        <ShotSpread>0.2</ShotSpread>
+                        <SwayFactor>1.5</SwayFactor>
+                    </value>
+                </li>
+
+                <!-- ========== Apparels ========== -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Apparel_SuperShieldBelt"]/statBases</xpath>
+                    <value>
+                        <Bulk>1</Bulk>
+                        <WornBulk>1</WornBulk>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MW_Toolbox"]/statBases</xpath>
+                    <value>
+                        <Bulk>5</Bulk>
+                        <WornBulk>1</WornBulk>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MW_ToolboxTwo"]/statBases</xpath>
+                    <value>
+                        <Bulk>2</Bulk>
+                        <WornBulk>1</WornBulk>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

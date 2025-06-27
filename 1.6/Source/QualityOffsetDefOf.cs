@@ -90,7 +90,7 @@ class QualityOffsetDefOf {
     public static StatDef MW_PawnCreatedQualityOffset;
 }
 
-[HarmonyPatch(typeof(QualityUtility), "GenerateQualityCreatedByPawn", new System.Type[] { typeof(Pawn), typeof(SkillDef) })]
+[HarmonyPatch(typeof(QualityUtility), "GenerateQualityCreatedByPawn", new System.Type[] { typeof(Pawn), typeof(SkillDef), typeof(bool) })]
 class QualityUtilityGenerateQualityCreatedByPawnPatch
 {
     private static QualityCategory AddLevels(QualityCategory quality, int levels)
