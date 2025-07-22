@@ -14,4 +14,7 @@
   <MW_ToolboxTwo.label>小工具箱</MW_ToolboxTwo.label>
   <MW_ToolboxTwo.description>小工具箱，可以很大的加快持有者的工作速度（增加1倍），并使生产物品质量偏移+2</MW_ToolboxTwo.description>
 
+  <MW_Toolbox3.label>微型工具箱</MW_Toolbox3.label>
+  <MW_Toolbox3.description>微型工具箱，可以使生产物品质量偏移+2</MW_Toolbox3.description>
+
 </LanguageData>
