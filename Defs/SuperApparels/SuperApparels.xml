@@ -149,7 +149,7 @@
         </statBases>
         <equippedStatOffsets>
             <WorkSpeedGlobal>49</WorkSpeedGlobal>
-            <MW_PawnCreatedQualityOffset>2</MW_PawnCreatedQualityOffset>
+            <MW_PawnCreatedQualityOffset>3</MW_PawnCreatedQualityOffset>
         </equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
@@ -211,7 +211,7 @@
         </statBases>
         <equippedStatOffsets>
             <WorkSpeedGlobal>1</WorkSpeedGlobal>
-            <MW_PawnCreatedQualityOffset>2</MW_PawnCreatedQualityOffset>
+            <MW_PawnCreatedQualityOffset>3</MW_PawnCreatedQualityOffset>
             <ResearchSpeed>20</ResearchSpeed>
             <EntityStudyRate>20</EntityStudyRate>
         </equippedStatOffsets>
@@ -244,7 +244,7 @@
     </ThingDef>
 
 	<ThingDef ParentName="ApparelBase">
-        <defName>MW_Toolbox3</defName>
+        <defName>MW_ToolboxThree</defName>
         <tradeability>None</tradeability>
         <label>tiny toolbox</label>
         <description>Toolbox that is capable of increasing the quality for the wearer significantly.</description>
@@ -275,7 +275,7 @@
             <EquipDelay>0</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MW_PawnCreatedQualityOffset>2</MW_PawnCreatedQualityOffset>
+            <MW_PawnCreatedQualityOffset>3</MW_PawnCreatedQualityOffset>
         </equippedStatOffsets>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
